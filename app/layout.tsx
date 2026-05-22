@@ -5,13 +5,13 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin", "latin-ext"] });
 
 export const metadata: Metadata = {
-  title: "AIBgin — White-label AI chatbot platforma",
+  title: "AIBgin — Bezpečná a nastavitelná AI pro děti",
   description:
-    "Nasaďte vlastní AI chatbot s vaším brandem, GDPR compliance a plnou kontrolou. Starter od 490 Kč/měsíc.",
+    "AI chatbot pro školy, školky, kroužky a domy dětí a mládeže. 5 vrstev ochrany, crisis detection, COPPA 2026, EU AI Act. Žádná registrace pro děti — stačí QR kód. Od 490 Kč/měsíc.",
   metadataBase: new URL("https://aibgin.cz"),
   openGraph: {
-    title: "AIBgin — White-label AI chatbot platforma",
-    description: "Váš AI asistent. Vaše značka. Vaše pravidla.",
+    title: "AIBgin — Bezpečná a nastavitelná AI pro děti",
+    description: "Bezpečný AI chatbot pro každou instituci pracující s dětmi. 5 vrstev ochrany, QR přístup, linka bezpečí 116 111.",
     url: "https://aibgin.cz",
     siteName: "AIBgin",
     locale: "cs_CZ",

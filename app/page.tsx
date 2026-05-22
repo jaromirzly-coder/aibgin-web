@@ -3,299 +3,361 @@ export default function Home() {
     <main className="min-h-screen bg-white text-gray-900 font-sans">
       <Nav />
       <Hero />
-      <HowItWorks />
-      <Pricing />
+      <Institutions />
+      <QRAccess />
+      <SafetyLayers />
       <Compliance />
+      <Pricing />
+      <Testimonials />
+      <CtaBanner />
       <Footer />
     </main>
   );
 }
 
+/* ── Navigation ───────────────────────────────────────────── */
 function Nav() {
   return (
-    <header className="fixed top-0 w-full bg-white/90 backdrop-blur border-b border-gray-100 z-50">
+    <header className="fixed top-0 w-full bg-white/95 backdrop-blur border-b border-gray-100 z-50">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <span className="font-bold text-xl" style={{ color: "#6C47FF" }}>AIBgin</span>
+        <div className="flex items-center gap-2">
+          <span className="font-black text-xl" style={{ color: "#6C47FF" }}>AIBgin</span>
+          <span className="hidden sm:inline text-xs text-gray-400 font-medium border border-gray-200 rounded-full px-2 py-0.5">
+            pro děti
+          </span>
+        </div>
         <nav className="hidden md:flex gap-8 text-sm text-gray-600">
-          <a href="#jak-to-funguje" className="hover:text-gray-900 transition-colors">Jak to funguje</a>
+          <a href="#instituce" className="hover:text-gray-900 transition-colors">Instituce</a>
+          <a href="#bezpecnost" className="hover:text-gray-900 transition-colors">Bezpečnost</a>
           <a href="#cenik" className="hover:text-gray-900 transition-colors">Ceník</a>
           <a href="#compliance" className="hover:text-gray-900 transition-colors">Compliance</a>
         </nav>
         <a
           href="mailto:support@aibgin.cz"
-          className="text-sm font-medium text-white px-4 py-2 rounded-lg transition-opacity hover:opacity-90"
+          className="text-sm font-semibold text-white px-4 py-2 rounded-lg transition-opacity hover:opacity-90"
           style={{ backgroundColor: "#6C47FF" }}
         >
-          Kontaktujte nás
+          Domluvit demo
         </a>
       </div>
     </header>
   );
 }
 
+/* ── Hero ─────────────────────────────────────────────────── */
 function Hero() {
   return (
-    <section className="pt-32 pb-24 px-6">
-      <div className="max-w-4xl mx-auto text-center">
+    <section className="pt-32 pb-20 px-6 text-center">
+      <div className="max-w-4xl mx-auto">
         <div
-          className="inline-block text-xs font-semibold uppercase tracking-widest px-3 py-1 rounded-full mb-6"
+          className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-8"
           style={{ backgroundColor: "#EDE9FF", color: "#6C47FF" }}
         >
-          White-label AI chatbot platforma
+          <span>🛡️</span>
+          <span>Certifikovaná AI bezpečná pro děti</span>
         </div>
-        <h1 className="text-5xl md:text-6xl font-extrabold leading-tight tracking-tight mb-6">
-          Váš AI asistent.
-          <br />
-          <span style={{ color: "#6C47FF" }}>Vaše značka.</span>
-          <br />
-          Vaše pravidla.
+
+        <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tight mb-6">
+          AIBgin —{" "}
+          <span style={{ color: "#6C47FF" }}>Bezpečná</span>
+          {" "}a nastavitelná
+          <br />AI pro děti
         </h1>
-        <p className="text-lg md:text-xl text-gray-500 max-w-2xl mx-auto mb-10">
-          AIBgin umožňuje firmám nasadit vlastní AI chatbot s plnou kontrolou nad obsahem, brandem
-          a bezpečností — bez nutnosti vlastního ML týmu. GDPR-first, audit log, šifrování.
+
+        <p className="text-lg md:text-xl text-gray-500 max-w-2xl mx-auto mb-4 leading-relaxed">
+          Bezpečný AI chatbot navržený pro každou instituci pracující s dětmi.
+          Každá odpověď prochází real-time auditem. Žádná registrace pro děti —
+          stačí QR kód z tabule.
         </p>
+        <p className="text-sm text-gray-400 mb-10">
+          Školy · Školky · Kroužky · Domy dětí a mládeže · Nízkoprahová centra
+        </p>
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="#cenik"
-            className="px-8 py-4 rounded-xl font-semibold text-white text-base transition-opacity hover:opacity-90"
+            className="px-8 py-4 rounded-xl font-bold text-white text-base transition-opacity hover:opacity-90 shadow-lg"
             style={{ backgroundColor: "#6C47FF" }}
           >
-            Zobrazit plány
+            Zobrazit plány od 490 Kč
           </a>
           <a
-            href="mailto:support@aibgin.cz"
-            className="px-8 py-4 rounded-xl font-semibold text-gray-700 text-base border border-gray-200 hover:border-gray-400 transition-colors"
+            href="mailto:support@aibgin.cz?subject=Demo AIBgin"
+            className="px-8 py-4 rounded-xl font-semibold text-gray-700 text-base border-2 border-gray-200 hover:border-gray-400 transition-colors"
           >
-            Domluvit demo
+            Domluvit demo zdarma
           </a>
         </div>
-        <p className="mt-6 text-sm text-gray-400">
-          Bez závazků · 14 dní zdarma · Nasazení do 30 minut
-        </p>
+
+        <div className="mt-10 flex flex-wrap justify-center gap-6 text-sm text-gray-400">
+          <span>✓ 14 dní zdarma</span>
+          <span>✓ Bez registrace pro děti</span>
+          <span>✓ GDPR & EU AI Act</span>
+          <span>✓ Linka bezpečí 116 111</span>
+        </div>
       </div>
     </section>
   );
 }
 
-function HowItWorks() {
-  const steps = [
+/* ── Institutions ─────────────────────────────────────────── */
+function Institutions() {
+  const list = [
+    { icon: "🏫", label: "Základní školy" },
+    { icon: "🎒", label: "Mateřské školy" },
+    { icon: "🌅", label: "Školní družiny" },
+    { icon: "⚽", label: "Zájmové kroužky" },
+    { icon: "🎮", label: "Dětské kluby" },
+    { icon: "🤝", label: "Nízkoprahová centra" },
+    { icon: "🏠", label: "Domy dětí a mládeže" },
+    { icon: "📚", label: "Střední školy" },
+  ];
+
+  return (
+    <section id="instituce" className="py-16 px-6 bg-gray-50">
+      <div className="max-w-5xl mx-auto text-center">
+        <h2 className="text-2xl md:text-3xl font-bold mb-3">
+          Pro každou instituci pracující s dětmi
+        </h2>
+        <p className="text-gray-500 mb-12 max-w-lg mx-auto">
+          Jedno řešení, stovky typů institucí. Každá dostane vlastní bezpečnostní profil.
+        </p>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          {list.map((item) => (
+            <div
+              key={item.label}
+              className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center gap-3"
+            >
+              <span className="text-4xl">{item.icon}</span>
+              <span className="font-medium text-sm text-gray-700 text-center">{item.label}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ── QR Access ────────────────────────────────────────────── */
+function QRAccess() {
+  return (
+    <section className="py-20 px-6">
+      <div className="max-w-5xl mx-auto">
+        <div
+          className="rounded-3xl p-10 md:p-14 flex flex-col md:flex-row items-center gap-10"
+          style={{ background: "linear-gradient(135deg, #EDE9FF 0%, #f5f3ff 100%)" }}
+        >
+          <div className="flex-1">
+            <div
+              className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-5"
+              style={{ backgroundColor: "#6C47FF", color: "#fff" }}
+            >
+              Žádná registrace pro děti
+            </div>
+            <h2 className="text-3xl md:text-4xl font-black mb-4" style={{ color: "#1a1a2e" }}>
+              Děti přistupují přes QR kód
+              <br />
+              <span style={{ color: "#6C47FF" }}>z tabule nebo odkaz.</span>
+            </h2>
+            <p className="text-gray-600 text-lg mb-6 leading-relaxed">
+              Učitel promítne QR kód. Dítě naskenuje telefonem. Hotovo.
+              Žádná registrace, žádné heslo, žádný účet.
+              Správce má plný přehled — děti mají nulovou digitální stopu.
+            </p>
+            <ul className="space-y-3">
+              {[
+                "QR kód se vygeneruje v dashboardu jedním klikem",
+                "Každá třída/skupina má vlastní bezpečnostní profil",
+                "Správce vidí souhrn konverzací, ne jejich obsah",
+                "Automatický reset po skončení hodiny",
+              ].map((item) => (
+                <li key={item} className="flex items-start gap-3 text-gray-700">
+                  <span className="mt-1 shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold text-white" style={{ backgroundColor: "#6C47FF" }}>✓</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="shrink-0">
+            <div className="w-48 h-48 bg-white rounded-3xl shadow-xl flex flex-col items-center justify-center gap-3 border-4" style={{ borderColor: "#6C47FF" }}>
+              <div className="grid grid-cols-5 gap-0.5">
+                {Array.from({ length: 25 }).map((_, i) => (
+                  <div
+                    key={i}
+                    className="w-3 h-3 rounded-sm"
+                    style={{
+                      backgroundColor: [0,1,2,3,4,5,9,10,14,15,19,20,21,22,23,24,6,8,16,18].includes(i)
+                        ? "#6C47FF"
+                        : "#EDE9FF",
+                    }}
+                  />
+                ))}
+              </div>
+              <p className="text-xs font-bold text-center px-4" style={{ color: "#6C47FF" }}>
+                Naskenuj a začni
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ── 5 Safety Layers ──────────────────────────────────────── */
+function SafetyLayers() {
+  const layers = [
     {
       num: "01",
-      title: "Nastavte brand",
-      desc: "Nahrajte logo, zvolte barvy a tón komunikace. Chatbot promluví vaším hlasem.",
+      icon: "🪪",
+      title: "AIBSN identita",
+      desc: "Certifikovaná identita každé instance ověřitelná veřejně na aibsn.org. Falešné chatboty vydávající se za vaši školu jsou detekovatelné okamžitě.",
+      tag: "Verifikovatelné",
     },
     {
       num: "02",
-      title: "Přidejte znalosti",
-      desc: "Nahrajte dokumenty, FAQ nebo propojte interní systémy. AI se naučí vašemu oboru.",
+      icon: "⚡",
+      title: "AIBguard real-time audit",
+      desc: "Každá odpověď AI projde nezávislým auditem PŘED odesláním dítěti. Verdikt PASS / ALERT / CRITICAL. Při CRITICAL odpověď nikdy neodejde.",
+      tag: "Fail-closed",
     },
     {
       num: "03",
-      title: "Vložte na web",
-      desc: "Jeden řádek kódu a widget je živý. Funguje na webu, v aplikaci i na intranetu.",
+      icon: "🎛️",
+      title: "Vlastní bezpečnostní profil",
+      desc: "Správce nastaví věkové skupiny (3–6, 7–10, 11–15 let), zakázaná témata, povolený obsah a tón komunikace. Vše bez IT znalostí.",
+      tag: "Plně nastavitelné",
     },
     {
       num: "04",
-      title: "Sledujte a optimalizujte",
-      desc: "Dashboard v reálném čase — metriky, audit log, nastavení limitů bez nutnosti IT.",
+      icon: "📋",
+      title: "Měsíční regulatorní update",
+      desc: "COPPA 2026, EU AI Act, nové zákony na ochranu dětí jsou automaticky zavedeny do všech instancí. Nemusíte sledovat legislativu — my to děláme za vás.",
+      tag: "Automaticky",
+    },
+    {
+      num: "05",
+      icon: "🆘",
+      title: "Crisis detection + Linka bezpečí",
+      desc: "Detekce šikany, sebepoškozování a krizových stavů. Dítěti se okamžitě zobrazí číslo 116 111 a správci přijde alert. Každá sekunda se počítá.",
+      tag: "116 111",
     },
   ];
 
   return (
-    <section id="jak-to-funguje" className="py-24 px-6 bg-gray-50">
+    <section id="bezpecnost" className="py-24 px-6 bg-gray-50">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Jak to funguje</h2>
-        <p className="text-center text-gray-500 mb-16 max-w-xl mx-auto">
-          Od registrace k živému chatbotu za méně než půl hodiny.
-        </p>
-        <div className="grid md:grid-cols-4 gap-8">
-          {steps.map((s) => (
-            <div key={s.num} className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-              <div className="text-3xl font-black mb-4" style={{ color: "#6C47FF" }}>
-                {s.num}
-              </div>
-              <h3 className="font-semibold text-lg mb-2">{s.title}</h3>
-              <p className="text-gray-500 text-sm leading-relaxed">{s.desc}</p>
-            </div>
-          ))}
+        <div className="text-center mb-16">
+          <div
+            className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4"
+            style={{ backgroundColor: "#EDE9FF", color: "#6C47FF" }}
+          >
+            5 vrstev ochrany
+          </div>
+          <h2 className="text-3xl md:text-4xl font-black mb-4">
+            Bezpečnost není volitelná funkce.
+            <br />
+            <span style={{ color: "#6C47FF" }}>Je to architektura.</span>
+          </h2>
+          <p className="text-gray-500 max-w-xl mx-auto">
+            Každá vrstva funguje nezávisle. Pokud selže jedna, ostatní blokují.
+            Fail-closed od základů.
+          </p>
         </div>
-      </div>
-    </section>
-  );
-}
 
-function Pricing() {
-  const plans = [
-    {
-      name: "Starter",
-      price: "490",
-      desc: "Pro malé weby a tesování v ostrém provozu.",
-      features: [
-        "1 chatbot",
-        "500 konverzací / měsíc",
-        "Upload dokumentů (do 10 MB)",
-        "Základní branding",
-        "Email podpora",
-      ],
-      cta: "Začít zdarma",
-      href: "mailto:support@aibgin.cz?subject=Starter plán",
-      highlight: false,
-    },
-    {
-      name: "Growth",
-      price: "1 490",
-      desc: "Pro rostoucí firmy s vlastními požadavky.",
-      features: [
-        "5 chatbotů",
-        "Neomezené konverzace",
-        "Upload dokumentů (do 100 MB)",
-        "Plný branding + vlastní doména",
-        "Audit log 5 let",
-        "Prioritní podpora",
-        "API přístup",
-      ],
-      cta: "Vybrat Growth",
-      href: "mailto:support@aibgin.cz?subject=Growth plán",
-      highlight: true,
-    },
-    {
-      name: "Enterprise",
-      price: null,
-      desc: "Pro korporace, banky a regulované odvětví.",
-      features: [
-        "Neomezené chatboty",
-        "On-premise nebo private cloud",
-        "SLA 99,9 %",
-        "Dedikovaný account manager",
-        "Vlastní integrace",
-        "Pokročilý compliance reporting",
-      ],
-      cta: "Požádat o nabídku",
-      href: "mailto:platby@aibgin.cz?subject=Enterprise poptávka",
-      highlight: false,
-    },
-  ];
-
-  return (
-    <section id="cenik" className="py-24 px-6">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Ceník</h2>
-        <p className="text-center text-gray-500 mb-16 max-w-xl mx-auto">
-          Transparentní ceny bez skrytých poplatků. Platby v Kč, faktura každý měsíc.
-        </p>
-        <div className="grid md:grid-cols-3 gap-8 items-stretch">
-          {plans.map((p) => (
+        <div className="grid md:grid-cols-5 gap-4">
+          {layers.map((l) => (
             <div
-              key={p.name}
-              className={`relative rounded-2xl p-8 flex flex-col border ${
-                p.highlight
-                  ? "border-2 shadow-xl"
-                  : "border-gray-200 bg-white"
-              }`}
-              style={
-                p.highlight
-                  ? { borderColor: "#6C47FF", background: "linear-gradient(135deg, #f5f3ff 0%, #fff 100%)" }
-                  : {}
-              }
+              key={l.num}
+              className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col"
             >
-              {p.highlight && (
-                <div
-                  className="absolute -top-3 left-1/2 -translate-x-1/2 text-white text-xs font-bold px-4 py-1 rounded-full"
-                  style={{ backgroundColor: "#6C47FF" }}
+              <div className="flex items-center justify-between mb-4">
+                <span className="text-3xl">{l.icon}</span>
+                <span
+                  className="text-xs font-bold px-2 py-0.5 rounded-full"
+                  style={{ backgroundColor: "#EDE9FF", color: "#6C47FF" }}
                 >
-                  Nejoblíbenější
-                </div>
-              )}
-              <div className="mb-6">
-                <h3 className="text-xl font-bold mb-1">{p.name}</h3>
-                <p className="text-gray-500 text-sm">{p.desc}</p>
+                  {l.tag}
+                </span>
               </div>
-              <div className="mb-8">
-                {p.price ? (
-                  <>
-                    <span className="text-4xl font-extrabold">{p.price} Kč</span>
-                    <span className="text-gray-400 text-sm"> / měsíc</span>
-                  </>
-                ) : (
-                  <span className="text-4xl font-extrabold">Na dotaz</span>
-                )}
+              <div className="text-2xl font-black mb-2" style={{ color: "#6C47FF" }}>
+                {l.num}
               </div>
-              <ul className="space-y-3 mb-10 flex-1">
-                {p.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2 text-sm text-gray-700">
-                    <span style={{ color: "#6C47FF" }} className="mt-0.5 shrink-0">✓</span>
-                    {f}
-                  </li>
-                ))}
-              </ul>
-              <a
-                href={p.href}
-                className="block text-center py-3 rounded-xl font-semibold text-sm transition-opacity hover:opacity-90"
-                style={
-                  p.highlight
-                    ? { backgroundColor: "#6C47FF", color: "#fff" }
-                    : { border: "1.5px solid #6C47FF", color: "#6C47FF" }
-                }
-              >
-                {p.cta}
-              </a>
+              <h3 className="font-bold text-sm mb-2">{l.title}</h3>
+              <p className="text-gray-500 text-xs leading-relaxed flex-1">{l.desc}</p>
             </div>
           ))}
         </div>
-        <p className="text-center text-xs text-gray-400 mt-8">
-          Všechny ceny jsou bez DPH. DPH 21 % bude připočteno.
-        </p>
       </div>
     </section>
   );
 }
 
+/* ── Compliance ───────────────────────────────────────────── */
 function Compliance() {
   const items = [
     {
+      badge: "COPPA 2026",
+      icon: "🇺🇸",
+      title: "COPPA 2026",
+      desc: "Plný soulad s Children's Online Privacy Protection Act. Žádná osobní data dětí nejsou sbírána bez souhlasu rodičů.",
+    },
+    {
+      badge: "EU AI Act",
+      icon: "🇪🇺",
+      title: "EU AI Act čl. 50",
+      desc: "Transparentnost AI systémů pro děti. Každé dítě ví, že mluví s AI. Automatický disclosure při každé konverzaci.",
+    },
+    {
+      badge: "GDPR",
       icon: "🔒",
       title: "GDPR & ePrivacy",
-      desc: "Data zpracováváme výhradně v EU (eu-central-1). Smlouva o zpracování osobních údajů (DPA) je součástí každého plánu.",
+      desc: "Data výhradně v EU (eu-central-1). DPA smlouva součástí každého plánu. Šifrování AES-256 per-instance.",
     },
     {
+      badge: "116 111",
+      icon: "🆘",
+      title: "Linka bezpečí 116 111",
+      desc: "Integrovaná detekce krizí. Automatické zobrazení Linky bezpečí a okamžitý alert správci instituce.",
+    },
+    {
+      badge: "Audit log",
       icon: "📋",
-      title: "Audit log 5 let",
-      desc: "Každá konverzace je neměnně zaznamenána. Splňuje požadavky ČNB, DORA i interních auditů.",
+      title: "5letý audit log",
+      desc: "Neměnný záznam pro inspekci ČŠI, GDPR audit a interní kontrolu. Uloženo v EU, šifrováno, nemodifikovatelné.",
     },
     {
-      icon: "🛡️",
-      title: "AIBguard safety layer",
-      desc: "Dvojí AI audit každé odpovědi. Fail-closed architektura — při selhání systém blokuje, neodpoví.",
-    },
-    {
-      icon: "🔑",
-      title: "Šifrování per-tenant",
-      desc: "Konverzace jsou šifrovány AES-256 s klíčem unikátním pro každého zákazníka. Ani my je nemůžeme číst.",
-    },
-    {
+      badge: "Czech law",
       icon: "⚖️",
-      title: "EU AI Act ready",
-      desc: "Architektura připravena na požadavky EU AI Act (transparentnost, lidský dohled, záznamy).",
-    },
-    {
-      icon: "🏢",
-      title: "Česká firma",
-      desc: "SAY TO PAY s.r.o., IČO dostupné na vyžádání. Smlouvy v češtině, fakturace v Kč.",
+      title: "Česká legislativa",
+      desc: "Zákon č. 561/2004 Sb. (školský zákon), vyhláška MŠMT. Smlouvy v češtině, fakturace v Kč, sídlo Frýdek-Místek.",
     },
   ];
 
   return (
-    <section id="compliance" className="py-24 px-6 bg-gray-50">
+    <section id="compliance" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Compliance & bezpečnost</h2>
-        <p className="text-center text-gray-500 mb-16 max-w-xl mx-auto">
-          Navrženo pro regulované odvětví. Splňuje standardy bank, pojišťoven i veřejné správy.
-        </p>
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-black mb-4">
+            Compliance & regulace
+          </h2>
+          <p className="text-gray-500 max-w-xl mx-auto">
+            Navrženo pro regulované prostředí. Připraveni na kontrolu ČŠI kdykoliv.
+          </p>
+        </div>
         <div className="grid md:grid-cols-3 gap-6">
           {items.map((item) => (
-            <div key={item.title} className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
-              <div className="text-3xl mb-4">{item.icon}</div>
-              <h3 className="font-semibold text-base mb-2">{item.title}</h3>
+            <div key={item.title} className="rounded-2xl p-6 border border-gray-100 shadow-sm bg-white">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-2xl">{item.icon}</span>
+                <span
+                  className="text-xs font-bold px-2 py-0.5 rounded-full"
+                  style={{ backgroundColor: "#EDE9FF", color: "#6C47FF" }}
+                >
+                  {item.badge}
+                </span>
+              </div>
+              <h3 className="font-bold text-base mb-2">{item.title}</h3>
               <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
             </div>
           ))}
@@ -305,59 +367,315 @@ function Compliance() {
   );
 }
 
+/* ── Pricing ──────────────────────────────────────────────── */
+function Pricing() {
+  const plans = [
+    {
+      name: "Starter",
+      price: "490",
+      target: "1 třída / kroužek",
+      desc: "Ideální pro otestování v jedné třídě nebo kroužku.",
+      features: [
+        "1 chatbot",
+        "Až 35 dětí",
+        "500 konverzací / měsíc",
+        "QR kód přístup",
+        "Základní bezpečnostní profil",
+        "Crisis detection + 116 111",
+        "Email podpora",
+      ],
+      cta: "Začít zdarma",
+      href: "mailto:support@aibgin.cz?subject=Starter plán",
+      highlight: false,
+    },
+    {
+      name: "Growth",
+      price: "1 490",
+      target: "Celá škola",
+      desc: "Pro školy a instituce s více třídami nebo skupinami.",
+      features: [
+        "5 chatbotů",
+        "Až 300 dětí",
+        "Neomezené konverzace",
+        "QR kódy pro každou třídu",
+        "Plný bezpečnostní profil",
+        "Crisis detection + 116 111",
+        "Měsíční regulatorní update",
+        "Audit log 5 let",
+        "Prioritní podpora",
+      ],
+      cta: "Vybrat Growth",
+      href: "mailto:support@aibgin.cz?subject=Growth plán",
+      highlight: true,
+    },
+    {
+      name: "Enterprise",
+      price: null,
+      target: "Více poboček",
+      desc: "Pro sítě škol, DDM, neziskovky s více pobočkami.",
+      features: [
+        "Neomezené chatboty",
+        "Neomezené děti",
+        "Více poboček / lokalit",
+        "Centrální správa všech instancí",
+        "SLA 99,9 %",
+        "Dedikovaný account manager",
+        "Vlastní integrace a API",
+        "Pokročilý compliance reporting",
+      ],
+      cta: "Požádat o nabídku",
+      href: "mailto:platby@aibgin.cz?subject=Enterprise poptávka",
+      highlight: false,
+    },
+  ];
+
+  return (
+    <section id="cenik" className="py-24 px-6 bg-gray-50">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-black mb-4">Ceník</h2>
+          <p className="text-gray-500 max-w-xl mx-auto">
+            Transparentní ceny bez skrytých poplatků. Platby v Kč, faktura každý měsíc.
+            14 dní zdarma u všech plánů.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-3 gap-8 items-stretch">
+          {plans.map((p) => (
+            <div
+              key={p.name}
+              className={`relative rounded-2xl p-8 flex flex-col border-2 ${
+                p.highlight ? "shadow-2xl" : "bg-white border-gray-200"
+              }`}
+              style={
+                p.highlight
+                  ? {
+                      borderColor: "#6C47FF",
+                      background: "linear-gradient(160deg, #f5f3ff 0%, #ffffff 100%)",
+                    }
+                  : {}
+              }
+            >
+              {p.highlight && (
+                <div
+                  className="absolute -top-4 left-1/2 -translate-x-1/2 text-white text-xs font-black px-5 py-1.5 rounded-full shadow"
+                  style={{ backgroundColor: "#6C47FF" }}
+                >
+                  🏫 Nejoblíbenější pro školy
+                </div>
+              )}
+
+              <div className="mb-2">
+                <span
+                  className="text-xs font-bold uppercase tracking-widest px-2 py-0.5 rounded-full"
+                  style={{ backgroundColor: "#EDE9FF", color: "#6C47FF" }}
+                >
+                  {p.target}
+                </span>
+              </div>
+              <h3 className="text-xl font-black mt-3 mb-1">{p.name}</h3>
+              <p className="text-gray-400 text-sm mb-6">{p.desc}</p>
+
+              <div className="mb-8">
+                {p.price ? (
+                  <>
+                    <span className="text-4xl font-black">{p.price} Kč</span>
+                    <span className="text-gray-400 text-sm"> / měsíc</span>
+                  </>
+                ) : (
+                  <span className="text-4xl font-black">Na dotaz</span>
+                )}
+              </div>
+
+              <ul className="space-y-2.5 mb-10 flex-1">
+                {p.features.map((f) => (
+                  <li key={f} className="flex items-start gap-2 text-sm text-gray-700">
+                    <span className="mt-0.5 shrink-0 font-bold" style={{ color: "#6C47FF" }}>
+                      ✓
+                    </span>
+                    {f}
+                  </li>
+                ))}
+              </ul>
+
+              <a
+                href={p.href}
+                className="block text-center py-3.5 rounded-xl font-bold text-sm transition-opacity hover:opacity-90"
+                style={
+                  p.highlight
+                    ? { backgroundColor: "#6C47FF", color: "#fff" }
+                    : { border: "2px solid #6C47FF", color: "#6C47FF" }
+                }
+              >
+                {p.cta}
+              </a>
+            </div>
+          ))}
+        </div>
+        <p className="text-center text-xs text-gray-400 mt-8">
+          Všechny ceny jsou bez DPH · DPH 21 % bude připočteno · Fakturace v Kč
+        </p>
+      </div>
+    </section>
+  );
+}
+
+/* ── Testimonials ─────────────────────────────────────────── */
+function Testimonials() {
+  const quotes = [
+    {
+      text: "Děti si rychle zvykly — a já jsem klidná, protože vím, že každá odpověď prošla kontrolou.",
+      name: "Mgr. Jana K.",
+      role: "Třídní učitelka, ZŠ Frýdek-Místek",
+      initials: "JK",
+    },
+    {
+      text: "Nastavení bylo hotové za půl hodiny. QR kódy rozdám každý pátek a kroužek může hned pracovat s AI.",
+      name: "Tomáš M.",
+      role: "Vedoucí robotického kroužku, DDM",
+      initials: "TM",
+    },
+    {
+      text: "Jako ředitel potřebuji mít jistotu, že jsme v souladu s legislativou. AIBgin to řeší za mě.",
+      name: "Mgr. Pavel R.",
+      role: "Ředitel ZŠ, Ostrava",
+      initials: "PR",
+    },
+  ];
+
+  return (
+    <section className="py-24 px-6">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-black mb-4">
+            Co říkají pedagogové
+          </h2>
+          <p className="text-gray-400 text-sm">
+            Ilustrativní reference · Skutečné zkušenosti zákazníků doplníme při spuštění
+          </p>
+        </div>
+        <div className="grid md:grid-cols-3 gap-6">
+          {quotes.map((q) => (
+            <div key={q.name} className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+              <div className="text-4xl mb-4" style={{ color: "#6C47FF" }}>"</div>
+              <p className="text-gray-700 leading-relaxed mb-6 italic">{q.text}</p>
+              <div className="flex items-center gap-3">
+                <div
+                  className="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-bold shrink-0"
+                  style={{ backgroundColor: "#6C47FF" }}
+                >
+                  {q.initials}
+                </div>
+                <div>
+                  <p className="font-bold text-sm">{q.name}</p>
+                  <p className="text-gray-400 text-xs">{q.role}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ── CTA Banner ───────────────────────────────────────────── */
+function CtaBanner() {
+  return (
+    <section className="py-20 px-6">
+      <div
+        className="max-w-4xl mx-auto rounded-3xl p-12 text-center text-white"
+        style={{ background: "linear-gradient(135deg, #6C47FF 0%, #9B7AFF 100%)" }}
+      >
+        <h2 className="text-3xl md:text-4xl font-black mb-4">
+          Připraveni začít?
+        </h2>
+        <p className="text-lg text-purple-100 mb-8 max-w-xl mx-auto">
+          14 dní zdarma, žádná kreditní karta. Nastavení za 30 minut,
+          první QR kód pro třídu za hodinu.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="#cenik"
+            className="px-8 py-4 rounded-xl font-bold text-base bg-white transition-opacity hover:opacity-90"
+            style={{ color: "#6C47FF" }}
+          >
+            Vybrat plán
+          </a>
+          <a
+            href="mailto:support@aibgin.cz?subject=Demo AIBgin"
+            className="px-8 py-4 rounded-xl font-bold text-base border-2 border-white/50 text-white hover:border-white transition-colors"
+          >
+            Domluvit demo →
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ── Footer ───────────────────────────────────────────────── */
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-400 py-16 px-6">
+    <footer className="bg-gray-950 text-gray-400 py-16 px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-3 gap-10 mb-12">
-          <div>
-            <span className="font-bold text-xl text-white block mb-3" style={{ color: "#6C47FF" }}>
+        <div className="grid md:grid-cols-4 gap-10 mb-12">
+          <div className="md:col-span-2">
+            <span className="font-black text-xl block mb-3" style={{ color: "#6C47FF" }}>
               AIBgin
             </span>
-            <p className="text-sm leading-relaxed">
-              White-label AI chatbot platforma pro firmy, které berou compliance vážně.
+            <p className="text-sm leading-relaxed mb-4 max-w-xs">
+              Bezpečná a nastavitelná AI platforma pro instituce pracující s dětmi.
+              Fail-closed architektura, crisis detection, 5 vrstev ochrany.
             </p>
-            <p className="text-xs mt-4">SAY TO PAY s.r.o. · Praha, Česká republika</p>
+            <p className="text-xs text-gray-600">
+              SAY TO PAY s.r.o.<br />
+              Frýdek-Místek, Česká republika<br />
+              Ekosystém AIBSN · AIBgin · AIBguard
+            </p>
           </div>
+
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm">Navigace</h4>
+            <h4 className="text-white font-bold mb-4 text-sm">Navigace</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#jak-to-funguje" className="hover:text-white transition-colors">Jak to funguje</a></li>
+              <li><a href="#instituce" className="hover:text-white transition-colors">Instituce</a></li>
+              <li><a href="#bezpecnost" className="hover:text-white transition-colors">5 vrstev bezpečnosti</a></li>
               <li><a href="#cenik" className="hover:text-white transition-colors">Ceník</a></li>
               <li><a href="#compliance" className="hover:text-white transition-colors">Compliance</a></li>
             </ul>
           </div>
+
           <div>
-            <h4 className="text-white font-semibold mb-4 text-sm">Kontakt</h4>
-            <ul className="space-y-2 text-sm">
+            <h4 className="text-white font-bold mb-4 text-sm">Kontakt</h4>
+            <ul className="space-y-3 text-sm">
               <li>
-                <a href="mailto:support@aibgin.cz" className="hover:text-white transition-colors">
+                <a href="mailto:support@aibgin.cz" className="hover:text-white transition-colors block">
                   support@aibgin.cz
                 </a>
-                <span className="ml-2 text-xs text-gray-500">— technická podpora</span>
+                <span className="text-xs text-gray-600">technická podpora</span>
               </li>
               <li>
-                <a href="mailto:platby@aibgin.cz" className="hover:text-white transition-colors">
+                <a href="mailto:platby@aibgin.cz" className="hover:text-white transition-colors block">
                   platby@aibgin.cz
                 </a>
-                <span className="ml-2 text-xs text-gray-500">— fakturace a platby</span>
+                <span className="text-xs text-gray-600">fakturace a platby</span>
               </li>
               <li>
-                <a href="mailto:noreply@aibgin.cz" className="hover:text-white transition-colors">
+                <a href="mailto:noreply@aibgin.cz" className="hover:text-white transition-colors block">
                   noreply@aibgin.cz
                 </a>
-                <span className="ml-2 text-xs text-gray-500">— automatické notifikace</span>
+                <span className="text-xs text-gray-600">automatické notifikace</span>
               </li>
             </ul>
           </div>
         </div>
+
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
-          <p>© 2026 SAY TO PAY s.r.o. Všechna práva vyhrazena.</p>
-          <p>
+          <p>© 2026 SAY TO PAY s.r.o. · Frýdek-Místek · Všechna práva vyhrazena.</p>
+          <div className="flex gap-4">
             <a href="#" className="hover:text-white transition-colors">Zpracování osobních údajů</a>
-            {" · "}
             <a href="#" className="hover:text-white transition-colors">Podmínky služby</a>
-          </p>
+            <a href="https://aibsn.org" className="hover:text-white transition-colors">aibsn.org</a>
+          </div>
         </div>
       </div>
     </footer>
