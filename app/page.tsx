@@ -4,11 +4,12 @@ export default function Home() {
       <Nav />
       <Hero />
       <Institutions />
+      <UseCases />
       <QRAccess />
       <SafetyLayers />
       <Compliance />
       <Pricing />
-      <Testimonials />
+      <References />
       <CtaBanner />
       <Footer />
     </main>
@@ -31,6 +32,7 @@ function Nav() {
           <a href="#bezpecnost" className="hover:text-gray-900 transition-colors">Bezpečnost</a>
           <a href="#cenik" className="hover:text-gray-900 transition-colors">Ceník</a>
           <a href="#compliance" className="hover:text-gray-900 transition-colors">Compliance</a>
+          <a href="#reference" className="hover:text-gray-900 transition-colors">Reference</a>
         </nav>
         <div className="flex items-center gap-3">
           <a
@@ -527,45 +529,168 @@ function Pricing() {
   );
 }
 
-/* ── Testimonials ─────────────────────────────────────────── */
-function Testimonials() {
-  const quotes = [
+/* ── Use Cases ────────────────────────────────────────────── */
+function UseCases() {
+  const cases = [
     {
-      text: "Děti si rychle zvykly — a já jsem klidná, protože vím, že každá odpověď prošla kontrolou.",
-      name: "Mgr. Jana K.",
-      role: "Třídní učitelka, ZŠ Frýdek-Místek",
-      initials: "JK",
+      icon: "🏫",
+      title: "Základní školy",
+      points: [
+        "Výukový asistent pro 1.–9. třídu",
+        "Každá třída má vlastní bezpečnostní profil",
+        "Učitel vidí souhrn dotazů, ne obsah",
+        "Připraveni na kontrolu ČŠI",
+      ],
     },
     {
-      text: "Nastavení bylo hotové za půl hodiny. QR kódy rozdám každý pátek a kroužek může hned pracovat s AI.",
-      name: "Tomáš M.",
-      role: "Vedoucí robotického kroužku, DDM",
-      initials: "TM",
+      icon: "🎒",
+      title: "Mateřské školy",
+      points: [
+        "Věková skupina 3–6 let — maximálně omezený obsah",
+        "Jen pohádky, hry, básničky a příroda",
+        "Žádná možnost přístupu bez QR kódu učitele",
+        "Plný soulad s COPPA 2026",
+      ],
     },
     {
-      text: "Jako ředitel potřebuji mít jistotu, že jsme v souladu s legislativou. AIBgin to řeší za mě.",
-      name: "Mgr. Pavel R.",
-      role: "Ředitel ZŠ, Ostrava",
-      initials: "PR",
+      icon: "🌅",
+      title: "Školní družiny",
+      points: [
+        "Odpolední asistent pro zábavu i domácí úkoly",
+        "Automatický reset po každé skupině dětí",
+        "Vychovatel nastaví témata pro daný den",
+        "Crisis detection i mimo výuku",
+      ],
+    },
+    {
+      icon: "⚽",
+      title: "Zájmové kroužky",
+      points: [
+        "Specializovaný chatbot pro konkrétní obor",
+        "Robotický kroužek: Arduino, Python, fyzika",
+        "Jazykový kroužek: konverzace v AJ/NJ",
+        "Vedoucí spustí QR kód v mobilu za 10 sekund",
+      ],
+    },
+    {
+      icon: "🎮",
+      title: "Dětské kluby & DDM",
+      points: [
+        "Flexibilní nastavení pro každou aktivitu",
+        "Podpora pro nízkoprahová centra",
+        "Anonymní přístup — bez sběru dat o dětech",
+        "Měsíční regulatorní aktualizace automaticky",
+      ],
+    },
+    {
+      icon: "🤝",
+      title: "Střední školy & VOŠ",
+      points: [
+        "Věková skupina 15–18 let se širšími tématy",
+        "Příprava na maturitu a přijímačky",
+        "Audit log 5 let pro potřeby školy",
+        "AIBSN certifikát ověřitelný rodiči",
+      ],
     },
   ];
 
   return (
-    <section className="py-24 px-6">
+    <section className="py-24 px-6 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
+          <div
+            className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4"
+            style={{ backgroundColor: "#EDE9FF", color: "#6C47FF" }}
+          >
+            Jak to funguje v praxi
+          </div>
+          <h2 className="text-3xl md:text-4xl font-black mb-4">
+            Jedno řešení pro každou instituci
+          </h2>
+          <p className="text-gray-500 max-w-xl mx-auto">
+            Každý typ instituce dostane profil přizpůsobený věku a kontextu.
+            Bez IT oddělení, bez programování.
+          </p>
+        </div>
+        <div className="grid md:grid-cols-3 gap-6">
+          {cases.map((c) => (
+            <div
+              key={c.title}
+              className="rounded-2xl p-7 border border-gray-100 shadow-sm bg-white hover:shadow-md transition-shadow"
+            >
+              <div className="text-4xl mb-4">{c.icon}</div>
+              <h3 className="font-black text-lg mb-4">{c.title}</h3>
+              <ul className="space-y-2">
+                {c.points.map((p) => (
+                  <li key={p} className="flex items-start gap-2 text-sm text-gray-600">
+                    <span className="mt-0.5 shrink-0 font-bold" style={{ color: "#6C47FF" }}>✓</span>
+                    {p}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ── References ───────────────────────────────────────────── */
+function References() {
+  const quotes = [
+    {
+      text: "Děti si rychle zvykly — a já jsem klidná, protože vím, že každá odpověď prošla kontrolou. QR kód na tabuli funguje skvěle.",
+      name: "Mgr. Jana K.",
+      role: "Třídní učitelka, ZŠ Frýdek-Místek",
+      initials: "JK",
+      tag: "Základní škola",
+    },
+    {
+      text: "Nastavení bylo hotové za půl hodiny. Kroužek může pracovat s AI hned — a já nemusím řešit, co děti uvidí.",
+      name: "Tomáš M.",
+      role: "Vedoucí robotického kroužku, DDM",
+      initials: "TM",
+      tag: "Zájmový kroužek",
+    },
+    {
+      text: "Jako ředitel potřebuji mít jistotu, že jsme v souladu s legislativou. AIBgin to řeší za mě — automaticky.",
+      name: "Mgr. Pavel R.",
+      role: "Ředitel ZŠ, Ostrava",
+      initials: "PR",
+      tag: "Ředitel školy",
+    },
+  ];
+
+  return (
+    <section id="reference" className="py-24 px-6 bg-gray-50">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16">
+          <div
+            className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4"
+            style={{ backgroundColor: "#EDE9FF", color: "#6C47FF" }}
+          >
+            Reference
+          </div>
           <h2 className="text-3xl md:text-4xl font-black mb-4">
             Co říkají pedagogové
           </h2>
-          <p className="text-gray-400 text-sm">
-            Ilustrativní reference · Skutečné zkušenosti zákazníků doplníme při spuštění
+          <p className="text-gray-400 text-sm max-w-md mx-auto">
+            Ilustrativní reference — skutečné zkušenosti zákazníků doplníme
+            při spuštění platformy. Chcete být mezi prvními? Napište nám.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
           {quotes.map((q) => (
-            <div key={q.name} className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
-              <div className="text-4xl mb-4" style={{ color: "#6C47FF" }}>"</div>
-              <p className="text-gray-700 leading-relaxed mb-6 italic">{q.text}</p>
+            <div key={q.name} className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm flex flex-col">
+              <div
+                className="text-xs font-bold uppercase tracking-widest px-2 py-0.5 rounded-full self-start mb-4"
+                style={{ backgroundColor: "#EDE9FF", color: "#6C47FF" }}
+              >
+                {q.tag}
+              </div>
+              <div className="text-4xl mb-3" style={{ color: "#6C47FF" }}>"</div>
+              <p className="text-gray-700 leading-relaxed mb-6 italic flex-1">{q.text}</p>
               <div className="flex items-center gap-3">
                 <div
                   className="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-bold shrink-0"
