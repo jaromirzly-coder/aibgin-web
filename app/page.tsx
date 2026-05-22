@@ -93,9 +93,9 @@ function Hero() {
           </a>
           <a
             href="https://app.aibgin.cz/demo"
-            className="px-8 py-4 rounded-xl font-semibold text-gray-700 text-base border-2 border-gray-200 hover:border-gray-400 transition-colors"
+            className="px-8 py-4 rounded-xl font-semibold text-white text-base bg-blue-600 hover:bg-blue-700 transition-colors"
           >
-            Vyzkoušet demo zdarma
+            Demo
           </a>
         </div>
 
@@ -736,9 +736,9 @@ function CtaBanner() {
           </a>
           <a
             href="https://app.aibgin.cz/demo"
-            className="px-8 py-4 rounded-xl font-bold text-base border-2 border-white/50 text-white hover:border-white transition-colors"
+            className="px-8 py-4 rounded-xl font-bold text-base bg-blue-600 hover:bg-blue-700 text-white transition-colors"
           >
-            Vyzkoušet demo →
+            Demo
           </a>
         </div>
       </div>
