@@ -90,7 +90,7 @@ function Hero() {
             Zobrazit plány od 490 Kč
           </a>
           <a
-            href="https://app.aibgin.cz/chat/AIBSN-JAROMIRZ-FR-V4PC2HDG-76"
+            href="https://app.aibgin.cz/demo"
             className="px-8 py-4 rounded-xl font-semibold text-gray-700 text-base border-2 border-gray-200 hover:border-gray-400 transition-colors"
           >
             Vyzkoušet demo zdarma
@@ -610,7 +610,7 @@ function CtaBanner() {
             Začít zdarma
           </a>
           <a
-            href="https://app.aibgin.cz/chat/AIBSN-JAROMIRZ-FR-V4PC2HDG-76"
+            href="https://app.aibgin.cz/demo"
             className="px-8 py-4 rounded-xl font-bold text-base border-2 border-white/50 text-white hover:border-white transition-colors"
           >
             Vyzkoušet demo →
