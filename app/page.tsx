@@ -22,7 +22,7 @@ function Nav() {
           <a href="#compliance" className="hover:text-gray-900 transition-colors">Compliance</a>
         </nav>
         <a
-          href="mailto:hello@aibgin.cz"
+          href="mailto:support@aibgin.cz"
           className="text-sm font-medium text-white px-4 py-2 rounded-lg transition-opacity hover:opacity-90"
           style={{ backgroundColor: "#6C47FF" }}
         >
@@ -63,7 +63,7 @@ function Hero() {
             Zobrazit plány
           </a>
           <a
-            href="mailto:hello@aibgin.cz"
+            href="mailto:support@aibgin.cz"
             className="px-8 py-4 rounded-xl font-semibold text-gray-700 text-base border border-gray-200 hover:border-gray-400 transition-colors"
           >
             Domluvit demo
@@ -138,7 +138,7 @@ function Pricing() {
         "Email podpora",
       ],
       cta: "Začít zdarma",
-      href: "mailto:hello@aibgin.cz?subject=Starter plán",
+      href: "mailto:support@aibgin.cz?subject=Starter plán",
       highlight: false,
     },
     {
@@ -155,7 +155,7 @@ function Pricing() {
         "API přístup",
       ],
       cta: "Vybrat Growth",
-      href: "mailto:hello@aibgin.cz?subject=Growth plán",
+      href: "mailto:support@aibgin.cz?subject=Growth plán",
       highlight: true,
     },
     {
@@ -171,7 +171,7 @@ function Pricing() {
         "Pokročilý compliance reporting",
       ],
       cta: "Požádat o nabídku",
-      href: "mailto:reditel@aibgin.cz?subject=Enterprise poptávka",
+      href: "mailto:platby@aibgin.cz?subject=Enterprise poptávka",
       highlight: false,
     },
   ];
@@ -331,22 +331,22 @@ function Footer() {
             <h4 className="text-white font-semibold mb-4 text-sm">Kontakt</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="mailto:hello@aibgin.cz" className="hover:text-white transition-colors">
-                  hello@aibgin.cz
-                </a>
-                <span className="ml-2 text-xs text-gray-500">— obecné dotazy</span>
-              </li>
-              <li>
                 <a href="mailto:support@aibgin.cz" className="hover:text-white transition-colors">
                   support@aibgin.cz
                 </a>
                 <span className="ml-2 text-xs text-gray-500">— technická podpora</span>
               </li>
               <li>
-                <a href="mailto:reditel@aibgin.cz" className="hover:text-white transition-colors">
-                  reditel@aibgin.cz
+                <a href="mailto:platby@aibgin.cz" className="hover:text-white transition-colors">
+                  platby@aibgin.cz
                 </a>
-                <span className="ml-2 text-xs text-gray-500">— Enterprise & partnerství</span>
+                <span className="ml-2 text-xs text-gray-500">— fakturace a platby</span>
+              </li>
+              <li>
+                <a href="mailto:noreply@aibgin.cz" className="hover:text-white transition-colors">
+                  noreply@aibgin.cz
+                </a>
+                <span className="ml-2 text-xs text-gray-500">— automatické notifikace</span>
               </li>
             </ul>
           </div>
