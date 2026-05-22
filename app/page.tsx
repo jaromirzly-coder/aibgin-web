@@ -32,13 +32,21 @@ function Nav() {
           <a href="#cenik" className="hover:text-gray-900 transition-colors">Ceník</a>
           <a href="#compliance" className="hover:text-gray-900 transition-colors">Compliance</a>
         </nav>
-        <a
-          href="mailto:support@aibgin.cz"
-          className="text-sm font-semibold text-white px-4 py-2 rounded-lg transition-opacity hover:opacity-90"
-          style={{ backgroundColor: "#6C47FF" }}
-        >
-          Domluvit demo
-        </a>
+        <div className="flex items-center gap-3">
+          <a
+            href="https://app.aibgin.cz/login"
+            className="hidden sm:block text-sm font-semibold text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            Přihlásit se
+          </a>
+          <a
+            href="https://app.aibgin.cz/onboarding"
+            className="text-sm font-semibold text-white px-4 py-2 rounded-lg transition-opacity hover:opacity-90"
+            style={{ backgroundColor: "#6C47FF" }}
+          >
+            Vyzkoušet zdarma
+          </a>
+        </div>
       </div>
     </header>
   );
@@ -82,10 +90,10 @@ function Hero() {
             Zobrazit plány od 490 Kč
           </a>
           <a
-            href="mailto:support@aibgin.cz?subject=Demo AIBgin"
+            href="https://app.aibgin.cz/chat/demo"
             className="px-8 py-4 rounded-xl font-semibold text-gray-700 text-base border-2 border-gray-200 hover:border-gray-400 transition-colors"
           >
-            Domluvit demo zdarma
+            Vyzkoušet demo zdarma
           </a>
         </div>
 
@@ -385,7 +393,7 @@ function Pricing() {
         "Email podpora",
       ],
       cta: "Začít zdarma",
-      href: "mailto:support@aibgin.cz?subject=Starter plán",
+      href: "https://app.aibgin.cz/onboarding",
       highlight: false,
     },
     {
@@ -405,7 +413,7 @@ function Pricing() {
         "Prioritní podpora",
       ],
       cta: "Vybrat Growth",
-      href: "mailto:support@aibgin.cz?subject=Growth plán",
+      href: "https://app.aibgin.cz/upgrade",
       highlight: true,
     },
     {
@@ -595,17 +603,17 @@ function CtaBanner() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="#cenik"
+            href="https://app.aibgin.cz/onboarding"
             className="px-8 py-4 rounded-xl font-bold text-base bg-white transition-opacity hover:opacity-90"
             style={{ color: "#6C47FF" }}
           >
-            Vybrat plán
+            Začít zdarma
           </a>
           <a
-            href="mailto:support@aibgin.cz?subject=Demo AIBgin"
+            href="https://app.aibgin.cz/chat/demo"
             className="px-8 py-4 rounded-xl font-bold text-base border-2 border-white/50 text-white hover:border-white transition-colors"
           >
-            Domluvit demo →
+            Vyzkoušet demo →
           </a>
         </div>
       </div>
