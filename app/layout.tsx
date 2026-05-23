@@ -8,15 +8,29 @@ const GA_ID = "G-F964Z5G173";
 
 const inter = Inter({ subsets: ["latin", "latin-ext"] });
 
+const SITE_URL = "https://aibgin.cz";
+
 export const metadata: Metadata = {
   title: "AIBgin — Bezpečná a nastavitelná AI pro děti",
   description:
-    "AI chatbot pro školy, školky, kroužky a domy dětí a mládeže. 5 vrstev ochrany, crisis detection, COPPA 2026, EU AI Act. Žádná registrace pro děti — stačí QR kód. Od 490 Kč/měsíc.",
-  metadataBase: new URL("https://aibgin.cz"),
+    "AI chatbot pro školy a děti. 5 vrstev ochrany, crisis detection, GDPR, EU AI Act. Žádná registrace pro děti — stačí QR kód. Od 490 Kč/měsíc.",
+  metadataBase: new URL(SITE_URL),
+  alternates: {
+    canonical: SITE_URL,
+  },
+  keywords: [
+    "bezpečný AI pro děti",
+    "AI chatbot pro školy",
+    "AI asistent pro žáky",
+    "bezpečná umělá inteligence pro děti",
+    "AI pro vzdělávání",
+    "GDPR AI pro školy",
+    "white-label AI chatbot",
+  ],
   openGraph: {
     title: "AIBgin — Bezpečná a nastavitelná AI pro děti",
     description: "Bezpečný AI chatbot pro každou instituci pracující s dětmi. 5 vrstev ochrany, QR přístup, linka bezpečí 116 111.",
-    url: "https://aibgin.cz",
+    url: SITE_URL,
     siteName: "AIBgin",
     locale: "cs_CZ",
     type: "website",
