@@ -42,11 +42,11 @@ function Nav() {
             Přihlásit se
           </a>
           <a
-            href="https://app.aibgin.cz/onboarding"
+            href="#cenik"
             className="text-sm font-semibold text-white px-4 py-2 rounded-lg transition-opacity hover:opacity-90"
             style={{ backgroundColor: "#6C47FF" }}
           >
-            Vyzkoušet zdarma
+            Koupit přístup
           </a>
         </div>
       </div>
@@ -59,12 +59,21 @@ function Hero() {
   return (
     <section className="pt-32 pb-20 px-6 text-center">
       <div className="max-w-4xl mx-auto">
-        <div
-          className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full mb-8"
-          style={{ backgroundColor: "#EDE9FF", color: "#6C47FF" }}
-        >
-          <span>🛡️</span>
-          <span>Certifikovaná AI bezpečná pro děti</span>
+        <div className="flex flex-wrap justify-center gap-2 mb-8">
+          <div
+            className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full"
+            style={{ backgroundColor: "#EDE9FF", color: "#6C47FF" }}
+          >
+            <span>🛡️</span>
+            <span>Certifikovaná AI bezpečná pro děti</span>
+          </div>
+          <div
+            className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-widest px-4 py-1.5 rounded-full"
+            style={{ backgroundColor: "#ECFDF5", color: "#059669" }}
+          >
+            <span>🇪🇺</span>
+            <span>EU AI Act Ready by Design</span>
+          </div>
         </div>
 
         <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tight mb-6">
@@ -89,7 +98,7 @@ function Hero() {
             className="px-8 py-4 rounded-xl font-bold text-white text-base transition-opacity hover:opacity-90 shadow-lg"
             style={{ backgroundColor: "#6C47FF" }}
           >
-            Zobrazit plány od 490 Kč
+            🚀 Červnový AI Sandbox — 999 Kč
           </a>
           <a
             href="https://app.aibgin.cz/demo"
@@ -100,10 +109,10 @@ function Hero() {
         </div>
 
         <div className="mt-10 flex flex-wrap justify-center gap-6 text-sm text-gray-400">
-          <span>✓ 14 dní zdarma</span>
           <span>✓ Bez registrace pro děti</span>
           <span>✓ GDPR & EU AI Act</span>
           <span>✓ Linka bezpečí 116 111</span>
+          <span>✓ Certifikát pilotní školy</span>
         </div>
       </div>
     </section>
@@ -348,11 +357,19 @@ function Compliance() {
     <section id="compliance" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
+          <div
+            className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4"
+            style={{ backgroundColor: "#ECFDF5", color: "#059669" }}
+          >
+            <span>🇪🇺</span>
+            <span>EU AI Act Ready by Design</span>
+          </div>
           <h2 className="text-3xl md:text-4xl font-black mb-4">
             Compliance & regulace
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto">
             Navrženo pro regulované prostředí. Připraveni na kontrolu ČŠI kdykoliv.
+            První český EdTech s architekturou připravenou na EU AI Act.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">
@@ -379,148 +396,159 @@ function Compliance() {
 
 /* ── Pricing ──────────────────────────────────────────────── */
 function Pricing() {
-  const plans = [
+  const sandboxFeatures = [
+    "1 třída nebo kroužek",
+    "20–35 dětí · 1 pedagog",
+    "AIBguard real-time audit",
+    "QR kód přístup",
+    "Crisis detection + 116 111",
+    "Základní audit log",
+    "Onboarding + bezpečnostní konfigurace",
+    "🏅 Certifikát pilotní školy AIBgin",
+  ];
+
+  const septemberPlans = [
     {
       name: "Starter",
-      price: "490",
-      target: "1 třída / kroužek",
-      desc: "Ideální pro otestování v jedné třídě nebo kroužku.",
-      features: [
-        "1 chatbot",
-        "Až 35 dětí",
-        "500 konverzací / měsíc",
-        "QR kód přístup",
-        "Základní bezpečnostní profil",
-        "Crisis detection + 116 111",
-        "Email podpora",
-      ],
-      cta: "Začít zdarma",
-      href: "https://app.aibgin.cz/api/stripe/create-checkout?plan=starter",
-      highlight: false,
+      price: "1 990",
+      target: "MŠ · kroužky · družiny",
+      features: ["50 dětí · 5 pedagogů", "AIBguard + QR přístup", "Crisis detection", "Audit log 5 let"],
     },
     {
-      name: "Growth",
-      price: "1 490",
-      target: "Celá škola",
-      desc: "Pro školy a instituce s více třídami nebo skupinami.",
-      features: [
-        "5 chatbotů",
-        "Až 300 dětí",
-        "Neomezené konverzace",
-        "QR kódy pro každou třídu",
-        "Plný bezpečnostní profil",
-        "Crisis detection + 116 111",
-        "Měsíční regulatorní update",
-        "Audit log 5 let",
-        "Prioritní podpora",
-      ],
-      cta: "Vybrat Growth",
-      href: "https://app.aibgin.cz/api/stripe/create-checkout?plan=growth",
-      highlight: true,
+      name: "School",
+      price: "4 990",
+      target: "Celá ZŠ nebo SŠ",
+      features: ["300 dětí · 30 pedagogů", "AIBguard advanced", "Crisis detection", "Audit log 5 let", "Prioritní podpora"],
     },
     {
       name: "Enterprise",
       price: null,
-      target: "Více poboček",
-      desc: "Pro sítě škol, DDM, neziskovky s více pobočkami.",
-      features: [
-        "Neomezené chatboty",
-        "Neomezené děti",
-        "Více poboček / lokalit",
-        "Centrální správa všech instancí",
-        "SLA 99,9 %",
-        "Dedikovaný account manager",
-        "Vlastní integrace a API",
-        "Pokročilý compliance reporting",
-      ],
-      cta: "Požádat o nabídku",
-      href: "mailto:platby@aibgin.cz?subject=Enterprise poptávka",
-      highlight: false,
+      target: "Sítě škol · DDM · města",
+      features: ["Neomezeno + SLA", "Centrální správa", "Dedikovaný account manager", "Vlastní API"],
     },
   ];
 
   return (
     <section id="cenik" className="py-24 px-6 bg-gray-50">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-black mb-4">Ceník</h2>
           <p className="text-gray-500 max-w-xl mx-auto">
-            Transparentní ceny bez skrytých poplatků. Platby v Kč, faktura každý měsíc.
-            14 dní zdarma u všech plánů.
+            Transparentní ceny bez skrytých poplatků. Platby v Kč, faktura ihned.
           </p>
         </div>
-        <div className="grid md:grid-cols-3 gap-8 items-stretch">
-          {plans.map((p) => (
-            <div
-              key={p.name}
-              className={`relative rounded-2xl p-8 flex flex-col border-2 ${
-                p.highlight ? "shadow-2xl" : "bg-white border-gray-200"
-              }`}
-              style={
-                p.highlight
-                  ? {
-                      borderColor: "#6C47FF",
-                      background: "linear-gradient(160deg, #f5f3ff 0%, #ffffff 100%)",
-                    }
-                  : {}
-              }
-            >
-              {p.highlight && (
-                <div
-                  className="absolute -top-4 left-1/2 -translate-x-1/2 text-white text-xs font-black px-5 py-1.5 rounded-full shadow"
-                  style={{ backgroundColor: "#6C47FF" }}
-                >
-                  🏫 Nejoblíbenější pro školy
-                </div>
-              )}
 
-              <div className="mb-2">
-                <span
-                  className="text-xs font-bold uppercase tracking-widest px-2 py-0.5 rounded-full"
+        {/* Sandbox — hlavní kampaň */}
+        <div className="mb-16">
+          <div
+            className="relative rounded-3xl p-10 md:p-14 border-2 shadow-2xl"
+            style={{ borderColor: "#6C47FF", background: "linear-gradient(160deg, #f5f3ff 0%, #ffffff 100%)" }}
+          >
+            <div
+              className="absolute -top-5 left-1/2 -translate-x-1/2 text-white text-sm font-black px-6 py-2 rounded-full shadow-lg whitespace-nowrap"
+              style={{ backgroundColor: "#6C47FF" }}
+            >
+              ⏰ Pouze do 30. června 2026
+            </div>
+
+            <div className="flex flex-col md:flex-row items-center gap-10">
+              <div className="flex-1">
+                <div
+                  className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4"
                   style={{ backgroundColor: "#EDE9FF", color: "#6C47FF" }}
                 >
-                  {p.target}
-                </span>
+                  Červnový AI Sandbox
+                </div>
+                <h3 className="text-3xl md:text-4xl font-black mb-2">
+                  <span style={{ color: "#6C47FF" }}>999 Kč</span>
+                  <span className="text-gray-400 text-lg font-normal"> jednorázově · bez DPH</span>
+                </h3>
+                <p className="text-gray-600 mb-2">
+                  Za cenu jednoho oběda ve školní jídelně měsíčně (~40–60 Kč na dítě) máte
+                  legislativně krytý AI nástroj pro celou třídu — s certifikátem pro rodiče i kontrolu ČŠI.
+                </p>
+                <p className="text-sm text-gray-400 mb-8">
+                  Platnost do 30. 6. 2026 · Žádné automatické obnovení · Po 30. 6. individuální letní nabídka
+                </p>
+                <a
+                  href="https://app.aibgin.cz/api/stripe/create-checkout?plan=sandbox"
+                  className="inline-block px-10 py-4 rounded-xl font-black text-white text-base transition-opacity hover:opacity-90 shadow-lg"
+                  style={{ backgroundColor: "#6C47FF" }}
+                >
+                  Koupit přístup — 999 Kč →
+                </a>
               </div>
-              <h3 className="text-xl font-black mt-3 mb-1">{p.name}</h3>
-              <p className="text-gray-400 text-sm mb-6">{p.desc}</p>
 
-              <div className="mb-8">
-                {p.price ? (
-                  <>
-                    <span className="text-4xl font-black">{p.price} Kč</span>
-                    <span className="text-gray-400 text-sm"> / měsíc</span>
-                  </>
-                ) : (
-                  <span className="text-4xl font-black">Na dotaz</span>
-                )}
+              <div className="shrink-0 w-full md:w-auto">
+                <ul className="space-y-3">
+                  {sandboxFeatures.map((f) => (
+                    <li key={f} className="flex items-start gap-3 text-gray-700">
+                      <span className="mt-0.5 shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold text-white" style={{ backgroundColor: "#6C47FF" }}>✓</span>
+                      <span className="text-sm">{f}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-
-              <ul className="space-y-2.5 mb-10 flex-1">
-                {p.features.map((f) => (
-                  <li key={f} className="flex items-start gap-2 text-sm text-gray-700">
-                    <span className="mt-0.5 shrink-0 font-bold" style={{ color: "#6C47FF" }}>
-                      ✓
-                    </span>
-                    {f}
-                  </li>
-                ))}
-              </ul>
-
-              <a
-                href={p.href}
-                className="block text-center py-3.5 rounded-xl font-bold text-sm transition-opacity hover:opacity-90"
-                style={
-                  p.highlight
-                    ? { backgroundColor: "#6C47FF", color: "#fff" }
-                    : { border: "2px solid #6C47FF", color: "#6C47FF" }
-                }
-              >
-                {p.cta}
-              </a>
             </div>
-          ))}
+          </div>
         </div>
+
+        {/* Září tarify */}
+        <div>
+          <div className="text-center mb-8">
+            <div
+              className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full"
+              style={{ backgroundColor: "#F3F4F6", color: "#6B7280" }}
+            >
+              Plný provoz od 1. září 2026
+            </div>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {septemberPlans.map((p) => (
+              <div
+                key={p.name}
+                className="relative rounded-2xl p-8 flex flex-col border-2 border-gray-200 bg-white opacity-80"
+              >
+                <div className="absolute -top-3 left-4 text-xs font-bold bg-gray-100 text-gray-500 px-3 py-1 rounded-full">
+                  Od září 2026
+                </div>
+                <div className="mb-2 mt-2">
+                  <span className="text-xs font-bold uppercase tracking-widest px-2 py-0.5 rounded-full bg-gray-100 text-gray-500">
+                    {p.target}
+                  </span>
+                </div>
+                <h3 className="text-xl font-black mt-3 mb-4 text-gray-700">{p.name}</h3>
+                <div className="mb-6">
+                  {p.price ? (
+                    <>
+                      <span className="text-3xl font-black text-gray-700">{p.price} Kč</span>
+                      <span className="text-gray-400 text-sm"> / měsíc</span>
+                    </>
+                  ) : (
+                    <span className="text-3xl font-black text-gray-700">Na dotaz</span>
+                  )}
+                </div>
+                <ul className="space-y-2 mb-8 flex-1">
+                  {p.features.map((f) => (
+                    <li key={f} className="flex items-start gap-2 text-sm text-gray-500">
+                      <span className="mt-0.5 shrink-0 font-bold text-gray-400">✓</span>
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+                <div
+                  className="block text-center py-3 rounded-xl font-bold text-sm text-gray-400 border-2 border-gray-200"
+                >
+                  Dostupné od září
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-xs text-gray-400 mt-6">
+            Roční předplatné: −15 % · Early Bird září: −15 % na první 3 měsíce
+          </p>
+        </div>
+
         <p className="text-center text-xs text-gray-400 mt-8">
           Všechny ceny jsou bez DPH · DPH 21 % bude připočteno · Fakturace v Kč
         </p>
@@ -722,17 +750,20 @@ function CtaBanner() {
         <h2 className="text-3xl md:text-4xl font-black mb-4">
           Připraveni začít?
         </h2>
-        <p className="text-lg text-purple-100 mb-8 max-w-xl mx-auto">
-          14 dní zdarma, žádná kreditní karta. Nastavení za 30 minut,
-          první QR kód pro třídu za hodinu.
+        <p className="text-lg text-purple-100 mb-2 max-w-xl mx-auto">
+          999 Kč jednorázově — přístup do 30. června 2026.
+          Nastavení za 30 minut, první QR kód pro třídu za hodinu.
+        </p>
+        <p className="text-sm text-purple-200 mb-8">
+          AIBgin je jediné edukační AI v ČR navržené s technickou garancí bezpečnosti podle EU AI Actu.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="https://app.aibgin.cz/onboarding"
+            href="https://app.aibgin.cz/api/stripe/create-checkout?plan=sandbox"
             className="px-8 py-4 rounded-xl font-bold text-base bg-white transition-opacity hover:opacity-90"
             style={{ color: "#6C47FF" }}
           >
-            Začít zdarma
+            Koupit přístup — 999 Kč →
           </a>
           <a
             href="https://app.aibgin.cz/demo"
