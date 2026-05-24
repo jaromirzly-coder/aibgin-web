@@ -96,7 +96,6 @@ export default function RegistracePage() {
                 className="w-full px-4 py-3 rounded-xl border text-sm focus:outline-none focus:ring-2 transition"
                 style={{
                   borderColor: errors.institution ? '#EF4444' : '#D1D5DB',
-                  focusRingColor: '#6C47FF',
                 }}
               />
               {errors.institution && (
