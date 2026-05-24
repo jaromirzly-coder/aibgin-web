@@ -334,20 +334,38 @@ export default function CompliancePage() {
               Crisis Detection — ochrana v reálném čase
             </h2>
 
-            {/* 116 111 highlight box */}
-            <div
-              className="rounded-3xl p-8 mb-8 text-center border-2"
-              style={{ borderColor: '#FCA5A5', backgroundColor: '#FEF2F2' }}
-            >
-              <p className="text-6xl md:text-7xl font-black mb-2" style={{ color: '#DC2626' }}>
-                116 111
-              </p>
-              <p className="text-base font-bold" style={{ color: '#B91C1C' }}>
-                Linka bezpečí — zdarma, nonstop
-              </p>
-              <p className="text-sm text-gray-500 mt-1">
-                Dostupná z celé ČR · Bezplatná · 24 hodin denně, 7 dní v týdnu
-              </p>
+            {/* Čísla — grid */}
+            <div className="grid sm:grid-cols-2 gap-4 mb-8">
+              {/* 116 111 */}
+              <div
+                className="rounded-3xl p-8 text-center border-2"
+                style={{ borderColor: '#FCA5A5', backgroundColor: '#FEF2F2' }}
+              >
+                <p className="text-5xl md:text-6xl font-black mb-2" style={{ color: '#DC2626' }}>
+                  116 111
+                </p>
+                <p className="text-sm font-bold" style={{ color: '#B91C1C' }}>
+                  Linka bezpečí — zdarma, nonstop
+                </p>
+                <p className="text-xs text-gray-500 mt-1">
+                  Bezplatná · 24/7 · celá ČR
+                </p>
+              </div>
+              {/* 723 657 885 */}
+              <div
+                className="rounded-3xl p-8 text-center border-2"
+                style={{ borderColor: '#C4B5FD', backgroundColor: '#F5F3FF' }}
+              >
+                <p className="text-5xl md:text-6xl font-black mb-2" style={{ color: '#6C47FF' }}>
+                  723 657 885
+                </p>
+                <p className="text-sm font-bold" style={{ color: '#5B3FDB' }}>
+                  Zákaznická linka AIBgin
+                </p>
+                <p className="text-xs text-gray-500 mt-1">
+                  Po–Pá 8:00–16:00
+                </p>
+              </div>
             </div>
 
             <div className="space-y-5 text-gray-600 leading-relaxed">

@@ -89,6 +89,12 @@ const contacts = [
 
 const channels = [
   {
+    icon: '📞',
+    label: 'Telefon',
+    value: '723 657 885 · Po–Pá 8:00–16:00',
+    href: 'tel:+420723657885',
+  },
+  {
     icon: '📧',
     label: 'E-mail',
     value: 'support@aibgin.cz',
@@ -192,6 +198,16 @@ export default function KontaktPage() {
               </div>
               <h2 className="text-2xl md:text-3xl font-black mb-5">SAY TO PAY s.r.o.</h2>
               <div className="space-y-4 text-gray-600">
+                <div className="flex gap-3">
+                  <span className="shrink-0 text-lg">📞</span>
+                  <div>
+                    <p className="font-semibold text-gray-800 text-sm">Telefon</p>
+                    <a href="tel:+420723657885" className="text-sm hover:underline" style={{ color: '#6C47FF' }}>
+                      723 657 885
+                    </a>
+                    <p className="text-xs text-gray-400">Po–Pá 8:00–16:00</p>
+                  </div>
+                </div>
                 <div className="flex gap-3">
                   <span className="shrink-0 text-lg">📍</span>
                   <div>
