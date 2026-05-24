@@ -526,7 +526,7 @@ export default function HomePage() {
                 href="https://app.aibgin.cz/demo"
                 className="px-8 py-4 rounded-xl font-bold text-base bg-white/10 hover:bg-white/20 text-white transition-colors border border-white/30"
               >
-                Demo zdarma
+                Demo
               </a>
             </div>
           </div>
