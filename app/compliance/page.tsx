@@ -268,6 +268,181 @@ export default function CompliancePage() {
           </div>
         </section>
 
+        {/* ── Annex IV — Technické prohlášení o shodě ── */}
+        <section className="py-20 px-6 bg-gray-50">
+          <div className="max-w-3xl mx-auto">
+            <div
+              className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6"
+              style={{ backgroundColor: '#ECFDF5', color: '#059669' }}
+            >
+              📄 EU AI Act — Annex IV
+            </div>
+            <h2 className="text-3xl md:text-4xl font-black mb-6">
+              Technické prohlášení o shodě
+            </h2>
+            <div className="space-y-5 text-gray-600 leading-relaxed">
+              <p>
+                AIBgin splňuje požadavky <strong className="text-gray-900">EU AI Act</strong> pro
+                vysokorizikové AI systémy v kategorii vzdělávání. Prohlášení o shodě dle Annex IV zahrnuje:
+              </p>
+              <ul className="space-y-3">
+                {[
+                  'Popis systému a jeho účelu — AI asistent pro vzdělávací instituce pracující s dětmi',
+                  'Bezpečnostní opatření a fail-closed architektura — systém odmítá odpovědět raději než riskovat nevhodný obsah',
+                  'AIBguard real-time filtr — každá odpověď prochází vícevrstvou kontrolou před zobrazením',
+                  'Zpracování dat dětí — žádná osobní data, přístup výhradně přes anonymní QR session',
+                  'Crisis detection a napojení na linku bezpečí 116 111 — automatická detekce tísně v reálném čase',
+                  'Audit log — neměnný záznam po dobu 5 let, přístupný pro ČŠI a GDPR audit',
+                  'Sub-zpracovatelé — Anthropic (AI model, SCC), Vercel (hosting EU/Frankfurt), Supabase (databáze EU)',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm">
+                    <span
+                      className="mt-0.5 shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold text-white"
+                      style={{ backgroundColor: '#059669' }}
+                    >
+                      ✓
+                    </span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <div
+                className="rounded-2xl p-5 border text-sm mt-6"
+                style={{ borderColor: '#D1FAE5', backgroundColor: '#F0FDF4' }}
+              >
+                <p className="font-bold text-gray-800 mb-1">Vydavatel prohlášení</p>
+                <p className="text-gray-600">
+                  SAY TO PAY s.r.o. · IČO: 08694222 · Zámostní 1155/27, Slezská Ostrava, 710 00
+                  <br />
+                  Datum vydání: 24. května 2026
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ── Crisis detection ── */}
+        <section className="py-20 px-6 bg-white">
+          <div className="max-w-3xl mx-auto">
+            <div
+              className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6"
+              style={{ backgroundColor: '#FEF2F2', color: '#DC2626' }}
+            >
+              🆘 Bezpečnost dětí
+            </div>
+            <h2 className="text-3xl md:text-4xl font-black mb-6">
+              Crisis Detection — ochrana v reálném čase
+            </h2>
+
+            {/* 116 111 highlight box */}
+            <div
+              className="rounded-3xl p-8 mb-8 text-center border-2"
+              style={{ borderColor: '#FCA5A5', backgroundColor: '#FEF2F2' }}
+            >
+              <p className="text-6xl md:text-7xl font-black mb-2" style={{ color: '#DC2626' }}>
+                116 111
+              </p>
+              <p className="text-base font-bold" style={{ color: '#B91C1C' }}>
+                Linka bezpečí — zdarma, nonstop
+              </p>
+              <p className="text-sm text-gray-500 mt-1">
+                Dostupná z celé ČR · Bezplatná · 24 hodin denně, 7 dní v týdnu
+              </p>
+            </div>
+
+            <div className="space-y-5 text-gray-600 leading-relaxed">
+              <p>
+                AIBgin obsahuje automatický systém detekce krizových situací integrovaný přímo
+                do každé AI konverzace. Systém pracuje nezávisle na ostatních vrstvách ochrany
+                a nemůže být vypnut.
+              </p>
+              <ul className="space-y-3">
+                {[
+                  'Při detekci ohrožení nebo tísně zobrazí systém okamžitě informaci o lince bezpečí 116 111',
+                  'Systém funguje 24/7 nezávisle na ostatních vrstvách ochrany',
+                  'Linka bezpečí 116 111 je bezplatná a dostupná z celé ČR',
+                  'Okamžitý alert správci instituce při detekci krizové situace',
+                  'Detekuje: šikanu, sebepoškozování, tíseň, ohrožení',
+                  'Anonymizovaný záznam krizové události pro následnou dokumentaci',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm">
+                    <span
+                      className="mt-0.5 shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold text-white"
+                      style={{ backgroundColor: '#DC2626' }}
+                    >
+                      ✓
+                    </span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* ── Certifikát pilotní školy ── */}
+        <section className="py-20 px-6 bg-gray-50">
+          <div className="max-w-3xl mx-auto">
+            <div
+              className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6"
+              style={{ backgroundColor: '#FEF9C3', color: '#92400E' }}
+            >
+              🏅 Pilotní program
+            </div>
+            <h2 className="text-3xl md:text-4xl font-black mb-6">
+              Certifikát pilotní školy AIBgin
+            </h2>
+            <div className="space-y-5 text-gray-600 leading-relaxed">
+              <p>
+                Každá škola, která se zapojí do pilotního programu <strong className="text-gray-900">Červnový AI Sandbox</strong>,
+                obdrží <strong className="text-gray-900">Certifikát pilotní školy AIBgin</strong> potvrzující
+                účast v prvním certifikovaném AI vzdělávacím programu v ČR splňujícím požadavky EU AI Act.
+              </p>
+
+              {/* Certifikát vizuál */}
+              <div
+                className="rounded-3xl p-8 border-2 text-center my-6"
+                style={{ borderColor: '#FDE68A', backgroundColor: '#FFFBEB' }}
+              >
+                <div className="text-4xl mb-3">🏅</div>
+                <p className="text-lg font-black text-gray-900 mb-1">Certifikát pilotní školy AIBgin</p>
+                <p className="text-sm text-gray-500 mb-4">
+                  První certifikovaný AI vzdělávací program v ČR · EU AI Act Ready
+                </p>
+                <div
+                  className="inline-block px-4 py-2 rounded-xl text-xs font-mono font-bold"
+                  style={{ backgroundColor: '#FEF3C7', color: '#78350F' }}
+                >
+                  AIBSN-CZ-EDU-DEMO-2026-001
+                </div>
+                <p className="text-xs text-gray-400 mt-3">
+                  Vydává: SAY TO PAY s.r.o. · IČO: 08694222 · Volně ověřitelný
+                </p>
+              </div>
+
+              <ul className="space-y-3">
+                {[
+                  'Certifikát potvrzuje soulad s EU AI Act pro vzdělávací instituce',
+                  'AIBSN číslo pilotu: AIBSN-CZ-EDU-DEMO-2026-001',
+                  'Certifikát je vydán společností SAY TO PAY s.r.o.',
+                  'Certifikát je volně ověřitelný — vhodný pro rodiče i ČŠI',
+                  'Součástí každého zakoupeného přístupu Červnový AI Sandbox',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm">
+                    <span
+                      className="mt-0.5 shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold text-white"
+                      style={{ backgroundColor: '#D97706' }}
+                    >
+                      ✓
+                    </span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
         {/* ── CTA ── */}
         <section className="py-16 px-6 bg-gray-50">
           <div
