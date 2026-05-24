@@ -6,6 +6,7 @@ import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 
 const AIBSN_NUMBER = 'AIBSN-CZ-EDU-DEMO-2026-001';
+const STRIPE_PRICE_ID_SANDBOX = 'price_1TahABPahLdnmYVi53T4EkVP';
 const CHECKOUT_BASE = 'https://app.aibgin.cz/api/stripe/create-checkout';
 
 export default function RegistracePage() {
@@ -41,6 +42,7 @@ export default function RegistracePage() {
     setSubmitting(true);
     const params = new URLSearchParams({
       plan: 'sandbox',
+      price_id: STRIPE_PRICE_ID_SANDBOX,
       aibsn_number: AIBSN_NUMBER,
       email: form.email,
       institution: form.institution,
