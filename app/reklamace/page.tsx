@@ -44,7 +44,7 @@ export default function ReklamacePage() {
             <h2 className="text-xl font-black text-gray-900 mb-3">1. Úvodní ustanovení</h2>
             <p>
               Tento reklamační řád upravuje práva a povinnosti mezi společností <strong>SAY TO PAY s.r.o.</strong>,
-              se sídlem Frýdek-Místek, IČO: [DOPLNIT] (dále jen „Poskytovatel") a zákazníkem při uplatňování
+              se sídlem Zámostní 1155/27, Slezská Ostrava, 710 00, IČO: 08694222 (dále jen „Poskytovatel") a zákazníkem při uplatňování
               práv z odpovědnosti za vady v souvislosti se službou AIBgin.
             </p>
           </div>
@@ -129,7 +129,7 @@ export default function ReklamacePage() {
           </div>
 
           <div className="border-t border-gray-100 pt-8 mt-10 text-sm text-gray-500 text-center">
-            SAY TO PAY s.r.o. · Frýdek-Místek · <a href="mailto:support@aibgin.cz" className="underline hover:text-gray-700">support@aibgin.cz</a>
+            SAY TO PAY s.r.o. · IČO: 08694222 · <a href="mailto:support@aibgin.cz" className="underline hover:text-gray-700">support@aibgin.cz</a>
           </div>
         </div>
       </section>

@@ -131,7 +131,7 @@ const complianceItems = [
       'Plný soulad se zákonem č. 561/2004 Sb.',
       'Vyhláška MŠMT o ochraně žáků',
       'Smluvní dokumentace v češtině',
-      'Fakturace v Kč, sídlo v ČR (Frýdek-Místek)',
+      'Fakturace v Kč, sídlo v ČR (Slezská Ostrava, 710 00)',
       'Podpora při auditu ČŠI a krajské inspekce',
     ],
   },

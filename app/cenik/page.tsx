@@ -55,6 +55,7 @@ const jsonLd = {
 const sandboxFeatures = [
   '1 třída nebo kroužek',
   '20–35 dětí · 1 pedagog',
+  '10 000 dotazů / měsíc · po vyčerpání možnost dokoupení',
   'AIBguard real-time audit',
   'QR kód přístup bez registrace',
   'Crisis detection + Linka bezpečí 116 111',

@@ -16,7 +16,7 @@ export default function Footer() {
             <p className="text-xs text-gray-600">
               SAY TO PAY s.r.o.
               <br />
-              Frýdek-Místek, Česká republika
+              Zámostní 1155/27, Slezská Ostrava, 710 00
               <br />
               Ekosystém AIBSN · AIBgin · AIBguard
             </p>
@@ -118,7 +118,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
-          <p>© 2026 SAY TO PAY s.r.o. · Frýdek-Místek · Všechna práva vyhrazena.</p>
+          <p>© 2026 SAY TO PAY s.r.o. · IČO: 08694222 · Všechna práva vyhrazena.</p>
           <div className="flex gap-4">
             <Link href="/privacy" className="hover:text-white transition-colors">
               Zpracování osobních údajů

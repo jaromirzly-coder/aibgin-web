@@ -43,8 +43,8 @@ export default function PrivacyPage() {
           <div>
             <h2 className="text-xl font-black text-gray-900 mb-3">1. Správce osobních údajů</h2>
             <p>
-              Správcem osobních údajů je <strong>SAY TO PAY s.r.o.</strong>, se sídlem Frýdek-Místek,
-              Česká republika, IČO: [DOPLNIT] (dále jen „Správce"). Kontakt na pověřence ochrany osobních
+              Správcem osobních údajů je <strong>SAY TO PAY s.r.o.</strong>, se sídlem Zámostní 1155/27, Slezská Ostrava, 710 00,
+              IČO: 08694222 (dále jen „Správce"). Kontakt na pověřence ochrany osobních
               údajů (DPO): <a href="mailto:support@aibgin.cz" className="underline" style={{ color: '#6C47FF' }}>support@aibgin.cz</a>.
             </p>
           </div>
@@ -162,7 +162,7 @@ export default function PrivacyPage() {
           </div>
 
           <div className="border-t border-gray-100 pt-8 mt-10 text-sm text-gray-500 text-center">
-            SAY TO PAY s.r.o. · Frýdek-Místek · <a href="mailto:support@aibgin.cz" className="underline hover:text-gray-700">support@aibgin.cz</a>
+            SAY TO PAY s.r.o. · IČO: 08694222 · <a href="mailto:support@aibgin.cz" className="underline hover:text-gray-700">support@aibgin.cz</a>
           </div>
         </div>
       </section>

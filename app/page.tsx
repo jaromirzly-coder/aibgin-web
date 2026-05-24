@@ -55,7 +55,9 @@ const jsonLd = {
     name: 'SAY TO PAY s.r.o.',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Frýdek-Místek',
+      streetAddress: 'Zámostní 1155/27',
+      addressLocality: 'Slezská Ostrava',
+      postalCode: '710 00',
       addressCountry: 'CZ',
     },
     contactPoint: {
@@ -151,7 +153,7 @@ const quotes = [
   {
     text: 'Děti si rychle zvykly — a já jsem klidná, protože vím, že každá odpověď prošla kontrolou. QR kód na tabuli funguje skvěle.',
     name: 'Mgr. Jana K.',
-    role: 'Třídní učitelka, ZŠ Frýdek-Místek',
+    role: 'Třídní učitelka, ZŠ Ostrava',
     initials: 'JK',
     tag: 'Základní škola',
   },
@@ -250,6 +252,7 @@ export default function HomePage() {
             <div className="mt-10 flex flex-wrap justify-center gap-6 text-sm text-gray-400">
               <span>✓ Bez registrace pro děti</span>
               <span>✓ GDPR & EU AI Act</span>
+              <span>✓ 10 000 dotazů / měsíc na třídu</span>
               <span>✓ Linka bezpečí 116 111</span>
               <span>✓ Certifikát pilotní školy</span>
             </div>

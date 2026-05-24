@@ -6,7 +6,7 @@ const SITE_URL = 'https://aibgin.cz';
 
 export const metadata: Metadata = {
   title: 'Všeobecné obchodní podmínky | AIBgin',
-  description: 'Všeobecné obchodní podmínky služby AIBgin — SAY TO PAY s.r.o., Frýdek-Místek.',
+  description: 'Všeobecné obchodní podmínky služby AIBgin — SAY TO PAY s.r.o., IČO: 08694222, Slezská Ostrava.',
   metadataBase: new URL(SITE_URL),
   alternates: { canonical: `${SITE_URL}/podminky` },
 };
@@ -45,8 +45,8 @@ export default function PodminkyPage() {
             <div>
               <h2 className="text-xl font-black text-gray-900 mb-3">1. Identifikace prodávajícího</h2>
               <p>
-                Poskytovatelem služby AIBgin je společnost <strong>SAY TO PAY s.r.o.</strong>, se sídlem Frýdek-Místek,
-                Česká republika, IČO: [DOPLNIT], zapsaná v obchodním rejstříku vedeném příslušným krajským soudem
+                Poskytovatelem služby AIBgin je společnost <strong>SAY TO PAY s.r.o.</strong>, se sídlem Zámostní 1155/27, Slezská Ostrava, 710 00,
+                IČO: 08694222, zapsaná v obchodním rejstříku vedeném příslušným krajským soudem
                 (dále jen „Poskytovatel" nebo „my").
               </p>
               <p className="mt-2">Kontaktní e-mail: <a href="mailto:support@aibgin.cz" className="underline" style={{ color: '#6C47FF' }}>support@aibgin.cz</a></p>
@@ -60,6 +60,7 @@ export default function PodminkyPage() {
               </p>
               <ul className="list-disc pl-5 space-y-1 mt-2">
                 <li>Přístup k platformě AIBgin po dobu trvání AI Sandboxu do 30. června 2026</li>
+                <li>10 000 dotazů na třídu za měsíc · po vyčerpání možnost dokoupení</li>
                 <li>5 vrstev ochrany obsahu, crisis detection (Linka bezpečí 116 111), audit log</li>
                 <li>Nastavení AI asistenta pro konkrétní instituci (školku, školu, kroužek)</li>
                 <li>QR přístup pro děti bez sběru jejich osobních dat</li>
@@ -140,7 +141,17 @@ export default function PodminkyPage() {
             </div>
 
             <div>
-              <h2 className="text-xl font-black text-gray-900 mb-3">9. Závěrečná ustanovení</h2>
+              <h2 className="text-xl font-black text-gray-900 mb-3">9. Limit používání</h2>
+              <p>
+                Tarif <strong>Červnový AI Sandbox</strong> zahrnuje <strong>10 000 dotazů na třídu za měsíc</strong>.
+                Po vyčerpání limitu je služba pozastavena. Obnovení přístupu je možné zakoupením dalšího balíčku
+                na <a href="https://app.aibgin.cz" className="underline" style={{ color: '#6C47FF' }}>app.aibgin.cz</a> nebo
+                na <a href="mailto:platby@aibgin.cz" className="underline" style={{ color: '#6C47FF' }}>platby@aibgin.cz</a>.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-xl font-black text-gray-900 mb-3">10. Závěrečná ustanovení</h2>
               <p>
                 Poskytovatel si vyhrazuje právo tyto podmínky měnit. O změnách informuje zákazníky e-mailem
                 s předstihem min. 14 dní. Pokračování v užívání služby po datu účinnosti změn se považuje
@@ -149,7 +160,7 @@ export default function PodminkyPage() {
             </div>
 
             <div className="border-t border-gray-100 pt-8 mt-10 text-sm text-gray-500 text-center">
-              SAY TO PAY s.r.o. · Frýdek-Místek · <a href="mailto:support@aibgin.cz" className="underline hover:text-gray-700">support@aibgin.cz</a>
+              SAY TO PAY s.r.o. · IČO: 08694222 · <a href="mailto:support@aibgin.cz" className="underline hover:text-gray-700">support@aibgin.cz</a>
             </div>
           </div>
         </div>

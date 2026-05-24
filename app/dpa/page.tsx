@@ -60,7 +60,7 @@ export default function DpaPage() {
               (identifikovaná e-mailovou adresou a názvem instituce zadanými při registraci).
             </p>
             <p className="mt-2">
-              <strong>Zpracovatel:</strong> SAY TO PAY s.r.o., Frýdek-Místek, IČO: [DOPLNIT],
+              <strong>Zpracovatel:</strong> SAY TO PAY s.r.o., Zámostní 1155/27, Slezská Ostrava, 710 00, IČO: 08694222,
               provozovatel platformy AIBgin (support@aibgin.cz).
             </p>
           </div>
@@ -166,7 +166,7 @@ export default function DpaPage() {
           </div>
 
           <div className="border-t border-gray-100 pt-8 mt-10 text-sm text-gray-500 text-center">
-            SAY TO PAY s.r.o. · Frýdek-Místek · <a href="mailto:support@aibgin.cz" className="underline hover:text-gray-700">support@aibgin.cz</a>
+            SAY TO PAY s.r.o. · IČO: 08694222 · <a href="mailto:support@aibgin.cz" className="underline hover:text-gray-700">support@aibgin.cz</a>
           </div>
         </div>
       </section>

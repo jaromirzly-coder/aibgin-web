@@ -8,7 +8,7 @@ const SITE_URL = 'https://aibgin.cz';
 export const metadata: Metadata = {
   title: 'Kontakt | AIBgin — Technická podpora a dotazy',
   description:
-    'Kontaktujte tým AIBgin. Technická podpora: support@aibgin.cz. Fakturace: platby@aibgin.cz. SAY TO PAY s.r.o., Frýdek-Místek. Odpovídáme do 24 hodin.',
+    'Kontaktujte tým AIBgin. Technická podpora: support@aibgin.cz. Fakturace: platby@aibgin.cz. SAY TO PAY s.r.o., Slezská Ostrava. Odpovídáme do 24 hodin.',
   metadataBase: new URL(SITE_URL),
   alternates: { canonical: `${SITE_URL}/kontakt` },
   keywords: [
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Kontakt | AIBgin — Technická podpora a dotazy',
     description:
-      'Kontaktujte tým AIBgin. support@aibgin.cz · platby@aibgin.cz · SAY TO PAY s.r.o., Frýdek-Místek.',
+      'Kontaktujte tým AIBgin. support@aibgin.cz · platby@aibgin.cz · SAY TO PAY s.r.o., Slezská Ostrava.',
     url: `${SITE_URL}/kontakt`,
     siteName: 'AIBgin',
     locale: 'cs_CZ',
@@ -41,7 +41,9 @@ const jsonLd = {
     url: SITE_URL,
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Frýdek-Místek',
+      streetAddress: 'Zámostní 1155/27',
+      addressLocality: 'Slezská Ostrava',
+      postalCode: '710 00',
       addressCountry: 'CZ',
     },
     contactPoint: [
@@ -194,7 +196,7 @@ export default function KontaktPage() {
                   <span className="shrink-0 text-lg">📍</span>
                   <div>
                     <p className="font-semibold text-gray-800 text-sm">Sídlo</p>
-                    <p className="text-sm">Frýdek-Místek, Česká republika</p>
+                    <p className="text-sm">Zámostní 1155/27, Slezská Ostrava, 710 00</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
