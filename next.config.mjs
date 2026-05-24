@@ -1,6 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  distDir: '/tmp/.next-aibgin',
-};
+const nextConfig = {};
 
 export default nextConfig;
