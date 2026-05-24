@@ -254,7 +254,7 @@ export default function KontaktPage() {
             <h2 className="text-2xl font-black mb-8">Nebo rovnou začněte</h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://app.aibgin.cz/api/stripe/create-checkout?plan=sandbox"
+                href="/registrace"
                 className="px-8 py-4 rounded-xl font-bold text-white text-base transition-opacity hover:opacity-90 shadow-lg shadow-purple-200"
                 style={{ backgroundColor: '#6C47FF' }}
               >

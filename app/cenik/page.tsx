@@ -199,7 +199,7 @@ export default function CenikPage() {
                     · Po 30. 6. individuální letní nabídka
                   </p>
                   <a
-                    href="https://app.aibgin.cz/api/stripe/create-checkout?plan=sandbox"
+                    href="/registrace"
                     className="inline-block px-10 py-4 rounded-xl font-black text-white text-base transition-opacity hover:opacity-90 shadow-lg shadow-purple-200"
                     style={{ backgroundColor: '#6C47FF' }}
                   >

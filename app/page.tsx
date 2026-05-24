@@ -235,7 +235,7 @@ export default function HomePage() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/cenik"
+                href="/registrace"
                 className="px-8 py-4 rounded-xl font-bold text-white text-base transition-all hover:opacity-90 shadow-lg shadow-purple-200"
                 style={{ backgroundColor: '#6C47FF' }}
               >
