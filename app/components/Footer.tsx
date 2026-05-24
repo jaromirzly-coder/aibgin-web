@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-950 text-gray-400 py-16 px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-4 gap-10 mb-12">
+        <div className="grid md:grid-cols-5 gap-10 mb-12">
           <div className="md:col-span-2">
             <Link href="/" className="font-black text-xl block mb-3" style={{ color: '#6C47FF' }}>
               AIBgin
@@ -57,6 +57,42 @@ export default function Footer() {
           </div>
 
           <div>
+            <h4 className="text-white font-bold mb-4 text-sm">Právní</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link href="/podminky" className="hover:text-white transition-colors">
+                  Podmínky služby
+                </Link>
+              </li>
+              <li>
+                <Link href="/privacy" className="hover:text-white transition-colors">
+                  Ochrana osobních údajů
+                </Link>
+              </li>
+              <li>
+                <Link href="/reklamace" className="hover:text-white transition-colors">
+                  Reklamační řád
+                </Link>
+              </li>
+              <li>
+                <Link href="/odstoupeni" className="hover:text-white transition-colors">
+                  Odstoupení od smlouvy
+                </Link>
+              </li>
+              <li>
+                <Link href="/dpa" className="hover:text-white transition-colors">
+                  DPA pro školy
+                </Link>
+              </li>
+              <li>
+                <Link href="/cookies" className="hover:text-white transition-colors">
+                  Cookies
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
             <h4 className="text-white font-bold mb-4 text-sm">Kontakt</h4>
             <ul className="space-y-3 text-sm">
               <li>
@@ -84,12 +120,12 @@ export default function Footer() {
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
           <p>© 2026 SAY TO PAY s.r.o. · Frýdek-Místek · Všechna práva vyhrazena.</p>
           <div className="flex gap-4">
-            <a href="https://app.aibgin.cz/privacy" className="hover:text-white transition-colors">
+            <Link href="/privacy" className="hover:text-white transition-colors">
               Zpracování osobních údajů
-            </a>
-            <a href="https://app.aibgin.cz/terms" className="hover:text-white transition-colors">
+            </Link>
+            <Link href="/podminky" className="hover:text-white transition-colors">
               Podmínky služby
-            </a>
+            </Link>
             <a href="https://aibsn.org" className="hover:text-white transition-colors">
               aibsn.org
             </a>

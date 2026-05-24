@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import CookieConsent from "./CookieConsent";
+import CookieBanner from "./components/CookieBanner";
 
 const GA_ID = "G-F964Z5G173";
 
@@ -61,6 +62,7 @@ export default function RootLayout({
         </Script>
         {children}
         <CookieConsent />
+        <CookieBanner />
       </body>
     </html>
   );
