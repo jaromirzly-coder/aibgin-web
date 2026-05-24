@@ -1,0 +1,11 @@
+{
+  "env": {
+    "VERCEL_PROJECT_ID": "prj_lHkaXOn1iLiFgHFY4I4A96A6kUhA"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(git -C /media/sf_AIBgin_SHARE/AIBgin rev-parse HEAD)",
+      "Bash(git -C /media/sf_AIBgin_SHARE/AIBgin rebase --abort)"
+    ]
+  }
+}
