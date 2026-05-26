@@ -17,6 +17,9 @@
 /.next/
 /out/
 
+# local dev build cache
+/tmp/
+
 # production
 /build
 
