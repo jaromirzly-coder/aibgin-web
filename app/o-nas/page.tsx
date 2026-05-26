@@ -1,37 +1,8 @@
 'use client';
 
-import type { Metadata } from 'next';
 import Link from 'next/link';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
-
-const SITE_URL = 'https://aibgin.cz';
-
-export const metadata: Metadata = {
-  title: 'O nás | AIBgin — SAY TO PAY s.r.o.',
-  description:
-    'AIBgin je vzdělávací AI platforma vyvinutá společností SAY TO PAY s.r.o. — českou technologickou firmou zaměřenou na bezpečnou AI pro děti a vzdělávací instituce.',
-  metadataBase: new URL(SITE_URL),
-  alternates: { canonical: `${SITE_URL}/o-nas` },
-  keywords: [
-    'AIBgin o nás',
-    'SAY TO PAY s.r.o.',
-    'bezpečná AI pro děti',
-    'AIBSN registr',
-    'AIBlab ekosystém',
-    'česká AI firma',
-    'vzdělávací AI platforma',
-  ],
-  openGraph: {
-    title: 'O nás | AIBgin — SAY TO PAY s.r.o.',
-    description:
-      'AIBgin je vzdělávací AI platforma vyvinutá společností SAY TO PAY s.r.o. — českou technologickou firmou zaměřenou na bezpečnou AI pro děti a vzdělávací instituce.',
-    url: `${SITE_URL}/o-nas`,
-    siteName: 'AIBgin',
-    locale: 'cs_CZ',
-    type: 'website',
-  },
-};
 
 const timeline = [
   { year: '2024', text: 'Vznik vize bezpečné AI pro vzdělávání' },
