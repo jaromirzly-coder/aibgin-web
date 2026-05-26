@@ -250,6 +250,7 @@ export default function CenikPage() {
               <h2 className="text-2xl md:text-3xl font-black text-gray-400">
                 Podzimní tarify
               </h2>
+              <p className="text-xs text-gray-400 italic mt-1">Pilotní ceny pro školy 2026/2027. Vyhrazujeme si právo aktualizovat ceník dle podmínek trhu.</p>
             </div>
             <div className="grid md:grid-cols-3 gap-6">
               {septemberPlans.map((p) => (
