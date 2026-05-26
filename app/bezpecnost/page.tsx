@@ -170,21 +170,6 @@ export default function BezpecnostPage() {
               Každá vrstva funguje nezávisle — pokud selže jedna, ostatní blokují.
               Fail-closed od základů.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                href="/cenik"
-                className="px-7 py-3.5 rounded-xl font-bold text-white transition-opacity hover:opacity-90 shadow-md"
-                style={{ backgroundColor: '#6C47FF' }}
-              >
-                Vyzkoušet AI Sandbox — 999 Kč →
-              </Link>
-              <a
-                href="https://app.aibgin.cz/demo"
-                className="px-7 py-3.5 rounded-xl font-semibold text-gray-700 bg-gray-100 hover:bg-gray-200 transition-colors"
-              >
-                Demo
-              </a>
-            </div>
           </div>
         </section>
 
