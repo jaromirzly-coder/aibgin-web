@@ -352,7 +352,7 @@ function Compliance() {
             Compliance & regulace
           </h2>
           <p className="text-gray-500 max-w-xl mx-auto">
-            Navrženo pro regulované prostředí. Připraveni na kontrolu ČŠI kdykoliv.
+            Navrženo pro regulované prostředí. Vaše škola je připravena na kontrolu České školní inspekce kdykoliv.
           </p>
         </div>
         <div className="grid md:grid-cols-3 gap-6">

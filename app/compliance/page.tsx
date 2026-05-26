@@ -178,7 +178,7 @@ export default function CompliancePage() {
             <p className="text-lg md:text-xl text-gray-500 max-w-2xl mx-auto mb-8 leading-relaxed">
               Navrženo pro regulované prostředí od prvního dne.
               První český EdTech s architekturou připravenou na EU AI Act.
-              Připraveni na kontrolu ČŠI kdykoliv.
+              Vaše škola je připravena na kontrolu České školní inspekce kdykoliv.
             </p>
           </div>
         </section>

@@ -258,7 +258,7 @@ export default function BezpecnostPage() {
             style={{ background: 'linear-gradient(135deg, #6C47FF 0%, #9B7AFF 100%)' }}
           >
             <h2 className="text-2xl md:text-3xl font-black mb-4">
-              Připraveni na kontrolu ČŠI kdykoliv
+              Vaše škola je připravena na kontrolu České školní inspekce kdykoliv
             </h2>
             <p className="text-purple-100 mb-8 max-w-xl mx-auto">
               Kompletní audit log, AIBSN certifikát, compliance dokumentace — vše k dispozici
