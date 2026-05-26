@@ -112,7 +112,7 @@ const faqs = [
   },
   {
     q: 'Jak rychle je platforma aktivní po zaplacení?',
-    a: 'Ihned. Po zaplacení dostanete přihlašovací údaje do dashboardu. Onboarding trvá přibližně 30 minut, první QR kód pro třídu vygenerujete za méně než hodinu.',
+    a: 'Ihned. Onboarding trvá asi 5 minut a první QR kód pro třídu vygenerujete ihned potom.',
   },
 ];
 
