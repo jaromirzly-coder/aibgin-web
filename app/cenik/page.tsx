@@ -250,7 +250,10 @@ export default function CenikPage() {
               <h2 className="text-2xl md:text-3xl font-black text-gray-400">
                 Podzimní tarify
               </h2>
-              <p className="text-xs text-gray-400 italic mt-1">Pilotní ceny pro školy 2026/2027. Vyhrazujeme si právo aktualizovat ceník dle podmínek trhu.</p>
+              <div className="text-xs text-gray-400 mt-2 max-w-xl mx-auto text-center">
+                <p className="text-sm font-semibold text-gray-600 mb-1">Co se stane po 30. 6. 2026?</p>
+                <p>Přístup vyprší. Žádné automatické obnovení, žádné strhávání peněz. Do 30. 6. vám nabídneme individuální letní nabídku pro testování bez žáků, zájemci napište na <a href="mailto:hello@aibgin.cz" style={{color:'#6C47FF'}}>hello@aibgin.cz</a></p>
+              </div>
             </div>
             <div className="grid md:grid-cols-3 gap-6">
               {septemberPlans.map((p) => (
