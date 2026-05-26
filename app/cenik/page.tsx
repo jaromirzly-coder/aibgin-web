@@ -104,7 +104,7 @@ const faqs = [
   },
   {
     q: 'Co se stane po 30. 6. 2026?',
-    a: 'Přístup vyprší. Žádné automatické obnovení, žádné strhávání peněz. Po 30. 6. vám nabídneme individuální letní nabídku pro přechod na podzimní tarify.',
+    a: 'Přístup vyprší. Žádné automatické obnovení, žádné strhávání peněz. Do 30. 6. vám nabídneme individuální letní nabídku pro testování bez žáků — zájemci napište na <a href="mailto:hello@aibgin.cz" style="color:#6C47FF">hello@aibgin.cz</a>',
   },
   {
     q: 'Potřebuji souhlas rodičů?',
@@ -313,7 +313,7 @@ export default function CenikPage() {
                   className="rounded-2xl p-6 border border-gray-100 shadow-sm bg-white"
                 >
                   <h3 className="font-bold text-base mb-2">{faq.q}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">{faq.a}</p>
+                  <p className="text-gray-500 text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.a }} />
                 </div>
               ))}
             </div>
