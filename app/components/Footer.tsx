@@ -41,17 +41,14 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/kontakt" className="hover:text-white transition-colors">
-                  Kontakt
+                <Link href="/o-nas" className="hover:text-white transition-colors">
+                  O nás
                 </Link>
               </li>
               <li>
-                <a
-                  href="https://app.aibgin.cz/demo"
-                  className="hover:text-white transition-colors"
-                >
-                  Demo
-                </a>
+                <Link href="/kontakt" className="hover:text-white transition-colors">
+                  Kontakt
+                </Link>
               </li>
             </ul>
           </div>
