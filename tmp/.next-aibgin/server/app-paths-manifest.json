@@ -1,0 +1,17 @@
+{
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/bezpecnost/page": "app/bezpecnost/page.js",
+  "/cenik/page": "app/cenik/page.js",
+  "/compliance/page": "app/compliance/page.js",
+  "/cookies/page": "app/cookies/page.js",
+  "/dpa/page": "app/dpa/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/kontakt/page": "app/kontakt/page.js",
+  "/odstoupeni/page": "app/odstoupeni/page.js",
+  "/page": "app/page.js",
+  "/podminky/page": "app/podminky/page.js",
+  "/privacy/page": "app/privacy/page.js",
+  "/registrace/page": "app/registrace/page.js",
+  "/reklamace/page": "app/reklamace/page.js"
+}

@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-gray-950 text-gray-400 py-16 px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-5 gap-10 mb-12">
+        <div className="grid md:grid-cols-6 gap-10 mb-12">
           <div className="md:col-span-2">
             <Link href="/" className="font-black text-xl block mb-3" style={{ color: '#6C47FF' }}>
               AIBgin
@@ -88,6 +88,27 @@ export default function Footer() {
                 <Link href="/cookies" className="hover:text-white transition-colors">
                   Cookies
                 </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-white font-bold mb-4 text-sm">Ekosystém</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <a href="https://aibaimy.cloud" className="hover:text-white transition-colors">
+                  Pro rodiče → AIBaimy
+                </a>
+              </li>
+              <li>
+                <a href="https://aibguardian.cz" className="hover:text-white transition-colors">
+                  Technologie bezpečnosti → AIBguardian
+                </a>
+              </li>
+              <li>
+                <a href="https://aibsn.org" className="hover:text-white transition-colors">
+                  AIBSN Global Registry
+                </a>
               </li>
             </ul>
           </div>

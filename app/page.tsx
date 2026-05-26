@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
+import CheckoutButton from './components/CheckoutButton';
 
 const SITE_URL = 'https://aibgin.cz';
 
@@ -518,15 +519,15 @@ export default function HomePage() {
               podle EU AI Actu.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://app.aibgin.cz/api/stripe/create-checkout?plan=sandbox&price_id=price_1TahABPahLdnmYVi53T4EkVP"
+              <CheckoutButton
+                href="/registrace"
                 className="px-8 py-4 rounded-xl font-bold text-base bg-white transition-opacity hover:opacity-90"
                 style={{ color: '#6C47FF' }}
               >
                 Koupit přístup — 999 Kč →
-              </a>
+              </CheckoutButton>
               <a
-                href="https://app.aibgin.cz/demo"
+                href="/kontakt"
                 className="px-8 py-4 rounded-xl font-bold text-base bg-white/10 hover:bg-white/20 text-white transition-colors border border-white/30"
               >
                 Demo

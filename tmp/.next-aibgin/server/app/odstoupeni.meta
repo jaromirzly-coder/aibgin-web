@@ -1,0 +1,15 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/odstoupeni/layout,_N_T_/odstoupeni/page,_N_T_/odstoupeni"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/odstoupeni/__PAGE__",
+    "/odstoupeni",
+    "/_index",
+    "/_head"
+  ]
+}

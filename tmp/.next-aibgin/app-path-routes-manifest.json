@@ -1,0 +1,17 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/bezpecnost/page": "/bezpecnost",
+  "/cenik/page": "/cenik",
+  "/compliance/page": "/compliance",
+  "/cookies/page": "/cookies",
+  "/dpa/page": "/dpa",
+  "/favicon.ico/route": "/favicon.ico",
+  "/kontakt/page": "/kontakt",
+  "/odstoupeni/page": "/odstoupeni",
+  "/page": "/",
+  "/podminky/page": "/podminky",
+  "/privacy/page": "/privacy",
+  "/registrace/page": "/registrace",
+  "/reklamace/page": "/reklamace"
+}

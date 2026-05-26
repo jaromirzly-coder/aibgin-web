@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
+import CheckoutButton from '../components/CheckoutButton';
 
 const SITE_URL = 'https://aibgin.cz';
 
@@ -198,13 +199,13 @@ export default function CenikPage() {
                     Platnost do 30. 6. 2026 · Žádné automatické obnovení
                     · Po 30. 6. individuální letní nabídka
                   </p>
-                  <a
+                  <CheckoutButton
                     href="/registrace"
                     className="inline-block px-10 py-4 rounded-xl font-black text-white text-base transition-opacity hover:opacity-90 shadow-lg shadow-purple-200"
                     style={{ backgroundColor: '#6C47FF' }}
                   >
                     Koupit přístup — 999 Kč →
-                  </a>
+                  </CheckoutButton>
                   <p className="text-xs text-gray-400 mt-3">
                     Platba kartou přes Stripe · Faktura okamžitě · DPH 21 % bude připočteno
                   </p>
