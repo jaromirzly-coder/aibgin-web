@@ -27,13 +27,6 @@ export default function Nav() {
           >
             Přihlásit se
           </a>
-          <Link
-            href="/cenik"
-            className="text-sm font-bold text-white px-4 py-2 rounded-lg transition-opacity hover:opacity-90 shadow-sm"
-            style={{ backgroundColor: '#6C47FF' }}
-          >
-            Koupit přístup
-          </Link>
         </div>
       </div>
     </header>
