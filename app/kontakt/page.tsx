@@ -280,7 +280,7 @@ export default function KontaktPage() {
                 href="https://app.aibgin.cz/demo"
                 className="px-8 py-4 rounded-xl font-semibold text-gray-700 bg-white border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-colors"
               >
-                Vyzkoušet demo zdarma
+                Demo
               </a>
             </div>
             <p className="text-xs text-gray-400 mt-6">
