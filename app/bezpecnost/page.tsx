@@ -266,13 +266,6 @@ export default function BezpecnostPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/cenik"
-                className="px-7 py-3.5 rounded-xl font-bold bg-white transition-opacity hover:opacity-90"
-                style={{ color: '#6C47FF' }}
-              >
-                Koupit přístup — 999 Kč →
-              </Link>
-              <Link
                 href="/compliance"
                 className="px-7 py-3.5 rounded-xl font-bold bg-white/10 hover:bg-white/20 text-white transition-colors border border-white/30"
               >
