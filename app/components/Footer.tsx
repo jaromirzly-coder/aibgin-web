@@ -96,6 +96,11 @@ export default function Footer() {
             <h4 className="text-white font-bold mb-4 text-sm">Ekosystém</h4>
             <ul className="space-y-2 text-sm">
               <li>
+                <a href="https://aiblab.cz" className="hover:text-white transition-colors">
+                  O nás → AIBlab
+                </a>
+              </li>
+              <li>
                 <a href="https://aibaimy.cloud" className="hover:text-white transition-colors">
                   Pro rodiče → AIBaimy
                 </a>
