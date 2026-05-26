@@ -245,7 +245,7 @@ export default function HomePage() {
                 href="https://app.aibgin.cz/demo"
                 className="px-8 py-4 rounded-xl font-semibold text-white text-base bg-gray-900 hover:bg-gray-800 transition-colors"
               >
-                Demo zdarma
+                Demo
               </a>
             </div>
 
@@ -526,7 +526,7 @@ export default function HomePage() {
                 Koupit přístup — 999 Kč →
               </CheckoutButton>
               <a
-                href="/kontakt"
+                href="https://app.aibgin.cz/demo"
                 className="px-8 py-4 rounded-xl font-bold text-base bg-white/10 hover:bg-white/20 text-white transition-colors border border-white/30"
               >
                 Demo

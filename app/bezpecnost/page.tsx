@@ -182,7 +182,7 @@ export default function BezpecnostPage() {
                 href="https://app.aibgin.cz/demo"
                 className="px-7 py-3.5 rounded-xl font-semibold text-gray-700 bg-gray-100 hover:bg-gray-200 transition-colors"
               >
-                Demo zdarma
+                Demo
               </a>
             </div>
           </div>

@@ -42,11 +42,11 @@ function Nav() {
             Přihlásit se
           </a>
           <a
-            href="https://app.aibgin.cz/onboarding"
+            href="https://app.aibgin.cz/demo"
             className="text-sm font-semibold text-white px-4 py-2 rounded-lg transition-opacity hover:opacity-90"
             style={{ backgroundColor: "#6C47FF" }}
           >
-            Vyzkoušet zdarma
+            Demo
           </a>
         </div>
       </div>
@@ -394,8 +394,8 @@ function Pricing() {
         "Crisis detection + 116 111",
         "Email podpora",
       ],
-      cta: "Začít zdarma",
-      href: "https://app.aibgin.cz/api/stripe/create-checkout?plan=starter",
+      cta: "Demo",
+      href: "https://app.aibgin.cz/demo",
       highlight: false,
     },
     {
@@ -728,11 +728,11 @@ function CtaBanner() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="https://app.aibgin.cz/onboarding"
+            href="https://app.aibgin.cz/demo"
             className="px-8 py-4 rounded-xl font-bold text-base bg-white transition-opacity hover:opacity-90"
             style={{ color: "#6C47FF" }}
           >
-            Začít zdarma
+            Demo
           </a>
           <a
             href="https://app.aibgin.cz/demo"
