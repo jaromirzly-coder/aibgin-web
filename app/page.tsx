@@ -72,7 +72,6 @@ const jsonLd = {
 const stats = [
   { value: '5', label: 'Vrstev ochrany', sub: 'Fail-closed architektura' },
   { value: '0', label: 'Registrací pro děti', sub: 'Jen QR kód z tabule' },
-  { value: 'AES-256', label: 'Šifrování', sub: 'Data výhradně v EU' },
   { value: '116 111', label: 'Linka bezpečí', sub: 'Crisis detection v reálném čase' },
 ];
 

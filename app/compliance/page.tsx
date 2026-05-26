@@ -8,7 +8,7 @@ const SITE_URL = 'https://aibgin.cz';
 export const metadata: Metadata = {
   title: 'Compliance | AIBgin — GDPR, EU AI Act, COPPA 2026',
   description:
-    'AIBgin splňuje GDPR, EU AI Act čl. 50, COPPA 2026, českou školskou legislativu. Data výhradně v EU (eu-central-1), AES-256 šifrování, 5letý audit log, DPA smlouva součástí každého plánu.',
+    'AIBgin splňuje GDPR, EU AI Act čl. 50, COPPA 2026, českou školskou legislativu. Data výhradně v EU (eu-central-1), audit log, DPA smlouva součástí každého plánu.',
   metadataBase: new URL(SITE_URL),
   alternates: { canonical: `${SITE_URL}/compliance` },
   keywords: [
@@ -80,11 +80,10 @@ const complianceItems = [
     color: '#EDE9FF',
     textColor: '#6C47FF',
     summary:
-      'Data výhradně v EU (eu-central-1). DPA smlouva součástí každého plánu. Šifrování AES-256.',
+      'Data výhradně v EU (eu-central-1). DPA smlouva součástí každého plánu.',
     points: [
       'Servery výhradně v EU (AWS eu-central-1, Frankfurt)',
       'DPA (Data Processing Agreement) součástí každého plánu',
-      'Šifrování AES-256 per-instance',
       'Právo na výmaz a přenositelnost dat zajištěno',
       'Jmenovaný DPO na vyžádání',
     ],

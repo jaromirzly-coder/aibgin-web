@@ -92,9 +92,7 @@ export default function DpaPage() {
             <h2 className="text-xl font-black text-gray-900 mb-3">4. Bezpečnostní opatření</h2>
             <p className="mb-3">Zpracovatel implementuje tato technická a organizační opatření:</p>
             <ul className="list-disc pl-5 space-y-1">
-              <li><strong>Šifrování AES-256</strong> pro veškerá uložená data</li>
               <li><strong>Servery výhradně v EU</strong> (Vercel Frankfurt, Supabase EU region)</li>
-              <li>Šifrovaný přenos dat (TLS 1.3)</li>
               <li>Přístup k datům pouze autorizovaným zaměstnancům (need-to-know)</li>
               <li>Pravidelné bezpečnostní audity a penetrační testy</li>
               <li>Zálohy každých 6 hodin, retence 30 dní</li>
