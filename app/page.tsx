@@ -535,6 +535,32 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* ── AIBaimy pro rodiče ── */}
+        <section className="py-16 px-6 bg-white border-t border-gray-100">
+          <div className="max-w-4xl mx-auto rounded-3xl p-10 md:p-14 flex flex-col md:flex-row items-center gap-10" style={{ background: 'linear-gradient(135deg, #fffbeb 0%, #fef9c3 100%)', border: '1px solid #fde68a' }}>
+            <div className="flex-1">
+              <div className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-5" style={{ backgroundColor: '#fbbf24', color: '#78350f' }}>
+                Jste rodič?
+              </div>
+              <h2 className="text-2xl md:text-3xl font-black mb-3" style={{ color: '#1a1a2e' }}>
+                AIBaimy — bezpečná umělá inteligence pro děti
+              </h2>
+              <p className="text-gray-600 text-base mb-6 leading-relaxed">
+                Sledujte co vaše dítě píše AI. Bezpečně, přehledně, v reálném čase.<br />
+                Real-time dashboard, push notifikace, krizová detekce 116 111 — vše na jednom místě.
+              </p>
+              <a
+                href="https://aibaimy.cloud"
+                className="inline-block px-7 py-3 rounded-xl font-bold text-sm transition-opacity hover:opacity-90"
+                style={{ background: '#fbbf24', color: '#78350f' }}
+              >
+                Zjistit více →
+              </a>
+            </div>
+            <div className="shrink-0 text-6xl">🛡️</div>
+          </div>
+        </section>
+
         <Footer />
       </main>
     </>

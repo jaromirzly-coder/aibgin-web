@@ -34,7 +34,7 @@ const jsonLdOrganization = {
   "@type": "Organization",
   name: "AIBgin",
   url: SITE_URL,
-  sameAs: ["https://aiblab.cz", "https://aibguardian.cz", "https://aibsn.org"],
+  sameAs: ["https://aiblab.cz", "https://aibguardian.cz", "https://aibsn.org", "https://aibaimy.cloud"],
 };
 
 export const metadata: Metadata = {
@@ -77,6 +77,12 @@ export const metadata: Metadata = {
         alt: "AIBgin — Bezpečná AI pro děti & školy",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AIBgin — Bezpečná AI platforma pro děti & školy",
+    description: metaDescription,
+    images: [`${SITE_URL}/logo.png`],
   },
 };
 
