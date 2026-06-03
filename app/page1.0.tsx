@@ -793,8 +793,8 @@ function Footer() {
                 <span className="text-xs text-gray-600">fakturace a platby</span>
               </li>
               <li>
-                <a href="mailto:noreply@aibgin.cz" className="hover:text-white transition-colors block">
-                  noreply@aibgin.cz
+                <a href="mailto:support@aibgin.cz" className="hover:text-white transition-colors block">
+                  support@aibgin.cz
                 </a>
                 <span className="text-xs text-gray-600">automatické notifikace</span>
               </li>
@@ -805,8 +805,8 @@ function Footer() {
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
           <p>© 2026 SAY TO PAY s.r.o. · IČO: 08694222 · Všechna práva vyhrazena.</p>
           <div className="flex gap-4">
-            <a href="#" className="hover:text-white transition-colors">Zpracování osobních údajů</a>
-            <a href="#" className="hover:text-white transition-colors">Podmínky služby</a>
+            <a href="/privacy" className="hover:text-white transition-colors">Zpracování osobních údajů</a>
+            <a href="/podminky" className="hover:text-white transition-colors">Podmínky služby</a>
             <a href="https://aibsn.org" className="hover:text-white transition-colors">aibsn.org</a>
           </div>
         </div>

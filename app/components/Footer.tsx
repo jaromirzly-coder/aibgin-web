@@ -89,30 +89,39 @@ export default function Footer() {
             </ul>
           </div>
 
+          {/* ÚKOL 2: Aktualizované anchor texty · ÚKOL 3: Sémantický nav */}
           <div>
-            <h4 className="text-white font-bold mb-4 text-sm">Ekosystém</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="https://aiblab.cz" className="hover:text-white transition-colors">
-                  O nás → AIBlab
-                </a>
-              </li>
-              <li>
-                <a href="https://aibaimy.cloud" className="hover:text-white transition-colors">
-                  Pro rodiče → AIBaimy
-                </a>
-              </li>
-              <li>
-                <a href="https://aibguardian.cz" className="hover:text-white transition-colors">
-                  Technologie bezpečnosti → AIBguardian
-                </a>
-              </li>
-              <li>
-                <a href="https://aibsn.org" className="hover:text-white transition-colors">
-                  AIBSN Global Registry
-                </a>
-              </li>
-            </ul>
+            <h4 className="text-white font-bold mb-2 text-sm">Ekosystém</h4>
+            <p className="text-xs text-gray-500 mb-4">
+              Součást ekosystému{" "}
+              <a href="https://aiblab.cz" className="hover:text-white transition-colors">
+                AIBlab
+              </a>
+            </p>
+            <nav aria-label="Ekosystém AIBlab">
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <a href="https://aiblab.cz" className="hover:text-white transition-colors">
+                    O ekosystému AIBlab
+                  </a>
+                </li>
+                <li>
+                  <a href="https://aibaimy.cloud" className="hover:text-white transition-colors">
+                    AI bezpečnost pro rodiče → AIBaimy
+                  </a>
+                </li>
+                <li>
+                  <a href="https://aibguardian.cz" className="hover:text-white transition-colors">
+                    Bezpečnostní AI systémy → AIBguardian
+                  </a>
+                </li>
+                <li>
+                  <a href="https://aibsn.org" className="hover:text-white transition-colors">
+                    AIBSN — AI registr
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
 
           <div>
@@ -131,8 +140,8 @@ export default function Footer() {
                 <span className="text-xs text-gray-600">fakturace a platby</span>
               </li>
               <li>
-                <a href="mailto:noreply@aibgin.cz" className="hover:text-white transition-colors block">
-                  noreply@aibgin.cz
+                <a href="mailto:support@aibgin.cz" className="hover:text-white transition-colors block">
+                  support@aibgin.cz
                 </a>
                 <span className="text-xs text-gray-600">automatické notifikace</span>
               </li>
