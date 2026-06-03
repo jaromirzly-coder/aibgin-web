@@ -45,11 +45,6 @@ export default function Footer() {
                   O nás
                 </Link>
               </li>
-              <li>
-                <Link href="/kontakt" className="hover:text-white transition-colors">
-                  Kontakt
-                </Link>
-              </li>
             </ul>
           </div>
 
