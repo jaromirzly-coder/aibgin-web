@@ -101,12 +101,6 @@ const channels = [
     href: 'mailto:support@aibgin.cz',
   },
   {
-    icon: '🌐',
-    label: 'Web app',
-    value: 'app.aibgin.cz',
-    href: 'https://app.aibgin.cz',
-  },
-  {
     icon: '📋',
     label: 'Certifikace AIBSN',
     value: 'aibsn.org',
