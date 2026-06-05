@@ -1,17 +1,37 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import CookieConsent from "./CookieConsent";
 import CookieBanner from "./components/CookieBanner";
-
-const GA_ID = "G-F964Z5G173";
 
 const inter = Inter({ subsets: ["latin", "latin-ext"] });
 
 const SITE_URL = "https://aibgin.cz";
 
 const metaDescription = "AIBgin je bezpečná AI vzdělávací platforma pro děti a školy. 5 vrstev ochrany, QR přístup, real-time audit. Certifikovaná podle EU AI Act. Červnový AI Sandbox od 999 Kč.";
+
+const jsonLdOrganization = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "SAY TO PAY s.r.o. / AIBgin",
+  url: SITE_URL,
+  logo: `${SITE_URL}/logo.png`,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Zámostní 1155/27",
+    addressLocality: "Slezská Ostrava",
+    postalCode: "710 00",
+    addressCountry: "CZ",
+  },
+  contactPoint: {
+    "@type": "ContactPoint",
+    email: "support@aibgin.cz",
+    contactType: "customer support",
+    telephone: "+420723657885",
+  },
+  identifier: "08694222",
+  sameAs: ["https://aiblab.cz", "https://aibguardian.cz", "https://aibsn.org", "https://aibaimy.cloud"],
+};
 
 const jsonLdProduct = {
   "@context": "https://schema.org",
@@ -27,14 +47,6 @@ const jsonLdProduct = {
     availability: "https://schema.org/InStock",
     seller: { "@type": "Organization", name: "SAY TO PAY s.r.o." },
   },
-};
-
-const jsonLdOrganization = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "AIBgin",
-  url: SITE_URL,
-  sameAs: ["https://aiblab.cz", "https://aibguardian.cz", "https://aibsn.org", "https://aibaimy.cloud"],
 };
 
 export const metadata: Metadata = {
@@ -94,22 +106,10 @@ export default function RootLayout({
   return (
     <html lang="cs" className={inter.className}>
       <head>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdProduct) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdOrganization) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdProduct) }} />
       </head>
       <body>
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-          strategy="afterInteractive"
-        />
-        <Script id="ga-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_ID}', { page_path: window.location.pathname });
-          `}
-        </Script>
         {children}
         <CookieConsent />
         <CookieBanner />

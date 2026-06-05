@@ -149,29 +149,6 @@ const useCases = [
   },
 ];
 
-const quotes = [
-  {
-    text: 'Děti si rychle zvykly — a já jsem klidná, protože vím, že každá odpověď prošla kontrolou. QR kód na tabuli funguje skvěle.',
-    name: 'Mgr. Jana K.',
-    role: 'Třídní učitelka, ZŠ Ostrava',
-    initials: 'JK',
-    tag: 'Základní škola',
-  },
-  {
-    text: 'Nastavení bylo hotové za půl hodiny. Kroužek může pracovat s AI hned — a já nemusím řešit, co děti uvidí.',
-    name: 'Tomáš M.',
-    role: 'Vedoucí robotického kroužku, DDM',
-    initials: 'TM',
-    tag: 'Zájmový kroužek',
-  },
-  {
-    text: 'Jako ředitel potřebuji mít jistotu, že jsme v souladu s legislativou. AIBgin to řeší za mě — automaticky.',
-    name: 'Mgr. Pavel R.',
-    role: 'Ředitel ZŠ, Ostrava',
-    initials: 'PR',
-    tag: 'Ředitel školy',
-  },
-];
 
 export default function HomePage() {
   return (
@@ -245,7 +222,7 @@ export default function HomePage() {
                 href="https://app.aibgin.cz/demo"
                 className="px-8 py-4 rounded-xl font-semibold text-white text-base bg-gray-900 hover:bg-gray-800 transition-colors"
               >
-                Demo
+                Prohlédnout ukázku
               </a>
             </div>
 
@@ -449,7 +426,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* ── References ── */}
+        {/* ── Pilot Program ── */}
         <section className="py-24 px-6 bg-gray-50">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
@@ -457,47 +434,24 @@ export default function HomePage() {
                 className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4"
                 style={{ backgroundColor: '#EDE9FF', color: '#6C47FF' }}
               >
-                Reference
+                Pilotní program
               </div>
-              <h2 className="text-3xl md:text-4xl font-black mb-4">Co říkají pedagogové</h2>
-              <p className="text-gray-400 text-sm max-w-md mx-auto">
-                Ilustrativní reference — skutečné zkušenosti zákazníků doplníme při spuštění.
-                Chcete být mezi prvními?{' '}
-                <Link href="/kontakt" style={{ color: '#6C47FF' }} className="underline">
-                  Napište nám.
-                </Link>
+              <h2 className="text-3xl md:text-4xl font-black mb-6">
+                Hledáme partnerské školy
+              </h2>
+              <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed mb-8">
+                Spouštíme pilotní program AIBgin a hledáme první partnerské školy,
+                které by se chtěly stát součástí této cesty. Budete mít přístup k nejnovějším
+                funkcím, přímý kontakt na náš tým a podíl na tvorbě budoucnosti bezpečné AI
+                v českém vzdělávání.
               </p>
-            </div>
-            <div className="grid md:grid-cols-3 gap-6">
-              {quotes.map((q) => (
-                <div
-                  key={q.name}
-                  className="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm flex flex-col"
-                >
-                  <div
-                    className="text-xs font-bold uppercase tracking-widest px-2 py-0.5 rounded-full self-start mb-4"
-                    style={{ backgroundColor: '#EDE9FF', color: '#6C47FF' }}
-                  >
-                    {q.tag}
-                  </div>
-                  <div className="text-4xl mb-3" style={{ color: '#6C47FF' }}>
-                    "
-                  </div>
-                  <p className="text-gray-700 leading-relaxed mb-6 italic flex-1">{q.text}</p>
-                  <div className="flex items-center gap-3">
-                    <div
-                      className="w-10 h-10 rounded-full flex items-center justify-center text-white text-sm font-bold shrink-0"
-                      style={{ backgroundColor: '#6C47FF' }}
-                    >
-                      {q.initials}
-                    </div>
-                    <div>
-                      <p className="font-bold text-sm">{q.name}</p>
-                      <p className="text-gray-400 text-xs">{q.role}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
+              <Link
+                href="/kontakt"
+                className="inline-block px-8 py-4 rounded-xl font-bold text-white transition-opacity hover:opacity-90 shadow-lg shadow-purple-200"
+                style={{ backgroundColor: '#6C47FF' }}
+              >
+                Staňte se partnerskou školou →
+              </Link>
             </div>
           </div>
         </section>
@@ -529,7 +483,7 @@ export default function HomePage() {
                 href="https://app.aibgin.cz/demo"
                 className="px-8 py-4 rounded-xl font-bold text-base bg-white/10 hover:bg-white/20 text-white transition-colors border border-white/30"
               >
-                Demo
+                Prohlédnout ukázku
               </a>
             </div>
           </div>

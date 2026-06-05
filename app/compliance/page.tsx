@@ -29,6 +29,21 @@ export const metadata: Metadata = {
     siteName: 'AIBgin',
     locale: 'cs_CZ',
     type: 'website',
+    images: [
+      {
+        url: `${SITE_URL}/logo.png`,
+        width: 1200,
+        height: 630,
+        alt: 'AIBgin — Compliance',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Compliance | AIBgin — GDPR, EU AI Act, COPPA 2026',
+    description:
+      'Kompletní compliance pro AI ve vzdělávání: GDPR, EU AI Act čl. 50, COPPA 2026, česká legislativa. Data v EU, DPA smlouva, 5letý audit log.',
+    images: [`${SITE_URL}/logo.png`],
   },
 };
 
@@ -44,33 +59,19 @@ const jsonLd = {
 
 const complianceItems = [
   {
-    badge: 'COPPA 2026',
-    icon: '🇺🇸',
-    title: "COPPA 2026",
+    badge: 'Czech law',
+    icon: '⚖️',
+    title: 'Česká legislativa',
     color: '#EDE9FF',
     textColor: '#6C47FF',
     summary:
-      'Plný soulad s Children\'s Online Privacy Protection Act. Žádná osobní data dětí nejsou sbírána.',
+      'Zákon č. 561/2004 Sb. (školský zákon), vyhláška MŠMT. Smlouvy v češtině, fakturace v Kč.',
     points: [
-      'Žádná osobní data dětí bez souhlasu rodičů',
-      'Anonymní přístup přes QR kód — žádná registrace',
-      'Bez cookies, bez profilování, bez sledování',
-      'Automatická implementace změn COPPA 2026',
-    ],
-  },
-  {
-    badge: 'EU AI Act',
-    icon: '🇪🇺',
-    title: 'EU AI Act čl. 50',
-    color: '#ECFDF5',
-    textColor: '#059669',
-    summary:
-      'Transparentnost AI systémů pro děti. Každé dítě ví, že mluví s AI — při každé konverzaci.',
-    points: [
-      'Automatický AI disclosure při každé konverzaci',
-      'Transparentní vysvětlení co AI je a co neumí',
-      'Architektura Ready by Design — ne retrofit',
-      'Monitoring a reporting v souladu s EU AI Act',
+      'Plný soulad se zákonem č. 561/2004 Sb.',
+      'Vyhláška MŠMT o ochraně žáků',
+      'Smluvní dokumentace v češtině',
+      'Fakturace v Kč, sídlo v ČR (Slezská Ostrava, 710 00)',
+      'Podpora při auditu ČŠI a krajské inspekce',
     ],
   },
   {
@@ -86,6 +87,21 @@ const complianceItems = [
       'DPA (Data Processing Agreement) součástí každého plánu',
       'Právo na výmaz a přenositelnost dat zajištěno',
       'Jmenovaný DPO na vyžádání',
+    ],
+  },
+  {
+    badge: 'EU AI Act',
+    icon: '🇪🇺',
+    title: 'EU AI Act čl. 50',
+    color: '#ECFDF5',
+    textColor: '#059669',
+    summary:
+      'Transparentnost AI systémů pro děti. Každé dítě ví, že mluví s AI — při každé konverzaci.',
+    points: [
+      'Automatický AI disclosure při každé konverzaci',
+      'Transparentní vysvětlení co AI je a co neumí',
+      'Architektura Ready by Design — ne retrofit',
+      'Monitoring a reporting v souladu s EU AI Act',
     ],
   },
   {
@@ -119,19 +135,18 @@ const complianceItems = [
     ],
   },
   {
-    badge: 'Czech law',
-    icon: '⚖️',
-    title: 'Česká legislativa',
+    badge: 'COPPA 2026',
+    icon: '🇺🇸',
+    title: "COPPA 2026",
     color: '#EDE9FF',
     textColor: '#6C47FF',
     summary:
-      'Zákon č. 561/2004 Sb. (školský zákon), vyhláška MŠMT. Smlouvy v češtině, fakturace v Kč.',
+      'Splňujeme i nejpřísnější americký federální standard pro ochranu dětí online.',
     points: [
-      'Plný soulad se zákonem č. 561/2004 Sb.',
-      'Vyhláška MŠMT o ochraně žáků',
-      'Smluvní dokumentace v češtině',
-      'Fakturace v Kč, sídlo v ČR (Slezská Ostrava, 710 00)',
-      'Podpora při auditu ČŠI a krajské inspekce',
+      'Žádná osobní data dětí bez souhlasu rodičů',
+      'Anonymní přístup přes QR kód — žádná registrace',
+      'Bez cookies, bez profilování, bez sledování',
+      'Automatická implementace změn COPPA 2026',
     ],
   },
 ];

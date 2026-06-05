@@ -104,7 +104,7 @@ const faqs = [
   },
   {
     q: 'Co se stane po 30. 6. 2026?',
-    a: 'Přístup vyprší. Žádné automatické obnovení, žádné strhávání peněz. Do 30. 6. vám nabídneme individuální letní nabídku pro testování bez žáků — zájemci napište na <a href="mailto:hello@aibgin.cz" style="color:#6C47FF">hello@aibgin.cz</a>',
+    a: 'Přístup vyprší. Žádné automatické obnovení, žádné strhávání peněz. Do 30. 6. vám nabídneme individuální letní nabídku pro testování bez žáků — zájemci napište na hello@aibgin.cz',
   },
   {
     q: 'Potřebuji souhlas rodičů?',
@@ -116,12 +116,29 @@ const faqs = [
   },
 ];
 
+const jsonLdFAQ = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.a,
+    },
+  })),
+};
+
 export default function CenikPage() {
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFAQ) }}
       />
       <main className="min-h-screen bg-white text-gray-900">
         <Nav />

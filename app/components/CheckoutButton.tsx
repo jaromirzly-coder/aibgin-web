@@ -8,11 +8,8 @@ interface CheckoutButtonProps {
 }
 
 export default function CheckoutButton({ href, className, style, children }: CheckoutButtonProps) {
-  const handleClick = () => {
-    (window as any).gtag?.("event", "begin_checkout", { currency: "CZK", value: 999 });
-  };
   return (
-    <a href={href} className={className} style={style} onClick={handleClick}>
+    <a href={href} className={className} style={style}>
       {children}
     </a>
   );

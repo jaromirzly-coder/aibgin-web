@@ -134,12 +134,6 @@ export default function Footer() {
                 </a>
                 <span className="text-xs text-gray-600">fakturace a platby</span>
               </li>
-              <li>
-                <a href="mailto:support@aibgin.cz" className="hover:text-white transition-colors block">
-                  support@aibgin.cz
-                </a>
-                <span className="text-xs text-gray-600">automatické notifikace</span>
-              </li>
             </ul>
           </div>
         </div>
