@@ -7,6 +7,8 @@ const links = [
   { href: '/bezpecnost', label: 'Bezpečnost' },
   { href: '/cenik', label: 'Ceník' },
   { href: '/compliance', label: 'Compliance' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/faq', label: 'FAQ' },
   { href: '/o-nas', label: 'O nás' },
   { href: '/kontakt', label: 'Kontakt' },
 ];

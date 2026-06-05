@@ -76,14 +76,14 @@ const stats = [
 ];
 
 const institutions = [
-  { icon: '🏫', label: 'Základní školy' },
-  { icon: '🎒', label: 'Mateřské školy' },
-  { icon: '🌅', label: 'Školní družiny' },
-  { icon: '⚽', label: 'Zájmové kroužky' },
-  { icon: '🎮', label: 'Dětské kluby' },
-  { icon: '🤝', label: 'Nízkoprahová centra' },
-  { icon: '🏠', label: 'Domy dětí a mládeže' },
-  { icon: '📚', label: 'Střední školy' },
+  { icon: '🏫', label: 'Základní školy', href: '/ai-pro-zakladni-skoly' },
+  { icon: '🎒', label: 'Mateřské školy', href: '/ai-pro-materske-skoly' },
+  { icon: '🌅', label: 'Školní družiny', href: '/ai-pro-ddm' },
+  { icon: '⚽', label: 'Zájmové kroužky', href: '/ai-pro-krouzky' },
+  { icon: '🎮', label: 'Dětské kluby', href: '/ai-pro-ddm' },
+  { icon: '🤝', label: 'Nízkoprahová centra', href: '/ai-pro-ddm' },
+  { icon: '🏠', label: 'Domy dětí a mládeže', href: '/ai-pro-ddm' },
+  { icon: '📚', label: 'Střední školy', href: '/ai-pro-zakladni-skoly' },
 ];
 
 const useCases = [
@@ -271,13 +271,14 @@ export default function HomePage() {
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               {institutions.map((item) => (
-                <div
+                <Link
                   key={item.label}
-                  className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow flex flex-col items-center gap-3"
+                  href={item.href}
+                  className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md hover:border-purple-200 transition-all flex flex-col items-center gap-3 group"
                 >
-                  <span className="text-4xl">{item.icon}</span>
-                  <span className="font-semibold text-sm text-gray-700 text-center">{item.label}</span>
-                </div>
+                  <span className="text-4xl group-hover:scale-110 transition-transform">{item.icon}</span>
+                  <span className="font-semibold text-sm text-gray-700 text-center group-hover:text-purple-600 transition-colors">{item.label}</span>
+                </Link>
               ))}
             </div>
           </div>
@@ -422,6 +423,118 @@ export default function HomePage() {
                   </ul>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* ── Visual Evidence ── */}
+        <section className="py-24 px-6 bg-gray-50">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <div
+                className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4"
+                style={{ backgroundColor: '#EDE9FF', color: '#6C47FF' }}
+              >
+                Jak to funguje v praxi
+              </div>
+              <h2 className="text-3xl md:text-4xl font-black mb-4">
+                Takhle to funguje v praxi
+              </h2>
+              <p className="text-gray-500 max-w-2xl mx-auto mb-12">
+                Tři klíčové komponenty, které činí AIBgin bezpečnou a používatelnou.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {/* AIBSN Certificate */}
+              <div className="rounded-2xl p-8 border border-gray-100 shadow-sm bg-white">
+                <div className="text-center mb-6">
+                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-full mb-4" style={{ backgroundColor: '#EDE9FF' }}>
+                    <span style={{ color: '#6C47FF' }}>📜</span>
+                  </div>
+                  <h3 className="font-black text-lg mb-1">AIBSN certifikát</h3>
+                  <p className="text-xs text-gray-500">Veřejně ověřitelné</p>
+                </div>
+                <div className="space-y-3 text-sm">
+                  <div className="p-3 rounded-lg" style={{ backgroundColor: '#F9FAFB' }}>
+                    <p className="text-xs text-gray-600">Číslo</p>
+                    <p className="font-mono font-bold" style={{ color: '#6C47FF' }}>AIBSN-SKOLA-DEMO-01</p>
+                  </div>
+                  <div className="p-3 rounded-lg" style={{ backgroundColor: '#F9FAFB' }}>
+                    <p className="text-xs text-gray-600">Provozovatel</p>
+                    <p className="font-semibold text-gray-900">Základní škola Demo</p>
+                  </div>
+                  <div className="p-3 rounded-lg" style={{ backgroundColor: '#F9FAFB' }}>
+                    <p className="text-xs text-gray-600">Věková skupina</p>
+                    <p className="font-semibold text-gray-900">11–15 let</p>
+                  </div>
+                  <div className="p-3 rounded-lg" style={{ backgroundColor: '#F9FAFB' }}>
+                    <p className="text-xs text-gray-600">Status</p>
+                    <p className="font-semibold text-green-600">✓ Aktivní</p>
+                  </div>
+                  <div className="pt-3 border-t border-gray-100">
+                    <p className="text-xs text-gray-500">Ověřovat na <a href="https://aibsn.org" className="underline" style={{ color: '#6C47FF' }}>aibsn.org</a></p>
+                  </div>
+                </div>
+              </div>
+
+              {/* AIBguard Audit Flow */}
+              <div className="rounded-2xl p-8 border border-gray-100 shadow-sm bg-white">
+                <div className="text-center mb-6">
+                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-full mb-4" style={{ backgroundColor: '#EDE9FF' }}>
+                    <span style={{ color: '#6C47FF' }}>🛡️</span>
+                  </div>
+                  <h3 className="font-black text-lg mb-1">AIBguard audit</h3>
+                  <p className="text-xs text-gray-500">Tři stavy filtrování</p>
+                </div>
+                <div className="space-y-3">
+                  <div className="p-3 rounded-lg border-l-4" style={{ borderColor: '#16a34a', backgroundColor: '#f0fdf4' }}>
+                    <p className="font-bold text-sm text-green-700">PASS</p>
+                    <p className="text-xs text-green-600 mt-1">Odpověď je bezpečná,<br />odeslána beze změny</p>
+                  </div>
+                  <div className="p-3 rounded-lg border-l-4" style={{ borderColor: '#ea580c', backgroundColor: '#fff7ed' }}>
+                    <p className="font-bold text-sm text-orange-700">ALERT</p>
+                    <p className="text-xs text-orange-600 mt-1">Citlivá část nahrazena<br />bezpečnější formulací</p>
+                  </div>
+                  <div className="p-3 rounded-lg border-l-4" style={{ borderColor: '#dc2626', backgroundColor: '#fef2f2' }}>
+                    <p className="font-bold text-sm text-red-700">CRITICAL</p>
+                    <p className="text-xs text-red-600 mt-1">Odpověď zablokována,<br />dítě ji neuvidí</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Security Profile */}
+              <div className="rounded-2xl p-8 border border-gray-100 shadow-sm bg-white">
+                <div className="text-center mb-6">
+                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-full mb-4" style={{ backgroundColor: '#EDE9FF' }}>
+                    <span style={{ color: '#6C47FF' }}>⚙️</span>
+                  </div>
+                  <h3 className="font-black text-lg mb-1">Bezpečnostní profil</h3>
+                  <p className="text-xs text-gray-500">Věková skupina 1.–3. třída</p>
+                </div>
+                <div className="space-y-3 text-sm">
+                  <div>
+                    <p className="font-bold text-gray-700 mb-2">Zakázaná témata:</p>
+                    <div className="flex flex-wrap gap-1">
+                      {['Násilí', 'Politika', 'Drogy', 'Horor'].map((tag) => (
+                        <span key={tag} className="px-2 py-1 rounded text-xs font-semibold" style={{ backgroundColor: '#fee2e2', color: '#991b1b' }}>
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <p className="font-bold text-gray-700 mb-2">Povolený obsah:</p>
+                    <div className="flex flex-wrap gap-1">
+                      {['Matematika', 'Příroda', 'Pohádky', 'Umění'].map((tag) => (
+                        <span key={tag} className="px-2 py-1 rounded text-xs font-semibold" style={{ backgroundColor: '#dcfce7', color: '#166534' }}>
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>

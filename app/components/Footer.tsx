@@ -120,6 +120,22 @@ export default function Footer() {
           </div>
 
           <div>
+            <h4 className="text-white font-bold mb-4 text-sm">Další informace</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link href="/blog" className="hover:text-white transition-colors">
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link href="/faq" className="hover:text-white transition-colors">
+                  FAQ
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
             <h4 className="text-white font-bold mb-4 text-sm">Kontakt</h4>
             <ul className="space-y-3 text-sm">
               <li>
