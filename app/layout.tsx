@@ -49,6 +49,48 @@ const jsonLdProduct = {
   },
 };
 
+const jsonLdSoftwareApp = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "AIBgin",
+  applicationCategory: "EducationalApplication",
+  operatingSystem: "Web",
+  image: `${SITE_URL}/logo.png`,
+  description: "Certifikovaný AI chatbot pro školy, školky a zájmové kroužky. 5 vrstev ochrany AIBguard, fail-closed architektura, krizová detekce 116 111, QR přístup bez registrace dětí.",
+  url: SITE_URL,
+  offers: {
+    "@type": "Offer",
+    price: "999",
+    priceCurrency: "CZK",
+    availability: "https://schema.org/InStock",
+    seller: { "@type": "Organization", name: "SAY TO PAY s.r.o." }
+  }
+};
+
+const jsonLdOrganizationExpanded = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "SAY TO PAY s.r.o.",
+  url: SITE_URL,
+  logo: `${SITE_URL}/logo.png`,
+  identifier: "08694222",
+  address: { "@type": "PostalAddress", streetAddress: "Zámostní 1155/27", addressLocality: "Slezská Ostrava", postalCode: "710 00", addressCountry: "CZ" },
+  contactPoint: { "@type": "ContactPoint", email: "support@aibgin.cz", contactType: "customer support" },
+  sameAs: ["https://aiblab.cz", "https://aibaimy.cloud", "https://aibsn.org"]
+};
+
+const jsonLdFAQ = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    { "@type": "Question", "name": "Jak děti přistupují k AIBgin bez registrace?", "acceptedAnswer": { "@type": "Answer", "text": "Učitel promítne QR kód vygenerovaný v dashboardu. Dítě ho naskenuje a okamžitě přistupuje k platformě bez registrace, e-mailu ani hesla. Po skončení hodiny se session automaticky resetuje." } },
+    { "@type": "Question", "name": "Je AIBgin v souladu s EU AI Act a GDPR?", "acceptedAnswer": { "@type": "Answer", "text": "Ano. AIBgin bylo navrženo v souladu s EU 2024/1689. AI systémy ve vzdělávání jsou HIGH-RISK — AIBgin splňuje všechny požadavky: risk assessment, data governance, transparentnost, lidský dohled." } },
+    { "@type": "Question", "name": "Co se stane při detekci krizové situace?", "acceptedAnswer": { "@type": "Answer", "text": "4. vrstva ochrany detekuje krizové vzorce. Správce je okamžitě notifikován a systém zahájí protokol pro kontakt s Linkou bezpečí 116 111." } },
+    { "@type": "Question", "name": "Jak rychle lze AIBgin nastavit?", "acceptedAnswer": { "@type": "Answer", "text": "Nastavení trvá 30 minut. První QR kód pro třídu lze mít za hodinu od registrace." } },
+    { "@type": "Question", "name": "Kolik dotazů je zahrnuto v ceně?", "acceptedAnswer": { "@type": "Answer", "text": "Červnový AI Sandbox za 999 Kč zahrnuje 10 000 dotazů měsíčně na třídu s přístupem do 30. června 2026." } }
+  ]
+};
+
 export const metadata: Metadata = {
   title: {
     default: "AIBgin — Bezpečná AI platforma pro děti & školy | EU AI Act Ready",
@@ -108,6 +150,9 @@ export default function RootLayout({
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdOrganization) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdProduct) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSoftwareApp) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdOrganizationExpanded) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFAQ) }} />
       </head>
       <body>
         {children}
