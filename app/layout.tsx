@@ -39,6 +39,7 @@ const jsonLdProduct = {
   name: "Červnový AI Sandbox",
   description: "Bezpečná AI platforma pro třídu až 35 dětí, přístup do 30.6.2026",
   url: SITE_URL,
+  image: "https://aibgin.cz/logo.png",
   offers: {
     "@type": "Offer",
     price: "999",
