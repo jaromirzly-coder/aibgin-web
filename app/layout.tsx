@@ -55,7 +55,7 @@ const jsonLdSoftwareApp = {
   name: "AIBgin",
   applicationCategory: "EducationalApplication",
   operatingSystem: "Web",
-  image: `${SITE_URL}/logo.png`,
+  image: "https://aibgin.cz/logo.png",
   description: "Certifikovaný AI chatbot pro školy, školky a zájmové kroužky. 5 vrstev ochrany AIBguard, fail-closed architektura, krizová detekce 116 111, QR přístup bez registrace dětí.",
   url: SITE_URL,
   offers: {
