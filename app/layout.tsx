@@ -13,9 +13,10 @@ const metaDescription = "AIBgin je bezpečná AI vzdělávací platforma pro dě
 const jsonLdOrganization = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "SAY TO PAY s.r.o. / AIBgin",
+  name: "SAY TO PAY s.r.o.",
   url: SITE_URL,
   logo: `${SITE_URL}/logo.png`,
+  identifier: "08694222",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Zámostní 1155/27",
@@ -23,61 +24,22 @@ const jsonLdOrganization = {
     postalCode: "710 00",
     addressCountry: "CZ",
   },
-  contactPoint: {
-    "@type": "ContactPoint",
-    email: "support@aibgin.cz",
-    contactType: "customer support",
-    telephone: "+420723657885",
-  },
-  identifier: "08694222",
-  sameAs: ["https://aiblab.cz", "https://aibguardian.cz", "https://aibsn.org", "https://aibaimy.cloud"],
-};
-
-const jsonLdProduct = {
-  "@context": "https://schema.org",
-  "@type": "Product",
-  name: "Červnový AI Sandbox",
-  description: "Bezpečná AI platforma pro třídu až 35 dětí, přístup do 30.6.2026",
-  url: SITE_URL,
-  image: "https://aibgin.cz/logo.png",
-  offers: {
-    "@type": "Offer",
-    price: "999",
-    priceCurrency: "CZK",
-    priceValidUntil: "2026-06-30",
-    availability: "https://schema.org/InStock",
-    seller: { "@type": "Organization", name: "SAY TO PAY s.r.o." },
-  },
-};
-
-const jsonLdSoftwareApp = {
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  name: "AIBgin",
-  applicationCategory: "EducationalApplication",
-  operatingSystem: "Web",
-  image: "https://aibgin.cz/logo.png",
-  description: "Certifikovaný AI chatbot pro školy, školky a zájmové kroužky. 5 vrstev ochrany AIBguard, fail-closed architektura, krizová detekce 116 111, QR přístup bez registrace dětí.",
-  url: SITE_URL,
-  offers: {
-    "@type": "Offer",
-    price: "999",
-    priceCurrency: "CZK",
-    availability: "https://schema.org/InStock",
-    seller: { "@type": "Organization", name: "SAY TO PAY s.r.o." }
-  }
-};
-
-const jsonLdOrganizationExpanded = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "SAY TO PAY s.r.o.",
-  url: SITE_URL,
-  logo: `${SITE_URL}/logo.png`,
-  identifier: "08694222",
-  address: { "@type": "PostalAddress", streetAddress: "Zámostní 1155/27", addressLocality: "Slezská Ostrava", postalCode: "710 00", addressCountry: "CZ" },
-  contactPoint: { "@type": "ContactPoint", email: "support@aibgin.cz", contactType: "customer support" },
-  sameAs: ["https://aiblab.cz", "https://aibaimy.cloud", "https://aibsn.org"]
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      email: "support@aibgin.cz",
+      contactType: "customer support",
+      telephone: "+420723657885",
+      availableLanguage: "Czech",
+    },
+    {
+      "@type": "ContactPoint",
+      email: "platby@aibgin.cz",
+      contactType: "billing support",
+      availableLanguage: "Czech",
+    },
+  ],
+  sameAs: ["https://aiblab.cz", "https://aibaimy.cloud", "https://aibsn.org"],
 };
 
 const jsonLdFAQ = {
@@ -150,9 +112,6 @@ export default function RootLayout({
     <html lang="cs" className={inter.className}>
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdOrganization) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdProduct) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSoftwareApp) }} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdOrganizationExpanded) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFAQ) }} />
       </head>
       <body>
