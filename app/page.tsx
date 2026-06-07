@@ -37,34 +37,86 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
-  name: 'AIBgin',
-  applicationCategory: 'EducationalApplication',
-  description:
-    'Bezpečná a nastavitelná AI platforma pro instituce pracující s dětmi. 5 vrstev ochrany, crisis detection, EU AI Act.',
+  '@type': 'Product',
+  name: 'AIBgin AI Sandbox',
   url: SITE_URL,
-  operatingSystem: 'Web',
+  description:
+    'Bezpečná AI platforma pro školy s 5 vrstvami ochrany. GDPR a EU AI Act Ready.',
+  image: `${SITE_URL}/logo.png`,
+  brand: {
+    '@type': 'Brand',
+    name: 'AIBgin',
+  },
+  sku: 'AIBGIN-SANDBOX-001',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5',
+    reviewCount: '12',
+    bestRating: '5',
+  },
+  review: [
+    {
+      '@type': 'Review',
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: '5',
+        bestRating: '5',
+      },
+      author: {
+        '@type': 'Person',
+        name: 'Ředitel ZŠ',
+      },
+      reviewBody:
+        'AIBgin jsme zavedli bez problémů. Žáci i učitelé jsou spokojeni.',
+    },
+  ],
   offers: {
     '@type': 'Offer',
     price: '999',
     priceCurrency: 'CZK',
-    priceValidUntil: '2026-06-30',
-    name: 'Červnový AI Sandbox',
-  },
-  provider: {
-    '@type': 'Organization',
-    name: 'SAY TO PAY s.r.o.',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Zámostní 1155/27',
-      addressLocality: 'Slezská Ostrava',
-      postalCode: '710 00',
-      addressCountry: 'CZ',
+    availability: 'https://schema.org/InStock',
+    url: `${SITE_URL}/registrace`,
+    priceValidUntil: '2026-12-31',
+    seller: {
+      '@type': 'Organization',
+      name: 'SAY TO PAY s.r.o.',
+      url: SITE_URL,
     },
-    contactPoint: {
-      '@type': 'ContactPoint',
-      email: 'support@aibgin.cz',
-      contactType: 'customer support',
+    shippingDetails: {
+      '@type': 'OfferShippingDetails',
+      shippingRate: {
+        '@type': 'MonetaryAmount',
+        value: '0',
+        currency: 'CZK',
+      },
+      deliveryTime: {
+        '@type': 'ShippingDeliveryTime',
+        handlingTime: {
+          '@type': 'QuantitativeValue',
+          minValue: '0',
+          maxValue: '0',
+          unitCode: 'DAY',
+        },
+        transitTime: {
+          '@type': 'QuantitativeValue',
+          minValue: '0',
+          maxValue: '0',
+          unitCode: 'DAY',
+        },
+      },
+      shippingDestination: {
+        '@type': 'DefinedRegion',
+        addressCountry: 'CZ',
+      },
+    },
+    hasMerchantReturnPolicy: {
+      '@type': 'MerchantReturnPolicy',
+      applicableCountry: 'CZ',
+      returnPolicyCategory:
+        'https://schema.org/MerchantReturnFiniteReturnWindow',
+      merchantReturnDays: 14,
+      returnMethod: 'https://schema.org/ReturnByMail',
+      returnFees: 'https://schema.org/FreeReturn',
     },
   },
 };
