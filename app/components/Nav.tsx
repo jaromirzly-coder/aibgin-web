@@ -5,8 +5,8 @@ import NavLinks from './NavLinks';
 export default function Nav() {
   return (
     <>
-      <div className="w-full bg-[#1a1a2e] text-white text-center px-6 py-4 text-base font-medium border-b-4 border-purple-600">
-        Z důvodu nečekaně velkého zájmu jsme uzavřeli přihlašování do pilotního programu AIBgin. Omlouváme se dalším zájemcům — nabídneme pázdninový testovací program, který zveřejníme včas před začátkem prázdnin.
+      <div style={{background:'#7c3aed',color:'#ffffff',textAlign:'center',padding:'18px 24px',fontSize:'16px',fontWeight:600,width:'100%',display:'block'}}>
+        Z důvodu nečekaně velkého zájmu jsme uzavřeli přihlašování do pilotního programu AIBgin. Omlouváme se dalším zájemcům — nabídneme prázdninový testovací program, který zveřejníme včas před začátkem pázdnin.
       </div>
       <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
