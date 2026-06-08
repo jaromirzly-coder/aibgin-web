@@ -199,13 +199,13 @@ export default function CenikPage() {
                     Platnost do 30. 6. 2026 · Žádné automatické obnovení
                     · Po 30. 6. individuální letní nabídka
                   </p>
-                  <CheckoutButton
-                    href="/registrace"
-                    className="inline-block px-10 py-4 rounded-xl font-black text-white text-base transition-opacity hover:opacity-90 shadow-lg shadow-purple-200"
-                    style={{ backgroundColor: '#6C47FF' }}
+                  <a
+                    className="inline-block px-10 py-4 rounded-xl font-black text-white text-base transition-opacity shadow-lg shadow-purple-200"
+                    style={{ backgroundColor: '#6C47FF', opacity: 0.4, cursor: 'not-allowed' }}
+                    onClick={(e) => e.preventDefault()}
                   >
                     Koupit přístup — 999 Kč →
-                  </CheckoutButton>
+                  </a>
                   <p className="text-xs text-gray-400 mt-3">
                     Platba kartou přes Stripe · Faktura okamžitě · DPH 21 % bude připočteno
                   </p>

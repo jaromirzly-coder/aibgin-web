@@ -99,13 +99,13 @@ export default function AIProKrouzkyPage() {
               Vedoucí spustí QR za 10 sekund. Bez registrace, bez papírování.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <CheckoutButton
-                href="/registrace"
-                className="px-8 py-4 rounded-xl font-bold text-white text-base transition-all hover:opacity-90 shadow-lg shadow-purple-200"
-                style={{ backgroundColor: '#6C47FF' }}
+              <a
+                className="px-8 py-4 rounded-xl font-bold text-white text-base transition-all shadow-lg shadow-purple-200"
+                style={{ backgroundColor: '#6C47FF', opacity: 0.4, cursor: 'not-allowed' }}
+                onClick={(e) => e.preventDefault()}
               >
                 Koupit přístup — 999 Kč →
-              </CheckoutButton>
+              </a>
               <Link
                 href="/kontakt"
                 className="px-8 py-4 rounded-xl font-semibold text-white text-base bg-gray-900 hover:bg-gray-800 transition-colors"
@@ -187,13 +187,13 @@ export default function AIProKrouzkyPage() {
                 999 Kč jednorázově. Přístup do 30. iunie 2026. QR kód za 10 sekund.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <CheckoutButton
-                  href="/registrace"
-                  className="px-8 py-3 rounded-xl font-bold text-base bg-white transition-opacity hover:opacity-90"
-                  style={{ color: '#6C47FF' }}
+                <a
+                  className="px-8 py-3 rounded-xl font-bold text-base bg-white transition-opacity"
+                  style={{ color: '#6C47FF', opacity: 0.4, cursor: 'not-allowed' }}
+                  onClick={(e) => e.preventDefault()}
                 >
                   Koupit přístup →
-                </CheckoutButton>
+                </a>
                 <Link
                   href="/kontakt"
                   className="px-8 py-3 rounded-xl font-bold text-base bg-white/10 hover:bg-white/20 text-white transition-colors border border-white/30"
