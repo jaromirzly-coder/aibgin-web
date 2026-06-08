@@ -201,8 +201,7 @@ export default function CenikPage() {
                   </p>
                   <a
                     className="inline-block px-10 py-4 rounded-xl font-black text-white text-base transition-opacity shadow-lg shadow-purple-200"
-                    style={{ backgroundColor: '#6C47FF', opacity: 0.4, cursor: 'not-allowed' }}
-                    onClick={(e) => e.preventDefault()}
+                    style={{ backgroundColor: '#6C47FF', opacity: 0.4, cursor: 'not-allowed', pointerEvents: 'none' }}
                   >
                     Koupit přístup — 999 Kč →
                   </a>

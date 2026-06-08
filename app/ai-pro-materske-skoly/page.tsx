@@ -97,8 +97,7 @@ export default function AIProMaterskeSkolyPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 className="px-8 py-4 rounded-xl font-bold text-white text-base transition-all shadow-lg shadow-purple-200"
-                style={{ backgroundColor: '#6C47FF', opacity: 0.4, cursor: 'not-allowed' }}
-                onClick={(e) => e.preventDefault()}
+                style={{ backgroundColor: '#6C47FF', opacity: 0.4, cursor: 'not-allowed', pointerEvents: 'none' }}
               >
                 Koupit přístup — 999 Kč →
               </a>
@@ -171,8 +170,7 @@ export default function AIProMaterskeSkolyPage() {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   className="px-8 py-3 rounded-xl font-bold text-base bg-white transition-opacity"
-                  style={{ color: '#6C47FF', opacity: 0.4, cursor: 'not-allowed' }}
-                  onClick={(e) => e.preventDefault()}
+                  style={{ color: '#6C47FF', opacity: 0.4, cursor: 'not-allowed', pointerEvents: 'none' }}
                 >
                   Koupit přístup →
                 </a>

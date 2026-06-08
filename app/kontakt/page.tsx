@@ -265,8 +265,7 @@ export default function KontaktPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 className="px-8 py-4 rounded-xl font-bold text-white text-base transition-opacity shadow-lg shadow-purple-200"
-                style={{ backgroundColor: '#6C47FF', opacity: 0.4, cursor: 'not-allowed' }}
-                onClick={(e) => e.preventDefault()}
+                style={{ backgroundColor: '#6C47FF', opacity: 0.4, cursor: 'not-allowed', pointerEvents: 'none' }}
               >
                 Koupit AI Sandbox — 999 Kč →
               </a>
