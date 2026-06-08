@@ -212,6 +212,10 @@ export default function HomePage() {
       <main className="min-h-screen bg-white text-gray-900 font-sans">
         <Nav />
 
+        <div style={{background:'#7c3aed',color:'#fff',textAlign:'center',padding:'40px 24px',fontSize:'20px',fontWeight:'bold',lineHeight:'1.8',width:'100%',boxSizing:'border-box' as 'border-box'}}>
+          ⚠️ Z důvodu nečekaně velkého zájmu jsme uzavřeli přihlašování do pilotního programu AIBgin.<br/>Omlouváme se dalším zájemcům — nabídneme pázdninový testovací program, který zveřejníme včas před začátkem pázdnin.
+        </div>
+
         {/* ── Hero ── */}
         <section
           className="pt-32 pb-24 px-6 text-center relative overflow-hidden"
@@ -286,10 +290,6 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-
-        <div style={{background:'#7c3aed',color:'#fff',textAlign:'center',padding:'40px 24px',fontSize:'20px',fontWeight:'bold',lineHeight:'1.8',width:'100%',boxSizing:'border-box' as 'border-box'}}>
-          ⚠️ Z důvodu nečekaně velkého zájmu jsme uzavřeli přihlašování do pilotního programu AIBgin.<br/>Omlouváme se dalším zájemcům — nabídneme pázdninový testovací program, který zveřejníme včas před začátkem pázdnin.
-        </div>
 
         {/* ── Stats ── */}
         <section className="border-y border-gray-100 bg-white py-12 px-6">
