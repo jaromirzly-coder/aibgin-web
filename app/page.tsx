@@ -210,10 +210,6 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <main className="min-h-screen bg-white text-gray-900 font-sans">
-        
-        <div style={{background:'#7c3aed',color:'#fff',textAlign:'center',padding:'16px 24px',fontSize:'16px',fontWeight:'bold',lineHeight:'1.6',width:'100%',boxSizing:'border-box' as 'border-box'}}>
-          ⚠️ Z důvodu nečekaně velkého zájmu jsme uzavřeli přihlašování do pilotního programu AIBgin.<br/>Omlouváme se dalším zájemcům — nabídneme pázdninový testovací program, který zveřejníme včas před začátkem pázdnin.
-        </div>
         <Nav />
 
         {/* ── Hero ── */}

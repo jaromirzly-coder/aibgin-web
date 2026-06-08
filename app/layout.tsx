@@ -115,7 +115,10 @@ export default function RootLayout({
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFAQ) }} />
       </head>
       <body>
-        {children}
+              <div style={{position:'fixed',top:0,left:0,right:0,zIndex:60,background:'#7c3aed',color:'#fff',textAlign:'center',padding:'10px 24px',fontSize:'14px',fontWeight:'bold',lineHeight:'1.5',width:'100%',boxSizing:'border-box' as 'border-box'}}>
+        ⚠️ Z důvodu nečekaně velkého zájmu jsme uzavřeli přihlašování do pilotního programu AIBgin. Omlouváme se dalším zájemcům — nabídneme pázdninový testovací program, který zveřejníme včas před začátkem pázdnin.
+      </div>
+      {children}
         <CookieConsent />
         <CookieBanner />
       </body>
