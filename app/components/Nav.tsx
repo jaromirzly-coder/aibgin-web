@@ -5,8 +5,8 @@ import NavLinks from './NavLinks';
 export default function Nav() {
   return (
     <>
-      <div style={{background:'#7c3aed',color:'#ffffff',textAlign:'center',padding:'18px 24px',fontSize:'16px',fontWeight:600,width:'100%',display:'block'}}>
-        Z důvodu nečekaně velkého zájmu jsme uzavřeli přihlašování do pilotního programu AIBgin. Omlouváme se dalším zájemcům — nabídneme prázdninový testovací program, který zveřejníme včas před začátkem pázdnin.
+      <div style={{background:'#7c3aed',color:'#ffffff',textAlign:'center',padding:'14px 20px',fontSize:'14px',fontWeight:600,width:'100%',display:'block',lineHeight:'1.4'}}>
+        ⚠️ Pilotní program AIBgin je uzavřen. Připravujeme prázdninový program — zveřejníme před pázdninami.
       </div>
       <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
