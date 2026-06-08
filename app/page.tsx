@@ -209,11 +209,9 @@ export default function HomePage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <section style={{background:'#7c3aed',padding:'40px 20px',textAlign:'center'}}>
-        <p style={{color:'#ffffff',fontSize:'20px',fontWeight:'700',maxWidth:'800px',margin:'0 auto',lineHeight:'1.6'}}>
-          Z důvodu nečekaně velkého zájmu jsme uzavřeli přihlašování do pilotního programu AIBgin. Omlouváme se dalším zájemcům — nabídneme prázdninový testovací program, který zveřejníme včas před začátkem pázdnin.
-        </p>
-      </section>
+      <div style={{background:'#7c3aed',color:'#fff',textAlign:'center',padding:'40px 24px',fontSize:'20px',fontWeight:'bold',lineHeight:'1.8',width:'100%',boxSizing:'border-box' as 'border-box'}}>
+        ⚠️ Z důvodu nečekaně velkého zájmu jsme uzavřeli přihlašování do pilotního programu AIBgin.<br/>Omlouváme se dalším zájemcům — nabídneme pázdninový testovací program, který zveřejníme včas před začátkem pázdnin.
+      </div>
       <main className="min-h-screen bg-white text-gray-900 font-sans">
         <Nav />
 
