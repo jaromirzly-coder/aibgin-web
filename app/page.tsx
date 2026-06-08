@@ -287,9 +287,9 @@ export default function HomePage() {
           </div>
         </section>
 
-      <div style={{background:'#7c3aed',color:'#fff',textAlign:'center',padding:'40px 24px',fontSize:'20px',fontWeight:'bold',lineHeight:'1.8',width:'100%',boxSizing:'border-box' as 'border-box'}}>
-        ⚠️ Z důvodu nečekaně velkého zájmu jsme uzavřeli přihlašování do pilotního programu AIBgin.<br/>Omlouváme se dalším zájemcům — nabídneme pázdninový testovací program, který zveřejníme včas před začátkem pázdnin.
-      </div>
+        <div style={{background:'#7c3aed',color:'#fff',textAlign:'center',padding:'40px 24px',fontSize:'20px',fontWeight:'bold',lineHeight:'1.8',width:'100%',boxSizing:'border-box' as 'border-box'}}>
+          ⚠️ Z důvodu nečekaně velkého zájmu jsme uzavřeli přihlašování do pilotního programu AIBgin.<br/>Omlouváme se dalším zájemcům — nabídneme pázdninový testovací program, který zveřejníme včas před začátkem pázdnin.
+        </div>
 
         {/* ── Stats ── */}
         <section className="border-y border-gray-100 bg-white py-12 px-6">
