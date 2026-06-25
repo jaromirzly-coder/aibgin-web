@@ -8,7 +8,7 @@ const timeline = [
   { year: '2024', text: 'Vznik vize bezpečné AI pro vzdělávání' },
   { year: '2025', text: 'Spuštění AIBSN registru, první AI identita na světě' },
   { year: '2025', text: 'Vývoj AIBgin platformy' },
-  { year: '2026', text: 'První pilotní školy, Červnový AI Sandbox' },
+  { year: '2026', text: 'Prázdninový testovací program 2026' },
 ];
 
 const ecosystem = [
@@ -120,7 +120,7 @@ export default function ONasPage() {
 
         {/* CTA */}
         <section className="bg-gray-50 py-16 px-6 text-center">
-          <p className="text-gray-500 mb-6">Máte zájem o spolupráci nebo pilotní nasazení?</p>
+          <p className="text-gray-500 mb-6">Máte zájem o spolupráci?</p>
           <Link
             href="/kontakt"
             className="inline-block text-sm font-bold text-white px-6 py-3 rounded-xl transition-opacity hover:opacity-90 shadow-sm"

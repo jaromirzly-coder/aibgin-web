@@ -73,15 +73,15 @@ const faqCategories = [
     questions: [
       {
         q: 'Kolik stojí AIBgin?',
-        a: '999 Kč jednorázově za třídu (do 30. 6. 2026). Bez skrytých poplatků. Bez měsíčních plateb. Bez automatického obnovení.',
+        a: '1 490 Kč jednorázově za třídu (červenec + srpen 2026). Bez skrytých poplatků. Bez měsíčních plateb. Bez automatického obnovení.',
       },
       {
         q: 'Platí se za každého žáka zvlášť?',
-        a: 'Ne. 999 Kč je za třídu. Máte 35 žáků? Pořád 999 Kč. 5 tříd? 4 995 Kč.',
+        a: 'Ne. 1 490 Kč je za třídu. Máte 35 žáků? Pořád 1 490 Kč. 5 tříd? 7 450 Kč.',
       },
       {
-        q: 'Co se stane po 30. 6. 2026?',
-        a: 'Přístup vyprší. Bez automatického obnovení. Do 30. 6. vám nabídneme podzimní ceník. Budete vědět, co bude dál, včas.',
+        q: 'Co se stane po prázdninách?',
+        a: 'Přístup vyprší 31. 8. 2026. Bez automatického obnovení. Od září nabídneme podzimní tarify. Budete vědět, co bude dál, včas.',
       },
       {
         q: 'Máte slevy pro více škol nebo sítě?',

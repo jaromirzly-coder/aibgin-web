@@ -605,7 +605,7 @@ export default function HomePage() {
                 Hledáme partnerské školy
               </h2>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed mb-8">
-                Spouštíme pilotní program AIBgin a hledáme první partnerské školy,
+                Spouštíme testovací program AIBgin a hledáme první partnerské školy,
                 které by se chtěly stát součástí této cesty. Budete mít přístup k nejnovějším
                 funkcím, přímý kontakt na náš tým a podíl na tvorbě budoucnosti bezpečné AI
                 v českém vzdělávání.

@@ -3,13 +3,13 @@ import type { Metadata } from 'next';
 const SITE_URL = 'https://aibgin.cz';
 
 export const metadata: Metadata = {
-  title: 'Registrace | AIBgin — Červnový AI Sandbox',
-  description: 'Registrace do Červnového AI Sandboxu — bezpečná AI pro vaši třídu za 999 Kč. Přístup do 30. 6. 2026, QR kód bez registrace dětí, AIBguard audit, certifikát pilotní školy.',
+  title: 'Registrace | AIBgin — Prázdninový testovací program',
+  description: 'Registrace do Prázdninového testovacího programu AIBgin — bezpečná AI pro vaši třídu za 1 490 Kč. Platnost červenec + srpen 2026, QR kód bez registrace dětí, AIBguard audit, certifikát AIBgin.',
   metadataBase: new URL(SITE_URL),
   alternates: { canonical: `${SITE_URL}/registrace` },
   openGraph: {
-    title: 'Registrace | AIBgin — Červnový AI Sandbox',
-    description: 'Registrace do Červnového AI Sandboxu — bezpečná AI pro vaši třídu za 999 Kč. Přístup do 30. 6. 2026, QR kód bez registrace dětí, AIBguard audit, certifikát pilotní školy.',
+    title: 'Registrace | AIBgin — Prázdninový testovací program',
+    description: 'Registrace do Prázdninového testovacího programu AIBgin — bezpečná AI pro vaši třídu za 1 490 Kč. Platnost červenec + srpen 2026, QR kód bez registrace dětí, AIBguard audit, certifikát AIBgin.',
     url: `${SITE_URL}/registrace`,
     siteName: 'AIBgin',
     locale: 'cs_CZ',
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Registrace | AIBgin — Červnový AI Sandbox',
-    description: 'Registrace do Červnového AI Sandboxu — bezpečná AI pro vaši třídu za 999 Kč. Přístup do 30. 6. 2026, QR kód bez registrace dětí, AIBguard audit, certifikát pilotní školy.',
+    title: 'Registrace | AIBgin — Prázdninový testovací program',
+    description: 'Registrace do Prázdninového testovacího programu AIBgin — bezpečná AI pro vaši třídu za 1 490 Kč. Platnost červenec + srpen 2026, QR kód bez registrace dětí, AIBguard audit, certifikát AIBgin.',
     images: [`${SITE_URL}/logo.png`],
   },
 };

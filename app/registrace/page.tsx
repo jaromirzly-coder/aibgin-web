@@ -67,10 +67,10 @@ export default function RegistracePage() {
             className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6"
             style={{ backgroundColor: '#EDE9FF', color: '#6C47FF' }}
           >
-            ⏰ Pouze do 30. června 2026
+            🌞 Prázdniny 2026 · červenec + srpen
           </div>
           <h1 className="text-4xl md:text-5xl font-black leading-tight tracking-tight mb-4">
-            Registrace — Červnový AI Sandbox
+            Registrace — Prázdninový testovací program
           </h1>
           <p className="text-gray-500 text-base">
             Vyplňte údaje instituce a přejdeme k platbě. Celé to trvá 2 minuty.
@@ -187,7 +187,7 @@ export default function RegistracePage() {
                 </span>
               </div>
               <p className="mt-1.5 text-xs text-amber-700">
-                Pilotní AIBSN číslo platné do 30. 6. 2026. Na podzim 2026 si zakoupíte vlastní
+                AIBSN číslo platné po celé prázdniny (červenec + srpen 2026). Na podzim 2026 si zakoupíte vlastní
                 unikátní AIBSN číslo přidělené vaší instituci.
               </p>
             </div>
@@ -200,7 +200,7 @@ export default function RegistracePage() {
                 className="w-full px-8 py-4 rounded-xl font-black text-white text-base transition-opacity hover:opacity-90 shadow-lg shadow-purple-200 disabled:opacity-60 disabled:cursor-not-allowed"
                 style={{ backgroundColor: '#6C47FF' }}
               >
-                {submitting ? 'Přesměrování na platbu…' : 'Přejít k platbě — 999 Kč →'}
+                {submitting ? 'Přesměrování na platbu…' : 'Přejít k platbě — 1 490 Kč →'}
               </button>
               <p className="text-center text-xs text-gray-400 mt-3">
                 Platba kartou přes Stripe · Faktura okamžitě · DPH 21 % bude připočteno
@@ -214,7 +214,7 @@ export default function RegistracePage() {
             className="mt-10 rounded-2xl p-6 border"
             style={{ borderColor: '#DDD6FE', backgroundColor: '#FAF9FF' }}
           >
-            <h3 className="font-bold text-sm mb-3 text-gray-700">Co získáte za 999 Kč</h3>
+            <h3 className="font-bold text-sm mb-3 text-gray-700">Co získáte za 1 490 Kč</h3>
             <ul className="space-y-2 text-sm text-gray-600">
               {[
                 '1 třída nebo kroužek · 20–35 dětí',
@@ -222,8 +222,8 @@ export default function RegistracePage() {
                 'AIBguard real-time audit',
                 'QR kód přístup bez registrace dětí',
                 'Crisis detection + Linka bezpečí 116 111',
-                'Platnost do 30. 6. 2026',
-                '🏅 Certifikát pilotní školy AIBgin',
+                'Platnost červenec + srpen 2026',
+                '🏅 Certifikát AIBgin',
               ].map((f) => (
                 <li key={f} className="flex items-start gap-2">
                   <span

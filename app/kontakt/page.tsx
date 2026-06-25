@@ -267,7 +267,7 @@ export default function KontaktPage() {
                 className="px-8 py-4 rounded-xl font-bold text-white text-base transition-opacity shadow-lg shadow-purple-200"
                 style={{ backgroundColor: '#6C47FF', opacity: 0.4, cursor: 'not-allowed', pointerEvents: 'none' }}
               >
-                Koupit AI Sandbox — 999 Kč →
+                Koupit prázdninový přístup — 1 490 Kč →
               </a>
               <a
                 href="https://app.aibgin.cz/demo"

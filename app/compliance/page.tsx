@@ -412,22 +412,22 @@ export default function CompliancePage() {
           </div>
         </section>
 
-        {/* ── Certifikát pilotní školy ── */}
+        {/* ── Certifikát AIBgin ── */}
         <section className="py-20 px-6 bg-gray-50">
           <div className="max-w-3xl mx-auto">
             <div
               className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6"
               style={{ backgroundColor: '#FEF9C3', color: '#92400E' }}
             >
-              🏅 Pilotní program
+              🏅 Prázdninový testovací program
             </div>
             <h2 className="text-3xl md:text-4xl font-black mb-6">
-              Certifikát pilotní školy AIBgin
+              Certifikát AIBgin
             </h2>
             <div className="space-y-5 text-gray-600 leading-relaxed">
               <p>
-                Každá škola, která se zapojí do pilotního programu <strong className="text-gray-900">Červnový AI Sandbox</strong>,
-                obdrží <strong className="text-gray-900">Certifikát pilotní školy AIBgin</strong> potvrzující
+                Každá škola, která se zapojí do <strong className="text-gray-900">Prázdninového testovacího programu</strong>,
+                obdrží <strong className="text-gray-900">Certifikát AIBgin</strong> potvrzující
                 účast v prvním certifikovaném AI vzdělávacím programu v ČR splňujícím požadavky EU AI Act.
               </p>
 
@@ -437,7 +437,7 @@ export default function CompliancePage() {
                 style={{ borderColor: '#FDE68A', backgroundColor: '#FFFBEB' }}
               >
                 <div className="text-4xl mb-3">🏅</div>
-                <p className="text-lg font-black text-gray-900 mb-1">Certifikát pilotní školy AIBgin</p>
+                <p className="text-lg font-black text-gray-900 mb-1">Certifikát AIBgin</p>
                 <p className="text-sm text-gray-500 mb-4">
                   První certifikovaný AI vzdělávací program v ČR · EU AI Act Ready
                 </p>
@@ -458,7 +458,7 @@ export default function CompliancePage() {
                   'AIBSN číslo pilotu: AIBSN-CZ-EDU-DEMO-2026-001',
                   'Certifikát je vydán společností SAY TO PAY s.r.o.',
                   'Certifikát je volně ověřitelný — vhodný pro rodiče i ČŠI',
-                  'Součástí každého zakoupeného přístupu Červnový AI Sandbox',
+                  'Součástí každého zakoupeného prázdninového přístupu AIBgin',
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-sm">
                     <span
@@ -494,7 +494,7 @@ export default function CompliancePage() {
                 className="px-7 py-3.5 rounded-xl font-bold bg-white transition-opacity hover:opacity-90"
                 style={{ color: '#6C47FF' }}
               >
-                Koupit přístup — 999 Kč →
+                Koupit prázdninový přístup — 1 490 Kč →
               </Link>
               <Link
                 href="/kontakt"

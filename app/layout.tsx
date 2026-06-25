@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin", "latin-ext"] });
 
 const SITE_URL = "https://aibgin.cz";
 
-const metaDescription = "AIBgin je bezpečná AI vzdělávací platforma pro děti a školy. 5 vrstev ochrany, QR přístup, real-time audit. Certifikovaná podle EU AI Act. Červnový AI Sandbox od 999 Kč.";
+const metaDescription = "AIBgin je bezpečná AI vzdělávací platforma pro děti a školy. 5 vrstev ochrany, QR přístup, real-time audit. Certifikovaná podle EU AI Act. Prázdninový testovací program od 1 490 Kč.";
 
 const jsonLdOrganization = {
   "@context": "https://schema.org",
@@ -50,7 +50,7 @@ const jsonLdFAQ = {
     { "@type": "Question", "name": "Je AIBgin v souladu s EU AI Act a GDPR?", "acceptedAnswer": { "@type": "Answer", "text": "Ano. AIBgin bylo navrženo v souladu s EU 2024/1689. AI systémy ve vzdělávání jsou HIGH-RISK — AIBgin splňuje všechny požadavky: risk assessment, data governance, transparentnost, lidský dohled." } },
     { "@type": "Question", "name": "Co se stane při detekci krizové situace?", "acceptedAnswer": { "@type": "Answer", "text": "4. vrstva ochrany detekuje krizové vzorce. Správce je okamžitě notifikován a systém zahájí protokol pro kontakt s Linkou bezpečí 116 111." } },
     { "@type": "Question", "name": "Jak rychle lze AIBgin nastavit?", "acceptedAnswer": { "@type": "Answer", "text": "Nastavení trvá 30 minut. První QR kód pro třídu lze mít za hodinu od registrace." } },
-    { "@type": "Question", "name": "Kolik dotazů je zahrnuto v ceně?", "acceptedAnswer": { "@type": "Answer", "text": "Červnový AI Sandbox za 999 Kč zahrnuje 10 000 dotazů měsíčně na třídu s přístupem do 30. června 2026." } }
+    { "@type": "Question", "name": "Kolik dotazů je zahrnuto v ceně?", "acceptedAnswer": { "@type": "Answer", "text": "Prázdninový testovací program za 1 490 Kč zahrnuje 10 000 dotazů měsíčně na třídu s přístupem po celé prázdniny (červenec + srpen 2026)." } }
   ]
 };
 
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     "AIBguard",
     "vzdělávací AI",
     "AI chatbot pro děti",
-    "Červnový AI Sandbox",
+    "Prázdninový testovací program",
   ],
   alternates: {
     canonical: SITE_URL,

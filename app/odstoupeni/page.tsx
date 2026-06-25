@@ -91,7 +91,7 @@ export default function OdstoupeniPage() {
 Komu: SAY TO PAY s.r.o., platby@aibgin.cz
 
 Oznamuji/oznamujeme (*), že odstupuji/odstupujeme (*) od smlouvy
-o nákupu produktu AIBgin — Červnový AI Sandbox.
+o nákupu produktu AIBgin — Prázdninový testovací program.
 
 Datum objednávky: ......................
 Číslo transakce (ze Stripe potvrzení): ......................

@@ -99,7 +99,7 @@ export default function AIProMaterskeSkolyPage() {
                 className="px-8 py-4 rounded-xl font-bold text-white text-base transition-all shadow-lg shadow-purple-200"
                 style={{ backgroundColor: '#6C47FF', opacity: 0.4, cursor: 'not-allowed', pointerEvents: 'none' }}
               >
-                Koupit přístup — 999 Kč →
+                Koupit prázdninový přístup — 1 490 Kč →
               </a>
               <Link
                 href="/kontakt"
@@ -165,7 +165,7 @@ export default function AIProMaterskeSkolyPage() {
             <div className="rounded-2xl p-8 text-center" style={{ background: 'linear-gradient(135deg, #6C47FF 0%, #9B7AFF 100%)' }}>
               <h2 className="text-2xl font-black mb-4 text-white">Připraveni začít?</h2>
               <p className="text-white/90 mb-6 max-w-xl mx-auto">
-                999 Kč jednorázově. Přístup do 30. iunie 2026. Onboarding za 5 minut.
+                1 490 Kč jednorázově. Platnost červenec + srpen 2026. Onboarding za 5 minut.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

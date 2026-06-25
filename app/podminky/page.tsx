@@ -56,10 +56,10 @@ export default function PodminkyPage() {
               <h2 className="text-xl font-black text-gray-900 mb-3">2. Předmět smlouvy</h2>
               <p>
                 Předmětem smlouvy je poskytnutí přístupu k SaaS platformě <strong>AIBgin</strong> — bezpečné a nastavitelné
-                AI platformě pro instituce pracující s dětmi. Produkt <strong>Červnový AI Sandbox</strong> zahrnuje:
+                AI platformě pro instituce pracující s dětmi. Produkt <strong>Prázdninový testovací program</strong> zahrnuje:
               </p>
               <ul className="list-disc pl-5 space-y-1 mt-2">
-                <li>Přístup k platformě AIBgin po dobu trvání AI Sandboxu do 30. června 2026</li>
+                <li>Přístup k platformě AIBgin po dobu trvání programu (červenec + srpen 2026)</li>
                 <li>10 000 dotazů na třídu za měsíc · po vyčerpání možnost dokoupení</li>
                 <li>5 vrstev ochrany obsahu, crisis detection (Linka bezpečí 116 111), audit log</li>
                 <li>Nastavení AI asistenta pro konkrétní instituci (školku, školu, kroužek)</li>
@@ -71,7 +71,7 @@ export default function PodminkyPage() {
             <div>
               <h2 className="text-xl font-black text-gray-900 mb-3">3. Cena a platba</h2>
               <p>
-                Cena produktu <strong>Červnový AI Sandbox</strong> je <strong>999 Kč jednorázově</strong> (vč. DPH dle platné sazby).
+                Cena produktu <strong>Prázdninový testovací program</strong> je <strong>1 490 Kč jednorázově</strong> (vč. DPH dle platné sazby).
                 Platba je realizována prostřednictvím platební brány <strong>Stripe</strong>, která akceptuje platební karty
                 (Visa, Mastercard, American Express) a další platební metody dostupné v rozhraní platební brány.
               </p>
@@ -85,7 +85,7 @@ export default function PodminkyPage() {
               <h2 className="text-xl font-black text-gray-900 mb-3">4. Přístup ke službě</h2>
               <p>
                 Přístup k platformě AIBgin je aktivován do 24 hodin od připsání platby. Přístup trvá do
-                <strong> 30. června 2026</strong> včetně, poté je přístup deaktivován. Poskytovatel
+                <strong> 31. srpna 2026</strong> včetně, poté je přístup deaktivován. Poskytovatel
                 si vyhrazuje právo nabídnout prodloužení přístupu za podmínek aktuálního ceníku.
               </p>
             </div>
@@ -143,7 +143,7 @@ export default function PodminkyPage() {
             <div>
               <h2 className="text-xl font-black text-gray-900 mb-3">9. Limit používání</h2>
               <p>
-                Tarif <strong>Červnový AI Sandbox</strong> zahrnuje <strong>10 000 dotazů na třídu za měsíc</strong>.
+                Tarif <strong>Prázdninový testovací program</strong> zahrnuje <strong>10 000 dotazů na třídu za měsíc</strong>.
                 Po vyčerpání limitu je služba pozastavena. Obnovení přístupu je možné zakoupením dalšího balíčku
                 na <a href="https://app.aibgin.cz" className="underline" style={{ color: '#6C47FF' }}>app.aibgin.cz</a> nebo
                 na <a href="mailto:platby@aibgin.cz" className="underline" style={{ color: '#6C47FF' }}>platby@aibgin.cz</a>.
