@@ -2,28 +2,27 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
-import CheckoutButton from '../components/CheckoutButton';
 
 const SITE_URL = 'https://aibgin.cz';
 
 export const metadata: Metadata = {
-  title: 'Ceník | AIBgin — Červnový AI Sandbox 999 Kč',
+  title: 'Ceník | AIBgin — Prázdninový testovací program 1 490 Kč',
   description:
-    'Červnový AI Sandbox pro školy: 999 Kč jednorázově, platnost do 30. 6. 2026, bez trialu, bez automatického obnovení. 1 třída, 20–35 dětí, AIBguard, QR přístup, crisis detection.',
+    'Prázdninový testovací program AIBgin: 1 490 Kč jednorázově bez DPH. Plný přístup pro 1 třídu nebo kroužek po celé prázdniny (červenec + srpen 2026). AIBguard, QR přístup, crisis detection.',
   metadataBase: new URL(SITE_URL),
   alternates: { canonical: `${SITE_URL}/cenik` },
   keywords: [
     'AIBgin cena',
     'AI pro školy cena',
-    'červnový AI sandbox',
+    'prázdninový AI program',
     'AI chatbot pro třídu',
-    '999 Kč AI škola',
+    '1490 Kč AI škola',
     'bezpečná AI pro děti cena',
   ],
   openGraph: {
-    title: 'Ceník | AIBgin — Červnový AI Sandbox 999 Kč',
+    title: 'Ceník | AIBgin — Prázdninový testovací program 1 490 Kč',
     description:
-      'Červnový AI Sandbox: 999 Kč jednorázově do 30. 6. 2026. Zahrnuje 1 třídu, AIBguard, QR přístup, crisis detection a certifikát pilotní školy.',
+      'Prázdninový testovací program: 1 490 Kč jednorázově, červenec + srpen 2026. 1 třída, AIBguard, QR přístup, crisis detection.',
     url: `${SITE_URL}/cenik`,
     siteName: 'AIBgin',
     locale: 'cs_CZ',
@@ -39,21 +38,21 @@ const jsonLd = {
   isPartOf: { '@type': 'WebSite', url: SITE_URL },
   mainEntity: {
     '@type': 'Product',
-    name: 'Červnový AI Sandbox',
+    name: 'AIBgin Prázdninový testovací program',
     description:
-      'Přístup k AIBginu pro jednu třídu nebo kroužek, platnost do 30. 6. 2026. Zahrnuje AIBguard, QR přístup, crisis detection, audit log a certifikát pilotní školy.',
+      'Přístup k AIBginu pro jednu třídu nebo kroužek po celé prázdniny (červenec + srpen 2026). Zahrnuje AIBguard, QR přístup, crisis detection, audit log a certifikát AIBgin.',
     offers: {
       '@type': 'Offer',
-      price: '999',
+      price: '1490',
       priceCurrency: 'CZK',
-      priceValidUntil: '2026-06-30',
+      priceValidUntil: '2026-08-31',
       availability: 'https://schema.org/InStock',
       seller: { '@type': 'Organization', name: 'SAY TO PAY s.r.o.' },
     },
   },
 };
 
-const sandboxFeatures = [
+const programFeatures = [
   '1 třída nebo kroužek',
   '20–35 dětí · 1 pedagog',
   '10 000 dotazů / měsíc · po vyčerpání možnost dokoupení',
@@ -62,7 +61,7 @@ const sandboxFeatures = [
   'Crisis detection + Linka bezpečí 116 111',
   'Základní audit log',
   'Onboarding + bezpečnostní konfigurace',
-  '🏅 Certifikát pilotní školy AIBgin',
+  '🏅 Certifikát AIBgin',
 ];
 
 const septemberPlans = [
@@ -99,12 +98,12 @@ const septemberPlans = [
 
 const faqs = [
   {
-    q: 'Proč 999 Kč a ne více?',
-    a: 'Červnový AI Sandbox je pilotní nabídka navržená tak, aby si každá škola mohla AIBgin vyzkoušet bez rizika. Chceme, aby rozhodnutí o přijetí AI do výuky bylo snadné a dostupné.',
+    q: 'Co je zahrnuto v prázdninovém programu?',
+    a: 'Prázdninový testovací program zahrnuje plný přístup pro 1 třídu nebo kroužek po celé prázdniny (červenec + srpen 2026): 10 000 dotazů/měsíc, AIBguard, QR kód bez registrace dětí, crisis detection, audit log a certifikát AIBgin.',
   },
   {
-    q: 'Co se stane po 30. 6. 2026?',
-    a: 'Přístup vyprší. Žádné automatické obnovení, žádné strhávání peněz. Do 30. 6. vám nabídneme individuální letní nabídku pro testování bez žáků — zájemci napište na hello@aibgin.cz',
+    q: 'Co se stane po prázdninách?',
+    a: 'Přístup vyprší 31. 8. 2026. Žádné automatické obnovení, žádné strhávání peněz. Od září 2026 budou k dispozici podzimní tarify (Starter, School, Enterprise). Zájemci mohou napsat na <a href="mailto:hello@aibgin.cz" style="color:#6C47FF">hello@aibgin.cz</a>.',
   },
   {
     q: 'Potřebuji souhlas rodičů?',
@@ -137,9 +136,9 @@ export default function CenikPage() {
           <div className="max-w-3xl mx-auto">
             <div
               className="inline-block text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6"
-              style={{ backgroundColor: '#EDE9FF', color: '#6C47FF' }}
+              style={{ backgroundColor: '#FEF3C7', color: '#92400E' }}
             >
-              ⏰ Pouze do 30. června 2026
+              🌞 Prázdniny 2026 · červenec + srpen
             </div>
             <h1 className="text-5xl md:text-6xl font-black leading-tight tracking-tight mb-6">
               Transparentní ceny.
@@ -161,49 +160,49 @@ export default function CenikPage() {
           </div>
         </section>
 
-        {/* ── Sandbox Card ── */}
+        {/* ── Prázdninový program Card ── */}
         <section className="py-16 px-6">
           <div className="max-w-4xl mx-auto">
             <div
-              className="relative rounded-3xl p-10 md:p-14 border-2 shadow-xl shadow-purple-100"
+              className="relative rounded-3xl p-10 md:p-14 border-2 shadow-xl shadow-amber-100"
               style={{
-                borderColor: '#6C47FF',
-                background: 'linear-gradient(160deg, #f5f3ff 0%, #ffffff 100%)',
+                borderColor: '#F59E0B',
+                background: 'linear-gradient(160deg, #fffbeb 0%, #ffffff 100%)',
               }}
             >
               <div
                 className="absolute -top-5 left-1/2 -translate-x-1/2 text-white text-sm font-black px-6 py-2 rounded-full shadow-lg whitespace-nowrap"
-                style={{ backgroundColor: '#6C47FF' }}
+                style={{ backgroundColor: '#F59E0B' }}
               >
-                ⏰ Pouze do 30. června 2026
+                🌞 Prázdninový testovací program
               </div>
 
               <div className="flex flex-col lg:flex-row items-start gap-10 mt-4">
                 <div className="flex-1">
                   <div
                     className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4"
-                    style={{ backgroundColor: '#EDE9FF', color: '#6C47FF' }}
+                    style={{ backgroundColor: '#FEF3C7', color: '#92400E' }}
                   >
-                    Červnový AI Sandbox
+                    Červenec + srpen 2026
                   </div>
                   <h2 className="text-4xl md:text-5xl font-black mb-2 leading-tight">
-                    <span style={{ color: '#6C47FF' }}>999 Kč</span>
+                    <span style={{ color: '#F59E0B' }}>1 490 Kč</span>
                     <span className="text-gray-400 text-lg font-normal"> jednorázově · bez DPH</span>
                   </h2>
                   <p className="text-gray-600 mb-2 leading-relaxed">
-                    Za cenu jednoho oběda ve školní jídelně měsíčně (~40–60 Kč na dítě)
-                    máte legislativně krytý AI nástroj pro celou třídu — s certifikátem
-                    pro rodiče i kontrolu ČŠI.
+                    Vyzkoušejte AIBgin přes celé prázdniny. Plný přístup pro 1 třídu nebo kroužek —
+                    s certifikátem pro rodiče i kontrolu ČŠI.
                   </p>
                   <p className="text-sm text-gray-400 mb-8">
-                    Platnost do 30. 6. 2026 · Žádné automatické obnovení
-                    · Po 30. 6. individuální letní nabídka
+                    Platnost červenec + srpen 2026 · Žádné automatické obnovení
+                    · Od září individuální podzimní tarif
                   </p>
                   <a
-                    className="inline-block px-10 py-4 rounded-xl font-black text-white text-base transition-opacity shadow-lg shadow-purple-200"
-                    style={{ backgroundColor: '#6C47FF', opacity: 0.4, cursor: 'not-allowed', pointerEvents: 'none' }}
+                    href="/registrace"
+                    className="inline-block px-10 py-4 rounded-xl font-black text-white text-base transition-opacity hover:opacity-90 shadow-lg"
+                    style={{ backgroundColor: '#F59E0B' }}
                   >
-                    Koupit přístup — 999 Kč →
+                    Koupit prázdninový přístup — 1 490 Kč →
                   </a>
                   <p className="text-xs text-gray-400 mt-3">
                     Platba kartou přes Stripe · Faktura okamžitě · DPH 21 % bude připočteno
@@ -213,15 +212,15 @@ export default function CenikPage() {
                 <div className="shrink-0 w-full lg:w-auto">
                   <div
                     className="rounded-2xl p-6 border"
-                    style={{ borderColor: '#DDD6FE', backgroundColor: '#FAF9FF' }}
+                    style={{ borderColor: '#FDE68A', backgroundColor: '#FFFBEB' }}
                   >
                     <h3 className="font-bold text-sm mb-4 text-gray-700">Co je zahrnuto</h3>
                     <ul className="space-y-3">
-                      {sandboxFeatures.map((f) => (
+                      {programFeatures.map((f) => (
                         <li key={f} className="flex items-start gap-3 text-gray-700">
                           <span
                             className="mt-0.5 shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold text-white"
-                            style={{ backgroundColor: '#6C47FF' }}
+                            style={{ backgroundColor: '#F59E0B' }}
                           >
                             ✓
                           </span>
@@ -250,8 +249,10 @@ export default function CenikPage() {
                 Podzimní tarify
               </h2>
               <div className="text-xs text-gray-400 mt-2 max-w-xl mx-auto text-center">
-                <p className="text-sm font-semibold text-gray-600 mb-1">Co se stane po 30. 6. 2026?</p>
-                <p>Přístup vyprší. Žádné automatické obnovení, žádné strhávání peněz. Do 30. 6. vám nabídneme individuální letní nabídku pro testování bez žáků, zájemci napište na <a href="mailto:hello@aibgin.cz" style={{color:'#6C47FF'}}>hello@aibgin.cz</a></p>
+                <p className="text-sm text-gray-500 mb-1">
+                  Od září 2026 nasazujeme pravidelné měsíční tarify pro školy a instituce.
+                </p>
+                <p>Zájemci: <a href="mailto:hello@aibgin.cz" style={{color:'#6C47FF'}}>hello@aibgin.cz</a></p>
               </div>
             </div>
             <div className="grid md:grid-cols-3 gap-6">

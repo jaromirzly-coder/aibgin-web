@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'AIBgin — Bezpečná a nastavitelná AI pro děti',
     description:
-      'Certifikovaný AI chatbot pro školy a instituce. 5 vrstev ochrany, QR přístup bez registrace, linka bezpečí 116 111. Červnový AI Sandbox 999 Kč.',
+      'Certifikovaný AI chatbot pro školy a instituce. 5 vrstev ochrany, QR přístup bez registrace, linka bezpečí 116 111. Prázdninový testovací program 1 490 Kč.',
     url: SITE_URL,
     siteName: 'AIBgin',
     locale: 'cs_CZ',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Product',
-  name: 'AIBgin AI Sandbox',
+  name: 'AIBgin Prázdninový testovací program',
   url: SITE_URL,
   description:
     'Bezpečná AI platforma pro školy s 5 vrstvami ochrany. GDPR a EU AI Act Ready.',
@@ -72,7 +72,7 @@ const jsonLd = {
   ],
   offers: {
     '@type': 'Offer',
-    price: '999',
+    price: '1490',
     priceCurrency: 'CZK',
     availability: 'https://schema.org/InStock',
     url: `${SITE_URL}/registrace`,
@@ -264,10 +264,11 @@ export default function HomePage() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                className="px-8 py-4 rounded-xl font-bold text-white text-base transition-all shadow-lg shadow-purple-200"
-                style={{ backgroundColor: '#6C47FF', opacity: 0.4, cursor: 'not-allowed', pointerEvents: 'none' }}
+                href="/cenik"
+                className="px-8 py-4 rounded-xl font-bold text-white text-base transition-all shadow-lg shadow-purple-200 hover:opacity-90"
+                style={{ backgroundColor: '#6C47FF' }}
               >
-                🚀 Červnový AI Sandbox — 999 Kč
+                🌞 Prázdninový program — 1 490 Kč
               </a>
               <a
                 href="https://app.aibgin.cz/demo"
@@ -282,7 +283,7 @@ export default function HomePage() {
               <span>✓ GDPR & EU AI Act</span>
               <span>✓ 10 000 dotazů / měsíc na třídu</span>
               <span>✓ Linka bezpečí 116 111</span>
-              <span>✓ Certifikát pilotní školy</span>
+              <span>✓ Certifikát AIBgin</span>
             </div>
           </div>
         </section>
