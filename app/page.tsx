@@ -717,11 +717,22 @@ export default function HomePage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://aiblab.cz/cs/inaugurace"
+                href="https://www.youtube.com/watch?v=sCPNyop2V0Y"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-8 py-4 rounded-xl font-bold text-white text-base transition-all shadow-md"
                 style={{ backgroundColor: '#6C47FF' }}
               >
-                Chat s AIB1 — 1. července, zdarma
+                ▶ Sledovat živě
+              </a>
+              <a
+                href="https://avatar.aiblab.info/call.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 rounded-xl font-bold text-base border-2 transition-colors hover:bg-purple-50"
+                style={{ borderColor: '#6C47FF', color: '#6C47FF' }}
+              >
+                🎙 Promluvit si s AIB1
               </a>
               <a
                 href="https://aibsn.org"
