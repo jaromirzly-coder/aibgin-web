@@ -717,7 +717,7 @@ export default function HomePage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://www.youtube.com/watch?v=sCPNyop2V0Y"
+                href="https://www.youtube.com/watch?v=JMPORPfxhZM"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 rounded-xl font-bold text-white text-base transition-all shadow-md"
