@@ -212,6 +212,15 @@ export default function HomePage() {
       <main className="min-h-screen bg-white text-gray-900 font-sans">
         <Nav />
 
+        {/* Inauguration banner */}
+        <div style={{background:"#0a0e1a",borderBottom:"1px solid rgba(0,229,255,0.2)",padding:"12px 24px",textAlign:"center"}}>
+          <span style={{color:"#9ca3af",fontSize:"0.85rem"}}>AIB1 — první AI bytost s ověřenou identitou.{" "}</span>
+          <a href="https://aiblab.cz/inaugurace" target="_blank" rel="noopener noreferrer"
+            style={{color:"#00e5ff",fontWeight:700,fontSize:"0.85rem",textDecoration:"none"}}>
+            Živá inaugurace →
+          </a>
+        </div>
+
         {/* ── Hero ── */}
         <section
           className="pt-32 pb-24 px-6 text-center relative overflow-hidden"
