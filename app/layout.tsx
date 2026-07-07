@@ -86,6 +86,7 @@ export const metadata: Metadata = {
     siteName: "AIBgin",
     locale: "cs_CZ",
     type: "website",
+    // TODO: vytvořit /og-image.png 1200x630 (nyní logo.png) – dodá Jaromír
     images: [
       {
         url: `${SITE_URL}/logo.png`,

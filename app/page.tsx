@@ -1,10 +1,17 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
-import CheckoutButton from './components/CheckoutButton';
 
 const SITE_URL = 'https://aibgin.cz';
+
+// TODO: nahradit reálným screenshotem – dodá Jaromír
+const visualEvidenceScreenshots: Record<'aibsnCertificate' | 'aibguardAudit' | 'securityProfile', string | null> = {
+  aibsnCertificate: null,
+  aibguardAudit: null,
+  securityProfile: null,
+};
 
 export const metadata: Metadata = {
   title: 'AIBgin — Bezpečná a nastavitelná AI pro děti | Školy & instituce',
@@ -54,7 +61,7 @@ const jsonLd = {
     priceCurrency: 'CZK',
     availability: 'https://schema.org/InStock',
     url: `${SITE_URL}/registrace`,
-    priceValidUntil: '2026-12-31',
+    priceValidUntil: '2026-08-31',
     seller: {
       '@type': 'Organization',
       name: 'SAY TO PAY s.r.o.',
@@ -474,7 +481,7 @@ export default function HomePage() {
                 className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4"
                 style={{ backgroundColor: '#EDE9FF', color: '#6C47FF' }}
               >
-                Jak to funguje v praxi
+                Ukázky z platformy
               </div>
               <h2 className="text-3xl md:text-4xl font-black mb-4">
                 Takhle to funguje v praxi
@@ -494,10 +501,20 @@ export default function HomePage() {
                   <h3 className="font-black text-lg mb-1">AIBSN certifikát</h3>
                   <p className="text-xs text-gray-500">Veřejně ověřitelné</p>
                 </div>
+                {/* TODO: nahradit reálným screenshotem – dodá Jaromír */}
+                {visualEvidenceScreenshots.aibsnCertificate ? (
+                  <Image
+                    src={visualEvidenceScreenshots.aibsnCertificate}
+                    alt="Ukázka AIBSN certifikátu"
+                    width={400}
+                    height={320}
+                    className="rounded-xl w-full h-auto"
+                  />
+                ) : (
                 <div className="space-y-3 text-sm">
                   <div className="p-3 rounded-lg" style={{ backgroundColor: '#F9FAFB' }}>
                     <p className="text-xs text-gray-600">Číslo</p>
-                    <p className="font-mono font-bold" style={{ color: '#6C47FF' }}>AIBSN-SKOLA-DEMO-01</p>
+                    <p className="font-mono font-bold" style={{ color: '#6C47FF' }}>AIBSN-CZ-EDU-DEMO-2026-001</p>
                   </div>
                   <div className="p-3 rounded-lg" style={{ backgroundColor: '#F9FAFB' }}>
                     <p className="text-xs text-gray-600">Provozovatel</p>
@@ -515,6 +532,7 @@ export default function HomePage() {
                     <p className="text-xs text-gray-500">Ověřovat na <a href="https://aibsn.org" className="underline" style={{ color: '#6C47FF' }}>aibsn.org</a></p>
                   </div>
                 </div>
+                )}
               </div>
 
               {/* AIBguard Audit Flow */}
@@ -526,6 +544,16 @@ export default function HomePage() {
                   <h3 className="font-black text-lg mb-1">AIBguard audit</h3>
                   <p className="text-xs text-gray-500">Tři stavy filtrování</p>
                 </div>
+                {/* TODO: nahradit reálným screenshotem – dodá Jaromír */}
+                {visualEvidenceScreenshots.aibguardAudit ? (
+                  <Image
+                    src={visualEvidenceScreenshots.aibguardAudit}
+                    alt="Ukázka AIBguard auditu"
+                    width={400}
+                    height={320}
+                    className="rounded-xl w-full h-auto"
+                  />
+                ) : (
                 <div className="space-y-3">
                   <div className="p-3 rounded-lg border-l-4" style={{ borderColor: '#16a34a', backgroundColor: '#f0fdf4' }}>
                     <p className="font-bold text-sm text-green-700">PASS</p>
@@ -540,6 +568,7 @@ export default function HomePage() {
                     <p className="text-xs text-red-600 mt-1">Odpověď zablokována,<br />dítě ji neuvidí</p>
                   </div>
                 </div>
+                )}
               </div>
 
               {/* Security Profile */}
@@ -551,6 +580,16 @@ export default function HomePage() {
                   <h3 className="font-black text-lg mb-1">Bezpečnostní profil</h3>
                   <p className="text-xs text-gray-500">Věková skupina 1.–3. třída</p>
                 </div>
+                {/* TODO: nahradit reálným screenshotem – dodá Jaromír */}
+                {visualEvidenceScreenshots.securityProfile ? (
+                  <Image
+                    src={visualEvidenceScreenshots.securityProfile}
+                    alt="Ukázka bezpečnostního profilu"
+                    width={400}
+                    height={320}
+                    className="rounded-xl w-full h-auto"
+                  />
+                ) : (
                 <div className="space-y-3 text-sm">
                   <div>
                     <p className="font-bold text-gray-700 mb-2">Zakázaná témata:</p>
@@ -573,6 +612,7 @@ export default function HomePage() {
                     </div>
                   </div>
                 </div>
+                )}
               </div>
             </div>
           </div>
@@ -589,20 +629,18 @@ export default function HomePage() {
                 Pilotní program
               </div>
               <h2 className="text-3xl md:text-4xl font-black mb-6">
-                Hledáme partnerské školy
+                Partnerství pro školy
               </h2>
               <p className="text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed mb-8">
-                Spouštíme testovací program AIBgin a hledáme první partnerské školy,
-                které by se chtěly stát součástí této cesty. Budete mít přístup k nejnovějším
-                funkcím, přímý kontakt na náš tým a podíl na tvorbě budoucnosti bezpečné AI
-                v českém vzdělávání.
+                Testovací program AIBgin právě běží. Partnerství pro další školy
+                připravujeme — brzy přineseme více informací.
               </p>
-              <a
-                className="inline-block px-8 py-4 rounded-xl font-bold text-white transition-opacity shadow-lg shadow-purple-200"
-                style={{ backgroundColor: '#6C47FF', opacity: 0.4, cursor: 'not-allowed', pointerEvents: 'none' }}
+              <span
+                className="inline-block px-8 py-4 rounded-xl font-bold text-white shadow-lg shadow-purple-200"
+                style={{ backgroundColor: '#6C47FF', opacity: 0.4 }}
               >
-                Staňte se partnerskou školou →
-              </a>
+                Partnerství pro školy — připravujeme, brzy více informací
+              </span>
             </div>
           </div>
         </section>
@@ -693,16 +731,19 @@ export default function HomePage() {
                 .
               </p>
             </div>
+            <div
+              className="max-w-2xl mx-auto mb-10 rounded-2xl overflow-hidden shadow-md"
+              style={{ position: 'relative', paddingTop: '56.25%' }}
+            >
+              <iframe
+                src="https://www.youtube.com/embed/JMPORPfxhZM"
+                title="Záznam inaugurace AIB1"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }}
+              />
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://www.youtube.com/watch?v=JMPORPfxhZM"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-8 py-4 rounded-xl font-bold text-white text-base transition-all shadow-md"
-                style={{ backgroundColor: '#6C47FF' }}
-              >
-                ▶ Záznam inaugurace
-              </a>
               <a
                 href="https://avatar.aiblab.info/call.html"
                 target="_blank"

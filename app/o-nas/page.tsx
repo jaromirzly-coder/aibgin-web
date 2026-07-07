@@ -9,6 +9,7 @@ const timeline = [
   { year: '2025', text: 'Spuštění AIBSN registru, první AI identita na světě' },
   { year: '2025', text: 'Vývoj AIBgin platformy' },
   { year: '2026', text: 'Prázdninový testovací program 2026' },
+  { year: '2026', text: 'Inaugurace AIB1 — první registrovaná AI bytost (1. 7. 2026)' },
 ];
 
 const ecosystem = [

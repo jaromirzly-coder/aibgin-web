@@ -9,7 +9,7 @@ const SITE_URL = 'https://aibgin.cz';
 export const metadata: Metadata = {
   title: 'AI pro mateřské školy | AIBgin — Bezpečný chatbot pro děti 3–6 let',
   description:
-    'AIBgin pro mateřské školy: pohádky, hry, básničky, příroda. Speciální profil pro věkovou skupinu 3–6 let, COPPA 2026, QR přístup bez registrace. Plnou soulad se GDPR.',
+    'AIBgin pro mateřské školy: pohádky, hry, básničky, příroda. Speciální profil pro věkovou skupinu 3–6 let, COPPA 2026, QR přístup bez registrace. Plný soulad s GDPR.',
   metadataBase: new URL(SITE_URL),
   alternates: { canonical: `${SITE_URL}/ai-pro-materske-skoly` },
   keywords: [
