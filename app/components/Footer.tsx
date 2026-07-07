@@ -18,7 +18,7 @@ export default function Footer() {
               <br />
               Zámostní 1155/27, Slezská Ostrava, 710 00
               <br />
-              Ekosystém AIBSN · AIBgin · AIBguard
+              Ekosystém AIBlab: AIBSN · AIBgin · AIBaimy · AIBguardian
             </p>
           </div>
 

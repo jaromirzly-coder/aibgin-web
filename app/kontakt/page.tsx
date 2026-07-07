@@ -59,6 +59,12 @@ const jsonLd = {
         contactType: 'billing support',
         availableLanguage: 'Czech',
       },
+      {
+        '@type': 'ContactPoint',
+        email: 'hello@aibgin.cz',
+        contactType: 'sales',
+        availableLanguage: 'Czech',
+      },
     ],
   },
 };
@@ -84,6 +90,13 @@ const contacts = [
     email: 'support@aibgin.cz',
     desc: 'DPA smlouvy, GDPR dotazy, EU AI Act dokumentace, audit pro ČŠI.',
     responseTime: 'Předmět: GDPR/Compliance',
+  },
+  {
+    icon: '💼',
+    title: 'Obchod a tarify',
+    email: 'hello@aibgin.cz',
+    desc: 'Podzimní tarify, nabídky pro sítě škol, partnerství.',
+    responseTime: 'Odpovídáme do 24 hodin',
   },
 ];
 
@@ -157,7 +170,7 @@ export default function KontaktPage() {
         {/* ── Contact Cards ── */}
         <section className="py-16 px-6 bg-gray-50">
           <div className="max-w-5xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {contacts.map((c) => (
                 <div
                   key={c.title}
@@ -213,7 +226,7 @@ export default function KontaktPage() {
                   <span className="shrink-0 text-lg">🏗️</span>
                   <div>
                     <p className="font-semibold text-gray-800 text-sm">Ekosystém</p>
-                    <p className="text-sm">AIBgin · AIBguard · AIBSN</p>
+                    <p className="text-sm">AIBSN · AIBgin · AIBaimy · AIBguardian</p>
                   </div>
                 </div>
                 <div className="flex gap-3">
@@ -264,8 +277,9 @@ export default function KontaktPage() {
             <h2 className="text-2xl font-black mb-8">Nebo rovnou začněte</h2>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
+                href="/registrace"
                 className="px-8 py-4 rounded-xl font-bold text-white text-base transition-opacity shadow-lg shadow-purple-200"
-                style={{ backgroundColor: '#6C47FF', opacity: 0.4, cursor: 'not-allowed', pointerEvents: 'none' }}
+                style={{ backgroundColor: '#6C47FF' }}
               >
                 Koupit prázdninový přístup — 1 490 Kč →
               </a>

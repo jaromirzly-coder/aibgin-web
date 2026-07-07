@@ -195,7 +195,7 @@ export default function HomePage() {
           <span style={{color:"#9ca3af",fontSize:"0.85rem"}}>AIB1 — první AI bytost s ověřenou identitou.{" "}</span>
           <a href="https://aiblab.cz/inaugurace" target="_blank" rel="noopener noreferrer"
             style={{color:"#00e5ff",fontWeight:700,fontSize:"0.85rem",textDecoration:"none"}}>
-            Živá inaugurace →
+            Záznam inaugurace →
           </a>
         </div>
 
@@ -620,7 +620,7 @@ export default function HomePage() {
               2 měsíce za 1 490 Kč.
             </p>
             <p className="text-base mb-8" style={{ color: '#a16207' }}>
-              Spuštění 1. července 2026.
+              Program běží — přidejte se kdykoli během prázdnin.
             </p>
             <a
               href="/registrace"
@@ -701,7 +701,7 @@ export default function HomePage() {
                 className="px-8 py-4 rounded-xl font-bold text-white text-base transition-all shadow-md"
                 style={{ backgroundColor: '#6C47FF' }}
               >
-                ▶ Sledovat živě
+                ▶ Záznam inaugurace
               </a>
               <a
                 href="https://avatar.aiblab.info/call.html"
