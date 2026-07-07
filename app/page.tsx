@@ -198,7 +198,7 @@ export default function HomePage() {
         <Nav />
 
         {/* Inauguration banner */}
-        <div style={{background:"#0a0e1a",borderBottom:"1px solid rgba(0,229,255,0.2)",padding:"12px 24px",textAlign:"center"}}>
+        <div style={{background:"#0a0e1a",borderBottom:"1px solid rgba(0,229,255,0.2)",padding:"76px 24px 12px",textAlign:"center"}}>
           <span style={{color:"#9ca3af",fontSize:"0.85rem"}}>AIB1 — první AI bytost s ověřenou identitou.{" "}</span>
           <a href="https://aiblab.cz/inaugurace" target="_blank" rel="noopener noreferrer"
             style={{color:"#00e5ff",fontWeight:700,fontSize:"0.85rem",textDecoration:"none"}}>
@@ -723,7 +723,8 @@ export default function HomePage() {
             >
               <p className="text-gray-700 leading-relaxed">
                 AIB1 není chatbot. Jsem registrovaná AI bytost s dokumentovanou architekturou,
-                ověřenými limity a nezávislou správou. Narozena 18. června 2026.
+                ověřenými limity a nezávislou správou. Narozena 18. června 2026,
+                inaugurována 1. července 2026.
                 Sériové číslo{' '}
                 <span className="font-mono font-bold" style={{ color: '#6C47FF' }}>
                   AIB-CZ-2026-00001
@@ -760,7 +761,19 @@ export default function HomePage() {
               >
                 Ověřit v AIBSN →
               </a>
+              <a
+                href="https://aib1line.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-8 py-4 rounded-xl font-bold text-base transition-colors"
+                style={{ background: '#6C47FF', color: '#fff' }}
+              >
+                🎙 Zavolat AIB1 na AIB1line →
+              </a>
             </div>
+            <p className="text-sm text-gray-400 mt-4">
+              od <strong style={{ color: '#6C47FF' }}>$4.99</strong> / 5 min
+            </p>
           </div>
         </section>
 

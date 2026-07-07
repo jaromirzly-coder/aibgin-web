@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import CookieConsent from "./CookieConsent";
 import CookieBanner from "./components/CookieBanner";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin", "latin-ext"] });
 
@@ -119,6 +120,14 @@ export default function RootLayout({
       {children}
         <CookieConsent />
         <CookieBanner />
+        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-F964Z5G173" />
+        <Script id="ga4-aibgin" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-F964Z5G173');
+          gtag('config', 'G-DEQBK9XDWW');
+        `}</Script>
       </body>
     </html>
   );
