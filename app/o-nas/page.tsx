@@ -41,8 +41,8 @@ export default function ONasPage() {
             <h2 className="text-2xl font-black text-gray-900 mb-5">Mise</h2>
             <p className="text-gray-600 text-lg leading-relaxed">
               Věříme, že děti mají právo na AI, která je bezpečná, transparentní a pedagogicky
-              smysluplná. AIBgin přináší první certifikovaný AI chatbot pro školy s 5 vrstvami
-              ochrany, real-time auditem a plnou shodou s EU AI Act.
+              smysluplná. AIBgin přináší AI chatbot pro školy navržený od základu pro bezpečnost
+              dětí, s 5 vrstvami ochrany, real-time auditem a souladem s EU AI Act.
             </p>
           </div>
         </section>

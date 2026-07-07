@@ -50,7 +50,7 @@ const benefits = [
 const faqs = [
   {
     q: 'Jak se AIBgin liší od obecných ChatGPT aplikací?',
-    a: 'AIBgin je navržen speciálně pro školství. Každá třída má vlastní bezpečnostní profil, učitel nevidí obsah konverzací (jen souhrn dotazů), a systém je certifikován pro GDPR, EU AI Act a COPPA. ChatGPT je obecný nástroj bez těchto bezpečnostních garantií.',
+    a: 'AIBgin je navržen speciálně pro školství. Každá třída má vlastní bezpečnostní profil, učitel nevidí obsah konverzací (jen souhrn dotazů), a systém je navržen v souladu s GDPR a EU AI Act. ChatGPT je obecný nástroj bez těchto bezpečnostních garantií.',
   },
   {
     q: 'Jaký je rozdíl mezi profilem pro 1.–3. třídu a 6.–9. třídu?',

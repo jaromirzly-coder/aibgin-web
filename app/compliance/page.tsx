@@ -141,7 +141,7 @@ const complianceItems = [
     color: '#EDE9FF',
     textColor: '#6C47FF',
     summary:
-      'Splňujeme i nejpřísnější americký federální standard pro ochranu dětí online.',
+      'Sledujeme a implementujeme požadavky COPPA, federálního standardu pro ochranu dětí online v USA.',
     points: [
       'Žádná osobní data dětí bez souhlasu rodičů',
       'Anonymní přístup přes QR kód — žádná registrace',
@@ -428,7 +428,7 @@ export default function CompliancePage() {
               <p>
                 Každá škola, která se zapojí do <strong className="text-gray-900">Prázdninového testovacího programu</strong>,
                 obdrží <strong className="text-gray-900">Certifikát AIBgin</strong> potvrzující
-                účast v prvním certifikovaném AI vzdělávacím programu v ČR splňujícím požadavky EU AI Act.
+                účast v AI vzdělávacím programu v ČR navrženém v souladu s požadavky EU AI Act.
               </p>
 
               {/* Certifikát vizuál */}
@@ -439,7 +439,7 @@ export default function CompliancePage() {
                 <div className="text-4xl mb-3">🏅</div>
                 <p className="text-lg font-black text-gray-900 mb-1">Certifikát AIBgin</p>
                 <p className="text-sm text-gray-500 mb-4">
-                  První certifikovaný AI vzdělávací program v ČR · EU AI Act Ready
+                  AI vzdělávací program v ČR navržený v souladu s EU AI Act
                 </p>
                 <div
                   className="inline-block px-4 py-2 rounded-xl text-xs font-mono font-bold"

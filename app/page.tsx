@@ -9,7 +9,7 @@ const SITE_URL = 'https://aibgin.cz';
 export const metadata: Metadata = {
   title: 'AIBgin — Bezpečná a nastavitelná AI pro děti | Školy & instituce',
   description:
-    'Certifikovaný AI chatbot pro školy, školky a zájmové kroužky. 5 vrstev ochrany, real-time AIBguard audit, crisis detection (116 111), GDPR & EU AI Act. Žádná registrace pro děti — stačí QR kód.',
+    'Bezpečný AI chatbot pro školy, školky a zájmové kroužky. 5 vrstev ochrany, real-time AIBguard audit, crisis detection (116 111), GDPR & EU AI Act. Žádná registrace pro děti — stačí QR kód.',
   metadataBase: new URL(SITE_URL),
   alternates: { canonical: SITE_URL },
   keywords: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'AIBgin — Bezpečná a nastavitelná AI pro děti',
     description:
-      'Certifikovaný AI chatbot pro školy a instituce. 5 vrstev ochrany, QR přístup bez registrace, linka bezpečí 116 111. Prázdninový testovací program 1 490 Kč.',
+      'Bezpečný AI chatbot pro školy a instituce. 5 vrstev ochrany, QR přístup bez registrace, linka bezpečí 116 111. Prázdninový testovací program 1 490 Kč.',
     url: SITE_URL,
     siteName: 'AIBgin',
     locale: 'cs_CZ',
@@ -48,28 +48,6 @@ const jsonLd = {
     name: 'AIBgin',
   },
   sku: 'AIBGIN-SANDBOX-001',
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '5',
-    reviewCount: '12',
-    bestRating: '5',
-  },
-  review: [
-    {
-      '@type': 'Review',
-      reviewRating: {
-        '@type': 'Rating',
-        ratingValue: '5',
-        bestRating: '5',
-      },
-      author: {
-        '@type': 'Person',
-        name: 'Ředitel ZŠ',
-      },
-      reviewBody:
-        'AIBgin jsme zavedli bez problémů. Žáci i učitelé jsou spokojeni.',
-    },
-  ],
   offers: {
     '@type': 'Offer',
     price: '1490',
@@ -156,7 +134,7 @@ const useCases = [
       'Věková skupina 3–6 let — max. omezený obsah',
       'Jen pohádky, hry, básničky a příroda',
       'Žádný přístup bez QR kódu učitele',
-      'Plný soulad s COPPA 2026',
+      'Sledujeme a implementujeme požadavky COPPA',
     ],
   },
   {
@@ -235,7 +213,7 @@ export default function HomePage() {
                 className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full"
                 style={{ backgroundColor: '#EDE9FF', color: '#6C47FF' }}
               >
-                🛡️ Certifikovaná AI bezpečná pro děti
+                🛡️ AI navržena pro bezpečnost dětí
               </span>
               <span
                 className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full"

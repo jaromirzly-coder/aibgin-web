@@ -64,7 +64,7 @@ function Hero() {
           style={{ backgroundColor: "#EDE9FF", color: "#6C47FF" }}
         >
           <span>🛡️</span>
-          <span>Certifikovaná AI bezpečná pro děti</span>
+          <span>AI navržena pro bezpečnost dětí</span>
         </div>
 
         <h1 className="text-4xl md:text-6xl font-black leading-tight tracking-tight mb-6">
@@ -310,7 +310,7 @@ function Compliance() {
       badge: "COPPA 2026",
       icon: "🇺🇸",
       title: "COPPA 2026",
-      desc: "Plný soulad s Children's Online Privacy Protection Act. Žádná osobní data dětí nejsou sbírána bez souhlasu rodičů.",
+      desc: "Sledujeme a implementujeme požadavky Children's Online Privacy Protection Act. Žádná osobní data dětí nejsou sbírána bez souhlasu rodičů.",
     },
     {
       badge: "EU AI Act",
@@ -549,7 +549,7 @@ function UseCases() {
         "Věková skupina 3–6 let — maximálně omezený obsah",
         "Jen pohádky, hry, básničky a příroda",
         "Žádná možnost přístupu bez QR kódu učitele",
-        "Plný soulad s COPPA 2026",
+        "Sledujeme a implementujeme požadavky COPPA",
       ],
     },
     {

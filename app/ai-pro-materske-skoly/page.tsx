@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 const benefits = [
   'Speciální profil pro věk 3–6 let — jen pohádky, hry, básničky, příroda',
   'Maximálně omezený obsah — pokud je otázka mimo, systém ji zamítne',
-  'COPPA 2026 compliance — nejpřísnější americký standard pro malé děti',
+  'Sledujeme a implementujeme požadavky COPPA pro malé děti',
   'Bez registrace, bez emailu, bez osobních údajů',
   'QR kód z tabule — učitel kontroluje přístup',
   'Všechny odpovědi prochází AIBguard auditem',

@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin", "latin-ext"] });
 
 const SITE_URL = "https://aibgin.cz";
 
-const metaDescription = "AIBgin je bezpečná AI vzdělávací platforma pro děti a školy. 5 vrstev ochrany, QR přístup, real-time audit. Certifikovaná podle EU AI Act. Prázdninový testovací program od 1 490 Kč.";
+const metaDescription = "AIBgin je bezpečná AI vzdělávací platforma pro děti a školy. 5 vrstev ochrany, QR přístup, real-time audit. Navržena v souladu s EU AI Act. Prázdninový testovací program od 1 490 Kč.";
 
 const jsonLdOrganization = {
   "@context": "https://schema.org",
