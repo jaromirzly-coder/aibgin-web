@@ -746,7 +746,7 @@ export default function HomePage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://avatar.aiblab.info/call.html"
+                href="https://aib1line.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 rounded-xl font-bold text-base border-2 transition-colors hover:bg-purple-50"
