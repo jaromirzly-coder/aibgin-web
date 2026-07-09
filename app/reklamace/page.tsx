@@ -53,8 +53,8 @@ export default function ReklamacePage() {
             <h2 className="text-xl font-black text-gray-900 mb-3">2. Jak uplatnit reklamaci</h2>
             <p>
               Reklamaci uplatňujte výhradně e-mailem na adresu{' '}
-              <a href="mailto:platby@aibgin.cz" className="underline font-semibold" style={{ color: '#6C47FF' }}>
-                platby@aibgin.cz
+              <a href="mailto:info@aiblab.cz" className="underline font-semibold" style={{ color: '#6C47FF' }}>
+                info@aiblab.cz
               </a>.
             </p>
             <p className="mt-3">E-mail musí obsahovat:</p>
@@ -129,7 +129,7 @@ export default function ReklamacePage() {
           </div>
 
           <div className="border-t border-gray-100 pt-8 mt-10 text-sm text-gray-500 text-center">
-            SAY TO PAY s.r.o. · IČO: 08694222 · <a href="mailto:support@aibgin.cz" className="underline hover:text-gray-700">support@aibgin.cz</a>
+            SAY TO PAY s.r.o. · IČO: 08694222 · <a href="mailto:info@aiblab.cz" className="underline hover:text-gray-700">info@aiblab.cz</a>
           </div>
         </div>
       </section>

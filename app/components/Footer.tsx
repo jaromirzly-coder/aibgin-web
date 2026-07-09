@@ -139,20 +139,26 @@ export default function Footer() {
             <h4 className="text-white font-bold mb-4 text-sm">Kontakt</h4>
             <ul className="space-y-3 text-sm">
               <li>
-                <a href="mailto:support@aibgin.cz" className="hover:text-white transition-colors block">
-                  support@aibgin.cz
+                <a href="mailto:info@aiblab.cz" className="hover:text-white transition-colors block">
+                  info@aiblab.cz
                 </a>
                 <span className="text-xs text-gray-600">technická podpora</span>
               </li>
               <li>
-                <a href="mailto:platby@aibgin.cz" className="hover:text-white transition-colors block">
-                  platby@aibgin.cz
+                <a href="mailto:info@aiblab.cz" className="hover:text-white transition-colors block">
+                  info@aiblab.cz
                 </a>
                 <span className="text-xs text-gray-600">fakturace a platby</span>
               </li>
             </ul>
           </div>
         </div>
+
+        <style>{`.hopea-band{box-sizing:border-box;width:100%;padding:22px 18px;background:#0f2e22;border-top:3px solid #3aa17a;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:16px 20px;text-align:center;font-family:inherit;}.hopea-text{color:#e8f3ee;font-size:15px;line-height:1.5;max-width:640px;margin:0;}.hopea-text strong{color:#7fe0b6;font-weight:700;}.hopea-btn{display:inline-flex;align-items:center;gap:8px;white-space:nowrap;background:#3aa17a;color:#04150e;text-decoration:none;font-weight:700;font-size:15px;padding:11px 20px;border-radius:999px;}.hopea-btn:hover{background:#57c497;}`}</style>
+        <section className="hopea-band" aria-label="Podporujeme HOPEA">
+          <p className="hopea-text">🌿 Hrdě podporujeme <strong>HOPEA</strong> — ekologicko-duchovní iniciativu, která vrací vyhynulé a ohrožené druhy zpět do přírody a obnovuje přetržené vazby v ekosystému. Žádný druh by neměl zmizet kvůli nám.</p>
+          <a className="hopea-btn" href="https://hopea.online/" target="_blank" rel="noopener noreferrer">Podpořit HOPEA →</a>
+        </section>
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs">
           <p>© 2026 SAY TO PAY s.r.o. · IČO: 08694222 · Všechna práva vyhrazena.</p>

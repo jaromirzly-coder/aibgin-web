@@ -8,7 +8,7 @@ const SITE_URL = 'https://aibgin.cz';
 export const metadata: Metadata = {
   title: 'Kontakt | AIBgin — Technická podpora a dotazy',
   description:
-    'Kontaktujte tým AIBgin. Technická podpora: support@aibgin.cz. Fakturace: platby@aibgin.cz. SAY TO PAY s.r.o., Slezská Ostrava. Odpovídáme do 24 hodin.',
+    'Kontaktujte tým AIBgin. Technická podpora: info@aiblab.cz. Fakturace: info@aiblab.cz. SAY TO PAY s.r.o., Slezská Ostrava. Odpovídáme do 24 hodin.',
   metadataBase: new URL(SITE_URL),
   alternates: { canonical: `${SITE_URL}/kontakt` },
   keywords: [
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Kontakt | AIBgin — Technická podpora a dotazy',
     description:
-      'Kontaktujte tým AIBgin. support@aibgin.cz · platby@aibgin.cz · SAY TO PAY s.r.o., Slezská Ostrava.',
+      'Kontaktujte tým AIBgin. info@aiblab.cz · info@aiblab.cz · SAY TO PAY s.r.o., Slezská Ostrava.',
     url: `${SITE_URL}/kontakt`,
     siteName: 'AIBgin',
     locale: 'cs_CZ',
@@ -49,19 +49,19 @@ const jsonLd = {
     contactPoint: [
       {
         '@type': 'ContactPoint',
-        email: 'support@aibgin.cz',
+        email: 'info@aiblab.cz',
         contactType: 'customer support',
         availableLanguage: 'Czech',
       },
       {
         '@type': 'ContactPoint',
-        email: 'platby@aibgin.cz',
+        email: 'info@aiblab.cz',
         contactType: 'billing support',
         availableLanguage: 'Czech',
       },
       {
         '@type': 'ContactPoint',
-        email: 'hello@aibgin.cz',
+        email: 'info@aiblab.cz',
         contactType: 'sales',
         availableLanguage: 'Czech',
       },
@@ -73,28 +73,28 @@ const contacts = [
   {
     icon: '🛠️',
     title: 'Technická podpora',
-    email: 'support@aibgin.cz',
+    email: 'info@aiblab.cz',
     desc: 'Nastavení, onboarding, technické problémy a dotazy k platformě.',
     responseTime: 'Odpovídáme do 24 hodin',
   },
   {
     icon: '🧾',
     title: 'Fakturace a platby',
-    email: 'platby@aibgin.cz',
+    email: 'info@aiblab.cz',
     desc: 'Otázky k fakturám, platbám, daňovým dokladům a IČO fakturaci.',
     responseTime: 'Odpovídáme do 48 hodin',
   },
   {
     icon: '⚖️',
     title: 'Compliance a GDPR',
-    email: 'support@aibgin.cz',
+    email: 'info@aiblab.cz',
     desc: 'DPA smlouvy, GDPR dotazy, EU AI Act dokumentace, audit pro ČŠI.',
     responseTime: 'Předmět: GDPR/Compliance',
   },
   {
     icon: '💼',
     title: 'Obchod a tarify',
-    email: 'hello@aibgin.cz',
+    email: 'info@aiblab.cz',
     desc: 'Podzimní tarify, nabídky pro sítě škol, partnerství.',
     responseTime: 'Odpovídáme do 24 hodin',
   },
@@ -110,8 +110,8 @@ const channels = [
   {
     icon: '📧',
     label: 'E-mail',
-    value: 'support@aibgin.cz',
-    href: 'mailto:support@aibgin.cz',
+    value: 'info@aiblab.cz',
+    href: 'mailto:info@aiblab.cz',
   },
   {
     icon: '📋',

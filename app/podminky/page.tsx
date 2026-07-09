@@ -49,7 +49,7 @@ export default function PodminkyPage() {
                 IČO: 08694222, zapsaná v obchodním rejstříku vedeném příslušným krajským soudem
                 (dále jen „Poskytovatel" nebo „my").
               </p>
-              <p className="mt-2">Kontaktní e-mail: <a href="mailto:support@aibgin.cz" className="underline" style={{ color: '#6C47FF' }}>support@aibgin.cz</a></p>
+              <p className="mt-2">Kontaktní e-mail: <a href="mailto:info@aiblab.cz" className="underline" style={{ color: '#6C47FF' }}>info@aiblab.cz</a></p>
             </div>
 
             <div>
@@ -96,7 +96,7 @@ export default function PodminkyPage() {
               <ul className="list-disc pl-5 space-y-1">
                 <li>Zajistit dostupnost služby na úrovni min. 99 % měsíčně (SLA)</li>
                 <li>Zpracovávat osobní údaje v souladu s GDPR a těmito podmínkami</li>
-                <li>Poskytnout technickou podporu prostřednictvím e-mailu support@aibgin.cz</li>
+                <li>Poskytnout technickou podporu prostřednictvím e-mailu info@aiblab.cz</li>
                 <li>Informovat o plánovaných výpadcích s předstihem min. 24 hodin</li>
               </ul>
               <h3 className="text-base font-bold text-gray-800 mb-2 mt-4">5.2 Kupující (Správce) se zavazuje:</h3>
@@ -146,7 +146,7 @@ export default function PodminkyPage() {
                 Tarif <strong>Prázdninový testovací program</strong> zahrnuje <strong>10 000 dotazů na třídu za měsíc</strong>.
                 Po vyčerpání limitu je služba pozastavena. Obnovení přístupu je možné zakoupením dalšího balíčku
                 na <a href="https://app.aibgin.cz" className="underline" style={{ color: '#6C47FF' }}>app.aibgin.cz</a> nebo
-                na <a href="mailto:platby@aibgin.cz" className="underline" style={{ color: '#6C47FF' }}>platby@aibgin.cz</a>.
+                na <a href="mailto:info@aiblab.cz" className="underline" style={{ color: '#6C47FF' }}>info@aiblab.cz</a>.
               </p>
             </div>
 
@@ -160,7 +160,7 @@ export default function PodminkyPage() {
             </div>
 
             <div className="border-t border-gray-100 pt-8 mt-10 text-sm text-gray-500 text-center">
-              SAY TO PAY s.r.o. · IČO: 08694222 · <a href="mailto:support@aibgin.cz" className="underline hover:text-gray-700">support@aibgin.cz</a>
+              SAY TO PAY s.r.o. · IČO: 08694222 · <a href="mailto:info@aiblab.cz" className="underline hover:text-gray-700">info@aiblab.cz</a>
             </div>
           </div>
         </div>

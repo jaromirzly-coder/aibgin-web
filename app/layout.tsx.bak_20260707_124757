@@ -3,7 +3,6 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import CookieConsent from "./CookieConsent";
 import CookieBanner from "./components/CookieBanner";
-import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin", "latin-ext"] });
 
@@ -87,7 +86,6 @@ export const metadata: Metadata = {
     siteName: "AIBgin",
     locale: "cs_CZ",
     type: "website",
-    // TODO: vytvořit /og-image.png 1200x630 (nyní logo.png) – dodá Jaromír
     images: [
       {
         url: `${SITE_URL}/logo.png`,
@@ -120,14 +118,6 @@ export default function RootLayout({
       {children}
         <CookieConsent />
         <CookieBanner />
-        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-F964Z5G173" />
-        <Script id="ga4-aibgin" strategy="afterInteractive">{`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-F964Z5G173');
-          gtag('config', 'G-DEQBK9XDWW');
-        `}</Script>
       </body>
     </html>
   );

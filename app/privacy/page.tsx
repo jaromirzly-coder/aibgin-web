@@ -45,7 +45,7 @@ export default function PrivacyPage() {
             <p>
               Správcem osobních údajů je <strong>SAY TO PAY s.r.o.</strong>, se sídlem Zámostní 1155/27, Slezská Ostrava, 710 00,
               IČO: 08694222 (dále jen „Správce"). Kontakt na pověřence ochrany osobních
-              údajů (DPO): <a href="mailto:support@aibgin.cz" className="underline" style={{ color: '#6C47FF' }}>support@aibgin.cz</a>.
+              údajů (DPO): <a href="mailto:info@aiblab.cz" className="underline" style={{ color: '#6C47FF' }}>info@aiblab.cz</a>.
             </p>
           </div>
 
@@ -103,7 +103,7 @@ export default function PrivacyPage() {
               <li><strong>Podat stížnost</strong> u Úřadu pro ochranu osobních údajů (www.uoou.cz)</li>
             </ul>
             <p className="mt-3">
-              Žádosti zasílejte na: <a href="mailto:support@aibgin.cz" className="underline" style={{ color: '#6C47FF' }}>support@aibgin.cz</a>.
+              Žádosti zasílejte na: <a href="mailto:info@aiblab.cz" className="underline" style={{ color: '#6C47FF' }}>info@aiblab.cz</a>.
               Odpovíme do 30 dnů.
             </p>
           </div>
@@ -162,7 +162,7 @@ export default function PrivacyPage() {
           </div>
 
           <div className="border-t border-gray-100 pt-8 mt-10 text-sm text-gray-500 text-center">
-            SAY TO PAY s.r.o. · IČO: 08694222 · <a href="mailto:support@aibgin.cz" className="underline hover:text-gray-700">support@aibgin.cz</a>
+            SAY TO PAY s.r.o. · IČO: 08694222 · <a href="mailto:info@aiblab.cz" className="underline hover:text-gray-700">info@aiblab.cz</a>
           </div>
         </div>
       </section>

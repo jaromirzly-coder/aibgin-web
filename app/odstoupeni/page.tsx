@@ -75,8 +75,8 @@ export default function OdstoupeniPage() {
             <p>
               Pokud se domníváte, že máte právo na odstoupení (např. přístup nebyl okamžitě zpřístupněn),
               zašlete e-mail na adresu{' '}
-              <a href="mailto:platby@aibgin.cz" className="underline font-semibold" style={{ color: '#6C47FF' }}>
-                platby@aibgin.cz
+              <a href="mailto:info@aiblab.cz" className="underline font-semibold" style={{ color: '#6C47FF' }}>
+                info@aiblab.cz
               </a>{' '}
               obsahující vyplněný formulář níže nebo jednoznačné prohlášení o odstoupení od smlouvy.
             </p>
@@ -88,7 +88,7 @@ export default function OdstoupeniPage() {
 {`Vzorový formulář pro odstoupení od smlouvy
 (vyplňte tento formulář a zašlete jej, pokud chcete odstoupit od smlouvy)
 
-Komu: SAY TO PAY s.r.o., platby@aibgin.cz
+Komu: SAY TO PAY s.r.o., info@aiblab.cz
 
 Oznamuji/oznamujeme (*), že odstupuji/odstupujeme (*) od smlouvy
 o nákupu produktu AIBgin — Prázdninový testovací program.
@@ -119,7 +119,7 @@ Datum: ......................
           </div>
 
           <div className="border-t border-gray-100 pt-8 mt-10 text-sm text-gray-500 text-center">
-            SAY TO PAY s.r.o. · IČO: 08694222 · <a href="mailto:support@aibgin.cz" className="underline hover:text-gray-700">support@aibgin.cz</a>
+            SAY TO PAY s.r.o. · IČO: 08694222 · <a href="mailto:info@aiblab.cz" className="underline hover:text-gray-700">info@aiblab.cz</a>
           </div>
         </div>
       </section>

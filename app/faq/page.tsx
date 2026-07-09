@@ -31,7 +31,7 @@ const faqCategories = [
       },
       {
         q: 'Co když nějak prolomím bezpečnost?',
-        a: 'Děkuji. Prosím, napište nám na security@aibgin.cz. Máme bug-bounty program. Bezpečnost komunity je důležitá.',
+        a: 'Děkuji. Prosím, napište nám na info@aiblab.cz. Máme bug-bounty program. Bezpečnost komunity je důležitá.',
       },
     ],
   },
@@ -85,7 +85,7 @@ const faqCategories = [
       },
       {
         q: 'Máte slevy pro více škol nebo sítě?',
-        a: 'Ano. Kontaktujte nás na hello@aibgin.cz. Domluvíme si ceník.',
+        a: 'Ano. Kontaktujte nás na info@aiblab.cz. Domluvíme si ceník.',
       },
       {
         q: 'Vrátíte peníze, pokud se mi to nebude líbit?',
@@ -193,7 +193,7 @@ const faqCategories = [
       },
       {
         q: 'Jak se mohu obrátit s otázkou nebo problémem?',
-        a: 'Email: hello@aibgin.cz. Telefon: +420 723 657 885. Chat na webu. Odpověď do 24 hodin.',
+        a: 'Email: info@aiblab.cz. Telefon: +420 723 657 885. Chat na webu. Odpověď do 24 hodin.',
       },
       {
         q: 'Chci si AIBgin vyzkoušet bez registrace. Je to možné?',

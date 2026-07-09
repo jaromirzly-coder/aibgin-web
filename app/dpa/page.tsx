@@ -61,7 +61,7 @@ export default function DpaPage() {
             </p>
             <p className="mt-2">
               <strong>Zpracovatel:</strong> SAY TO PAY s.r.o., Zámostní 1155/27, Slezská Ostrava, 710 00, IČO: 08694222,
-              provozovatel platformy AIBgin (support@aibgin.cz).
+              provozovatel platformy AIBgin (info@aiblab.cz).
             </p>
           </div>
 
@@ -152,7 +152,7 @@ export default function DpaPage() {
               na vaši e-mailovou adresu.
             </p>
             <a
-              href="mailto:support@aibgin.cz?subject=Žádost%20o%20DPA%20smlouvu%20AIBgin&body=Dobrý%20den%2C%0A%0Aprosím%20o%20zaslání%20DPA%20smlouvy%20(Data%20Processing%20Agreement)%20pro%20platformu%20AIBgin.%0A%0ANázev%20instituce%3A%20%0AKontaktní%20osoba%3A%20%0AE-mail%3A%20%0A%0ADěkuji."
+              href="mailto:info@aiblab.cz?subject=Žádost%20o%20DPA%20smlouvu%20AIBgin&body=Dobrý%20den%2C%0A%0Aprosím%20o%20zaslání%20DPA%20smlouvy%20(Data%20Processing%20Agreement)%20pro%20platformu%20AIBgin.%0A%0ANázev%20instituce%3A%20%0AKontaktní%20osoba%3A%20%0AE-mail%3A%20%0A%0ADěkuji."
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-white transition-opacity hover:opacity-90"
               style={{ backgroundColor: '#6C47FF' }}
             >
@@ -164,7 +164,7 @@ export default function DpaPage() {
           </div>
 
           <div className="border-t border-gray-100 pt-8 mt-10 text-sm text-gray-500 text-center">
-            SAY TO PAY s.r.o. · IČO: 08694222 · <a href="mailto:support@aibgin.cz" className="underline hover:text-gray-700">support@aibgin.cz</a>
+            SAY TO PAY s.r.o. · IČO: 08694222 · <a href="mailto:info@aiblab.cz" className="underline hover:text-gray-700">info@aiblab.cz</a>
           </div>
         </div>
       </section>

@@ -103,7 +103,7 @@ const faqs = [
   },
   {
     q: 'Co se stane po prázdninách?',
-    a: 'Přístup vyprší 31. 8. 2026. Žádné automatické obnovení, žádné strhávání peněz. Od září 2026 budou k dispozici podzimní tarify (Starter, School, Enterprise). Zájemci mohou napsat na <a href="mailto:hello@aibgin.cz" style="color:#6C47FF">hello@aibgin.cz</a>.',
+    a: 'Přístup vyprší 31. 8. 2026. Žádné automatické obnovení, žádné strhávání peněz. Od září 2026 budou k dispozici podzimní tarify (Starter, School, Enterprise). Zájemci mohou napsat na <a href="mailto:info@aiblab.cz" style="color:#6C47FF">info@aiblab.cz</a>.',
   },
   {
     q: 'Potřebuji souhlas rodičů?',
@@ -252,7 +252,7 @@ export default function CenikPage() {
                 <p className="text-sm text-gray-500 mb-1">
                   Od září 2026 nasazujeme pravidelné měsíční tarify pro školy a instituce.
                 </p>
-                <p>Zájemci: <a href="mailto:hello@aibgin.cz" style={{color:'#6C47FF'}}>hello@aibgin.cz</a></p>
+                <p>Zájemci: <a href="mailto:info@aiblab.cz" style={{color:'#6C47FF'}}>info@aiblab.cz</a></p>
               </div>
             </div>
             <div className="grid md:grid-cols-3 gap-6">
